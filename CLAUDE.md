@@ -1,0 +1,12 @@
+# Project rules (these override any skill defaults)
+- Business: Ashford & Reyes CPAs, a fictional CPA and tax advisory firm in Lodi, California
+- Stack: Next.js 14 App Router, TypeScript, Tailwind CSS, Framer Motion, static export to Cloudflare Pages
+- No em dashes anywhere in copy or code comments
+- No overline pill labels above headings
+- next/image only, never raw <img> tags
+- Mobile parallax disabled under 768px via useMediaQuery
+- Forms use FormSubmit
+- Photography from Pexels
+- Footer credit linking to alectronicsolutions.com
+- Plan first and wait for my approval before building each stage
+- Ask before installing any new npm package

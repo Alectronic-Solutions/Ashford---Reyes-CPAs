@@ -31,6 +31,7 @@ function validate(data: FormData): Errors {
 export function Contact() {
   const [errors, setErrors] = useState<Errors>({});
   const [sent, setSent] = useState(false);
+  const [refocus, setRefocus] = useState(false);
 
   // FormSubmit sends visitors back with ?sent=1 once their message is delivered.
   useEffect(() => {
@@ -50,7 +51,16 @@ export function Contact() {
   function sendAnother() {
     window.history.replaceState(null, '', `${window.location.pathname}#contact`);
     setSent(false);
+    setRefocus(true);
   }
+
+  // The form remounts after "Send another message"; put the keyboard back inside it.
+  useEffect(() => {
+    if (refocus && !sent) {
+      document.getElementById('contact-name')?.focus();
+      setRefocus(false);
+    }
+  }, [refocus, sent]);
 
   return (
     <section
@@ -139,7 +149,7 @@ export function Contact() {
                       className={field}
                     />
                     {errors.name && (
-                      <p id="contact-name-error" className={error}>
+                      <p id="contact-name-error" role="alert" className={error}>
                         {errors.name}
                       </p>
                     )}
@@ -159,7 +169,7 @@ export function Contact() {
                       className={field}
                     />
                     {errors.email && (
-                      <p id="contact-email-error" className={error}>
+                      <p id="contact-email-error" role="alert" className={error}>
                         {errors.email}
                       </p>
                     )}
@@ -192,7 +202,7 @@ export function Contact() {
                     className={field}
                   />
                   {errors.message && (
-                    <p id="contact-message-error" className={error}>
+                    <p id="contact-message-error" role="alert" className={error}>
                       {errors.message}
                     </p>
                   )}

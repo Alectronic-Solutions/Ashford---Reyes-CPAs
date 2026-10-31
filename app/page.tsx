@@ -1,6 +1,7 @@
 import { Hero } from '@/components/Hero';
 import { WhatWeDo } from '@/components/WhatWeDo';
-import { Calendar } from '@/components/Calendar';
+import { WhoWeServe } from '@/components/WhoWeServe';
+import { YearAhead } from '@/components/YearAhead';
 import { Contact } from '@/components/Contact';
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
     <>
       <Hero />
       <WhatWeDo />
-      <Calendar />
+      <WhoWeServe />
+      <YearAhead />
       <Contact />
     </>
   );

@@ -20,6 +20,12 @@ export function Navbar() {
           >
             What we do
           </a>
+          <a
+            href="#year-ahead"
+            className="-my-3 hidden py-3 text-body font-medium hover:underline lg:inline-block"
+          >
+            The year ahead
+          </a>
           <a href="#contact" className={buttonCompactClass}>
             Talk to us
           </a>

@@ -48,14 +48,15 @@
 /*
   The one gradient on the page, allowed for the hero by the brief. A dark #15201B scrim,
   strongest behind the text and fading toward the right on desktop, strongest at the bottom on phones.
-  Opacities come from a contrast measurement over every frame of the clips.
+  Opacities began as a contrast measurement over every frame of the clips, then went up 0.06
+  after the held final frame measured about 4.8:1 at its brightest pixel.
 */
 .hero-scrim {
   background-image: linear-gradient( /* taste-skill-ignore: hero scrim, allowed by the brief */
     180deg,
     rgb(21 32 27 / 0.2) 0%,
-    rgb(21 32 27 / 0.6) 30%,
-    rgb(21 32 27 / 0.6) 100%
+    rgb(21 32 27 / 0.66) 30%,
+    rgb(21 32 27 / 0.66) 100%
   );
 }
 
@@ -63,8 +64,8 @@
   .hero-scrim {
     background-image: linear-gradient( /* taste-skill-ignore: hero scrim, allowed by the brief */
       90deg,
-      rgb(21 32 27 / 0.6) 0%,
-      rgb(21 32 27 / 0.6) 62%,
+      rgb(21 32 27 / 0.66) 0%,
+      rgb(21 32 27 / 0.66) 62%,
       rgb(21 32 27 / 0.12) 100%
     );
   }

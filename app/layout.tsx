@@ -32,9 +32,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <style>{'[data-reveal]{opacity:1!important;transform:none!important}'}</style>
         </noscript>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-5 focus:top-24 focus:z-50 focus:bg-ink focus:px-5 focus:py-3 focus:text-bg"
+        >
+          Skip to content
+        </a>
         <Motion>
           <Navbar />
-          <main>{children}</main>
+          <main id="main">{children}</main>
           <Footer />
         </Motion>
       </body>

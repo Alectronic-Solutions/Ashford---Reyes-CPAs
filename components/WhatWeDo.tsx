@@ -21,7 +21,7 @@ const services = [
 
 export function WhatWeDo() {
   return (
-    <section id="what-we-do" className="scroll-mt-4 px-5 py-24 md:px-8 md:py-40">
+    <section id="what-we-do" className="mx-auto max-w-page scroll-mt-24 px-5 py-24 md:px-8 md:py-40">
       <RiseGroup>
         <div className="grid gap-8 md:grid-cols-12 md:gap-8">
           <Rise className="md:col-span-5">
@@ -34,9 +34,9 @@ export function WhatWeDo() {
           </Rise>
         </div>
       </RiseGroup>
-      <RiseGroup as="ul" className="mt-12 grid gap-2 md:mt-20">
+      <RiseGroup as="ul" className="mt-12 grid gap-10 md:mt-20 md:gap-14">
         {services.map((s) => (
-          <RiseRow key={s.name} className="grid gap-4 bg-surface p-6 md:grid-cols-12 md:gap-8 md:p-10">
+          <RiseRow key={s.name} className="grid gap-3 md:grid-cols-12 md:gap-8">
             <RisePart as="h3" className="text-statement md:col-span-5">
               {s.name}
             </RisePart>

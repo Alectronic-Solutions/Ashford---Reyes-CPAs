@@ -4,11 +4,14 @@
 
 :root {
   --fs-statement: 22px;
+  /* The sticky header's height, so the phone menu opens directly beneath it. */
+  --header-h: 76px;
 }
 
 @media (min-width: 768px) {
   :root {
     --fs-statement: 28px;
+    --header-h: 84px;
   }
 }
 

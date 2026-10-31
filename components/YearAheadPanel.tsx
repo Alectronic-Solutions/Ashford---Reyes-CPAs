@@ -44,9 +44,9 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
     <section
       id="year-ahead"
       aria-labelledby="year-ahead-title"
-      className="scroll-mt-4 bg-delta px-5 py-24 text-bg md:px-8 md:py-40"
+      className="scroll-mt-24 bg-delta px-5 pb-20 pt-24 text-bg md:px-8 md:pb-28 md:pt-40"
     >
-      <RiseGroup>
+      <RiseGroup className="mx-auto max-w-[90rem]">
         <div className="grid gap-8 md:grid-cols-12 md:gap-8">
           <Rise className="md:col-span-5">
             <h2 id="year-ahead-title" className="text-h2">

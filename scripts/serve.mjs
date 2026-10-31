@@ -1,6 +1,6 @@
 // Serves the static export in out/ with range support, which video seeking needs.
 import { createServer } from 'node:http';
-import { createReadStream, statSync } from 'node:fs';
+import { createReadStream, existsSync, statSync } from 'node:fs';
 import { extname, join, normalize } from 'node:path';
 
 const root = join(process.cwd(), 'out');
@@ -27,7 +27,10 @@ createServer((req, res) => {
     return;
   }
   try {
-    if (statSync(file).isDirectory()) file = join(file, 'index.html');
+    // Clean URLs like Cloudflare Pages: /faq or /faq/ serves faq.html.
+    const bare = file.replace(/[\\/]+$/, '');
+    if (!extname(bare) && existsSync(`${bare}.html`)) file = `${bare}.html`;
+    else if (statSync(file).isDirectory()) file = join(file, 'index.html');
     const { size } = statSync(file);
     const type = types[extname(file)] || 'application/octet-stream';
     const range = req.headers.range?.match(/bytes=(\d*)-(\d*)/);

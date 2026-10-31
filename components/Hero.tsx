@@ -101,73 +101,75 @@ export function Hero() {
       </div>
       <div className="hero-scrim absolute inset-0 -z-10" aria-hidden="true" />
 
-      <div className="max-w-[46rem] text-bg">
-        <motion.h1
-          id="hero-title"
-          className="text-h2"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease }}
-        >
-          Steady books <br className="hidden md:block" />
-          through every season.
-        </motion.h1>
-        <motion.p
-          className="mt-8 max-w-[36ch] md:mt-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease, delay: 0.1 }}
-        >
-          Tax, bookkeeping and advisory for Lodi farms, wineries, small businesses and families, all
-          year and not just in April.
-        </motion.p>
-        <motion.div
-          className="mt-8 md:mt-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease, delay: 0.2 }}
-        >
-          <a href="#contact" className={buttonClass}>
-            Talk to us
-          </a>
-        </motion.div>
-      </div>
+      <div className="relative mx-auto w-full max-w-[90rem]">
+        <div className="max-w-[46rem] text-bg">
+          <motion.h1
+            id="hero-title"
+            className="text-h2"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease }}
+          >
+            Steady books <br className="hidden md:block" />
+            through every season.
+          </motion.h1>
+          <motion.p
+            className="mt-8 max-w-[36ch] md:mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease, delay: 0.1 }}
+          >
+            Tax, bookkeeping and advisory for Lodi farms, wineries, small businesses and families, all
+            year and not just in April.
+          </motion.p>
+          <motion.div
+            className="mt-8 md:mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease, delay: 0.2 }}
+          >
+            <a href="#contact" className={buttonClass}>
+              Talk to us
+            </a>
+          </motion.div>
+        </div>
 
-      {showVideo && (
-        <button
-          type="button"
-          onClick={toggle}
-          aria-label={label}
-          className={`absolute bottom-10 right-5 flex h-12 min-w-12 items-center justify-center gap-2 bg-ink text-bg transition duration-200 hover:brightness-150 md:bottom-14 md:right-8 ${status === 'ended' ? 'px-4' : ''}`}
-        >
-          {status === 'playing' ? (
-            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" fill="currentColor">
-              <rect x="3" y="2" width="4" height="14" />
-              <rect x="11" y="2" width="4" height="14" />
-            </svg>
-          ) : status === 'ended' ? (
-            <>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              aria-hidden="true"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M16 10a6 6 0 1 1-2-4.5" />
-              <path d="M16 2.5v4h-4" />
-            </svg>
-            <span className="text-small font-medium">Replay</span>
-            </>
-          ) : (
-            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" fill="currentColor">
-              <path d="M4 2l12 7-12 7z" />
-            </svg>
-          )}
-        </button>
-      )}
+        {showVideo && (
+          <button
+            type="button"
+            onClick={toggle}
+            aria-label={label}
+            className={`absolute bottom-0 right-0 flex h-12 min-w-12 items-center justify-center gap-2 bg-ink text-bg transition duration-200 hover:brightness-150 ${status === 'ended' ? 'px-4' : ''}`}
+          >
+            {status === 'playing' ? (
+              <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" fill="currentColor">
+                <rect x="3" y="2" width="4" height="14" />
+                <rect x="11" y="2" width="4" height="14" />
+              </svg>
+            ) : status === 'ended' ? (
+              <>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M16 10a6 6 0 1 1-2-4.5" />
+                <path d="M16 2.5v4h-4" />
+              </svg>
+              <span className="text-small font-medium">Replay</span>
+              </>
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" fill="currentColor">
+                <path d="M4 2l12 7-12 7z" />
+              </svg>
+            )}
+          </button>
+        )}
+      </div>
     </section>
   );
 }

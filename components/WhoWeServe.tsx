@@ -13,7 +13,7 @@ const businessNeeds = [
 
 export function WhoWeServe() {
   return (
-    <section id="who-we-serve" aria-labelledby="serve-title" className="scroll-mt-4 pb-24 md:pb-40">
+    <section id="who-we-serve" aria-labelledby="serve-title" className="mx-auto max-w-page scroll-mt-24 pb-24 md:pb-40">
       <RiseGroup>
         <div className="grid gap-8 px-5 md:grid-cols-12 md:gap-8 md:px-8">
           <Rise className="md:col-span-5">
@@ -83,9 +83,10 @@ export function WhoWeServe() {
               </p>
             </Rise>
             <Rise>
-              <ul className="mt-8 grid max-w-[48ch] gap-1.5">
+              <ul className="mt-8 grid max-w-[48ch] gap-3">
                 {businessNeeds.map((need) => (
-                  <li key={need} className="bg-surface px-4 py-3.5 font-medium">
+                  <li key={need} className="flex items-baseline gap-4 font-medium">
+                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 translate-y-[-1px] bg-accent" />
                     {need}
                   </li>
                 ))}

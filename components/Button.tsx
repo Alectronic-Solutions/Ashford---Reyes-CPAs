@@ -5,3 +5,7 @@ export const buttonClass = `${base} px-7 py-4`;
 
 /** Header size: tighter on phones so the wordmark and the button share one row. */
 export const buttonCompactClass = `${base} px-4 py-3 md:px-7`;
+
+/** An underlined link to a fuller page, for the trimmed sections on the home page. */
+export const textLink =
+  'inline-block py-3 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink';

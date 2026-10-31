@@ -66,7 +66,7 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="scroll-mt-4 px-5 pb-24 pt-8 md:px-8 md:pb-40 md:pt-12"
+      className="mx-auto max-w-page scroll-mt-24 px-5 pb-24 pt-8 md:px-8 md:pb-40 md:pt-12"
     >
       <RiseGroup>
         <div className="grid gap-12 md:grid-cols-12 md:gap-8">

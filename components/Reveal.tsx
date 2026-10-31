@@ -58,18 +58,19 @@ export function RiseGroup({
   className,
   children,
 }: {
-  as?: 'div' | 'ul';
+  as?: 'div' | 'ul' | 'ol';
   className?: string;
   children: React.ReactNode;
 }) {
-  const Tag = as === 'ul' ? motion.ul : motion.div;
+  const Tag = as === 'ul' ? motion.ul : as === 'ol' ? motion.ol : motion.div;
   return (
     <Tag
       className={className}
       variants={stagger}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
+      // Fires as the group's top edge enters, so a tall group or a quick jump never leaves it blank.
+      viewport={{ once: true, amount: 0, margin: '0px 0px -8% 0px' }}
     >
       {children}
     </Tag>

@@ -1,0 +1,51 @@
+// Serves the static export in out/ with range support, which video seeking needs.
+import { createServer } from 'node:http';
+import { createReadStream, statSync } from 'node:fs';
+import { extname, join, normalize } from 'node:path';
+
+const root = join(process.cwd(), 'out');
+const port = Number(process.env.PORT) || 3000;
+const types = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'text/javascript',
+  '.css': 'text/css',
+  '.json': 'application/json',
+  '.mp4': 'video/mp4',
+  '.jpg': 'image/jpeg',
+  '.png': 'image/png',
+  '.svg': 'image/svg+xml',
+  '.woff2': 'font/woff2',
+  '.ico': 'image/x-icon',
+  '.txt': 'text/plain',
+};
+
+createServer((req, res) => {
+  const url = new URL(req.url, 'http://localhost');
+  let file = normalize(join(root, decodeURIComponent(url.pathname)));
+  if (!file.startsWith(root)) {
+    res.writeHead(403).end();
+    return;
+  }
+  try {
+    if (statSync(file).isDirectory()) file = join(file, 'index.html');
+    const { size } = statSync(file);
+    const type = types[extname(file)] || 'application/octet-stream';
+    const range = req.headers.range?.match(/bytes=(\d*)-(\d*)/);
+    if (range) {
+      const start = range[1] ? Number(range[1]) : 0;
+      const end = range[2] ? Number(range[2]) : size - 1;
+      res.writeHead(206, {
+        'Content-Type': type,
+        'Accept-Ranges': 'bytes',
+        'Content-Range': `bytes ${start}-${end}/${size}`,
+        'Content-Length': end - start + 1,
+      });
+      createReadStream(file, { start, end }).pipe(res);
+    } else {
+      res.writeHead(200, { 'Content-Type': type, 'Content-Length': size, 'Accept-Ranges': 'bytes' });
+      createReadStream(file).pipe(res);
+    }
+  } catch {
+    res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found');
+  }
+}).listen(port, () => console.log(`Serving out/ at http://localhost:${port}`));

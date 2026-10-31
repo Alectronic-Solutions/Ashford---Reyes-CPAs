@@ -1,0 +1,7 @@
+source-media/
+.taste-skill/inspect/
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts

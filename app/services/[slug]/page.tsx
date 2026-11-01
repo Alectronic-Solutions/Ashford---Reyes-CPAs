@@ -24,7 +24,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props) {
   const s = service(params.slug);
   if (!s) return {};
-  return pageMetadata({ title: s.name, description: `${s.lede} ${s.blurb}`, path: `/services/${s.slug}` });
+  return pageMetadata({
+    title: s.name,
+    description: `${s.lede} ${s.blurb}`,
+    path: `/services/${s.slug}`,
+    image: '/services/opengraph-image.png',
+  });
 }
 
 const subhead = 'text-h2';

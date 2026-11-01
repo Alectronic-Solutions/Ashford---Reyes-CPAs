@@ -23,6 +23,7 @@ export function generateMetadata({ params }: Props) {
     title: `${p.name}, ${p.title}`,
     description: `Sample team member. ${p.name}, ${p.title.toLowerCase()} at ${site.name}: ${p.specialty}`,
     path: `/team/${p.slug}`,
+    image: '/team/opengraph-image.png',
   });
 }
 

@@ -24,7 +24,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props) {
   const i = industry(params.slug);
   if (!i) return {};
-  return pageMetadata({ title: i.name, description: `${i.lede} ${i.blurb}`, path: `/industries/${i.slug}` });
+  return pageMetadata({
+    title: i.name,
+    description: `${i.lede} ${i.blurb}`,
+    path: `/industries/${i.slug}`,
+    image: '/industries/opengraph-image.png',
+  });
 }
 
 const subhead = 'text-h2';

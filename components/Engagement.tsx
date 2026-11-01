@@ -53,11 +53,13 @@ function Sheet({
   index,
   progress,
   depth,
+  heading: Title,
 }: {
   step: (typeof steps)[number];
   index: number;
   progress: MotionValue<number>;
   depth: boolean;
+  heading: 'h2' | 'h3';
 }) {
   const below = steps.length - 1 - index;
   const start = index / steps.length;
@@ -74,7 +76,7 @@ function Sheet({
         className={`grid origin-top gap-6 rounded-3xl p-6 shadow-lift md:min-h-[22rem] md:gap-8 md:p-12 lg:grid-cols-12 ${tones[index]}`}
         style={depth ? { scale, rotateX } : undefined}
       >
-        <h3 className="text-h2 lg:col-span-5">{step.title}</h3>
+        <Title className="text-h2 lg:col-span-5">{step.title}</Title>
         <dl className="grid gap-6 md:grid-cols-2 md:gap-8 lg:col-span-7">
           <div>
             <dt className={`font-medium ${dark ? '' : 'text-accent'}`}>What you do</dt>
@@ -121,7 +123,14 @@ export function Engagement({ variant = 'home' }: { variant?: 'home' | 'page' }) 
       {/* The order is the list's own: a real ol, with no numerals. */}
       <ol ref={listRef} className="grid list-none gap-4 md:gap-10">
         {steps.map((step, i) => (
-          <Sheet key={step.title} step={step} index={i} progress={scrollYProgress} depth={scroll} />
+          <Sheet
+            key={step.title}
+            step={step}
+            index={i}
+            progress={scrollYProgress}
+            depth={scroll}
+            heading={home ? 'h3' : 'h2'}
+          />
         ))}
       </ol>
     </section>

@@ -6,7 +6,7 @@ import { Tilt } from './Depth';
 import { textLink } from './Button';
 
 /** Articles as a row: a photograph that leans toward the cursor, then the topic, title, summary and date. */
-export function InsightCards({ items }: { items: Insight[] }) {
+export function InsightCards({ items, heading: Title = 'h3' }: { items: Insight[]; heading?: 'h2' | 'h3' }) {
   return (
     <RiseGroup as="ul" className={`grid gap-x-8 gap-y-14 ${items.length > 1 ? 'md:grid-cols-3' : ''}`}>
       {items.map((a) => (
@@ -27,14 +27,14 @@ export function InsightCards({ items }: { items: Insight[] }) {
               />
             </Link>
           </Tilt>
-          <h3 className="mt-6 text-h3">
+          <Title className="mt-6 text-h3">
             <Link prefetch={false}
               href={`/insights/${a.slug}`}
               className="hover:underline hover:decoration-accent hover:decoration-2 hover:underline-offset-4"
             >
               {a.title}
             </Link>
-          </h3>
+          </Title>
           <p className="mt-4 max-w-[46ch]">{a.summary}</p>
           <p className="mt-4 text-small">
             <span className="font-medium text-accent">{a.topic}</span>. <time dateTime={a.date}>{formatDate(a.date)}</time>,{' '}

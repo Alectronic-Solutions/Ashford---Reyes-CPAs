@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/metadata';
 
 export const metadata = pageMetadata({
   title: 'Terms of use',
-  description: 'The terms that apply when you use the Ashford and Reyes CPAs website.',
+  description: 'The terms that apply when you use the Ashford and Reyes CPAs website, including what the site is and is not for.',
   path: '/terms',
 });
 

@@ -19,7 +19,7 @@ export default function Page() {
         photo={{ src: '/photos/harvest-hands.jpg', alt: 'Hands lifting a bunch of dark wine grapes from a harvest tub' }}
       />
       <section aria-label="Articles" className="mx-auto max-w-page px-5 pb-24 md:px-8 md:pb-40">
-        <InsightCards items={insights} />
+        <InsightCards items={insights} heading="h2" />
       </section>
     </>
   );

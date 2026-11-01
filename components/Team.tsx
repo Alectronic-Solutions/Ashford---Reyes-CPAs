@@ -7,6 +7,8 @@ import { Tilt } from './Depth';
 
 export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
   const shown = variant === 'home' ? people.slice(0, 4) : people;
+  // On the team page the names follow the page's h1 directly, so they are h2; on the home page they sit under "The team".
+  const Name = variant === 'home' ? 'h3' : 'h2';
   return (
     <section
       id="team"
@@ -49,11 +51,11 @@ export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
                 />
               </Link>
             </Tilt>
-            <h3 className="mt-5 font-display text-h3 font-semibold">
+            <Name className="mt-5 font-display text-h3 font-semibold">
               <Link prefetch={false} href={`/team/${person.slug}`} className="hover:text-accent">
                 {person.name}
               </Link>
-            </h3>
+            </Name>
             <p className="mt-0.5 font-medium">{person.title}</p>
             <p className="mt-1.5 max-w-[34ch] text-small">{person.specialty}</p>
             <a

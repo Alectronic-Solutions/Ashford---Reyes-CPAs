@@ -4,8 +4,9 @@ import { PageHeader } from '@/components/PageHeader';
 
 export const metadata = pageMetadata({
   title: 'Photo credits',
-  description: 'The photographers and filmmakers whose work appears on this site.',
+  description: 'The photographers and filmmakers whose work appears on this site, with a link to each photo or video on Pexels.',
   path: '/credits',
+  image: '/opengraph-image.png',
 });
 
 export default function Page() {

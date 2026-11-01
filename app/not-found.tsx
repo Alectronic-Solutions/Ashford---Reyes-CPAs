@@ -5,6 +5,7 @@ import { contactInfo } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Page not found',
+  description: 'That page is not on the books. Head back to the home page or call Ashford and Reyes CPAs in Lodi.',
 };
 
 export default function NotFound() {

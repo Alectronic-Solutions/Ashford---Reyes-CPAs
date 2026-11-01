@@ -41,7 +41,7 @@ export function ProofStrip() {
               </span>
             </div>
             <p className="font-medium md:col-span-5">{credentials}</p>
-            <p className="text-small md:col-span-3">{sampleNote}</p>
+            <p className="whitespace-pre-line text-small md:col-span-3">{sampleNote}</p>
           </Rise>
         </RiseGroup>
       </div>
@@ -76,7 +76,7 @@ export function Stories({
             </Rise>
             <Rise className="md:col-span-7 md:pt-3">
               <p className="max-w-[36ch] text-statement">{lede}</p>
-              <p className="mt-4 max-w-[46ch] text-small">{sampleNote}</p>
+              <p className="mt-4 max-w-[46ch] whitespace-pre-line text-small">{sampleNote}</p>
             </Rise>
           </div>
         </RiseGroup>

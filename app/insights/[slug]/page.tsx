@@ -19,7 +19,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props) {
   const a = insight(params.slug);
   if (!a) return {};
-  return pageMetadata({ title: a.title, description: a.summary, path: `/insights/${a.slug}` });
+  return pageMetadata({
+    title: a.title,
+    description: a.summary,
+    path: `/insights/${a.slug}`,
+    image: '/insights/opengraph-image.png',
+  });
 }
 
 export default function Page({ params }: Props) {

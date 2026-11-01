@@ -4,7 +4,7 @@ import { glue } from './text';
   site and is labeled as such wherever it appears. Replace it with real, permitted material at launch.
 */
 
-export const sampleNote = glue('Sample figures, stories and quotes for demonstration. None describe real clients.');
+export const sampleNote = glue('Sample figures, stories and quotes for demonstration.\nNone describe real clients.');
 
 export const stats = glue([
   { value: '1987', label: 'Year the Lodi office opened' },

@@ -115,7 +115,8 @@ export function WhoWeServe() {
       {/* Families: a smaller, quieter row, since a household does not need a campaign. */}
       <RiseGroup>
         <div className="mx-5 mt-20 md:mx-8 md:mt-40">
-          <Rise className="grid items-center gap-6 rounded-3xl bg-surface p-6 shadow-rest md:grid-cols-12 md:gap-10 md:p-10">
+          <Rise className="rounded-3xl bg-surface p-6 shadow-rest md:p-10">
+           <div className="mx-auto grid max-w-[76rem] items-center gap-6 md:grid-cols-12 md:gap-10">
             <div className="relative aspect-[3/2] overflow-hidden rounded-2xl md:col-span-4 lg:col-span-3">
               <Image
                 src="/photos/serve-family.jpg"
@@ -136,6 +137,7 @@ export function WhoWeServe() {
                 How we work with families
               </Link>
             </div>
+           </div>
           </Rise>
         </div>
       </RiseGroup>

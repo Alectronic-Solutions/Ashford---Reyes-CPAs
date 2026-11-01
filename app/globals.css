@@ -18,12 +18,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
+    /* Keeps focused and anchored content out from under the sticky header. */
+    scroll-padding-top: var(--header-h);
   }
 
   body {
@@ -138,5 +134,25 @@
         rgb(21 32 27 / 0) 30%,
         rgb(21 32 27 / 0.7) 100%
       );
+  }
+}
+
+/* Reduced motion: smooth scrolling off, CSS transitions near-instant, and no zoom on hovered photos. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+
+  .hover\:scale-105:hover,
+  .group:hover .group-hover\:scale-105 {
+    --tw-scale-x: 1 !important;
+    --tw-scale-y: 1 !important;
   }
 }

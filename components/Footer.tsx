@@ -83,7 +83,7 @@ export function Footer() {
             <div className="hidden gap-8 md:grid md:grid-cols-3">
               {columns.map((c) => (
                 <div key={c.title}>
-                  <h2 className="font-sans text-small font-medium text-bg">{c.title}</h2>
+                  <p className="font-sans text-small font-medium text-bg">{c.title}</p>
                   <ul className="mt-2">
                     {c.links.map((l) => (
                       <li key={l.href}>

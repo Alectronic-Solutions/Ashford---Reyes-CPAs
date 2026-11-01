@@ -1,6 +1,6 @@
 'use client';
 
-import { forwardRef, useImperativeHandle, useRef } from 'react';
+import { forwardRef, useId, useImperativeHandle, useRef } from 'react';
 import { buttonClass } from './Button';
 
 export type ExampleNoticeHandle = { open: () => void };
@@ -14,13 +14,17 @@ export const ExampleNotice = forwardRef<ExampleNoticeHandle, { onClose?: () => v
   ref,
 ) {
   const dialog = useRef<HTMLDialogElement>(null);
+  // Contact and the footer signup each render a notice, so the ids must be unique per instance.
+  const uid = useId();
+  const titleId = `${uid}-title`;
+  const textId = `${uid}-text`;
   useImperativeHandle(ref, () => ({ open: () => dialog.current?.showModal() }));
 
   return (
     <dialog
       ref={dialog}
-      aria-labelledby="example-notice-title"
-      aria-describedby="example-notice-text"
+      aria-labelledby={titleId}
+      aria-describedby={textId}
       onClose={onClose}
       onClick={(event) => {
         // A click on the backdrop lands on the dialog element itself.
@@ -29,10 +33,10 @@ export const ExampleNotice = forwardRef<ExampleNoticeHandle, { onClose?: () => v
       className="m-auto w-[calc(100%-2.5rem)] max-w-lg bg-bg p-0 text-ink backdrop:bg-ink/70"
     >
       <div className="p-6 md:p-10">
-        <h2 id="example-notice-title" className="font-display text-h3">
+        <h2 id={titleId} className="font-display text-h3">
           Nothing was sent
         </h2>
-        <p id="example-notice-text" className="mt-4">
+        <p id={textId} className="mt-4">
           This is an example site for a fictional firm, so forms are switched off. Your message did not leave this
           page and nobody will reply to it.
         </p>

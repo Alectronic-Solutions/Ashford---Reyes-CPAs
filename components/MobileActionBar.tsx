@@ -45,7 +45,8 @@ export function MobileActionBar() {
   return (
     <AnimatePresence>
       {show && (
-        <motion.div
+        <motion.aside
+          aria-label="Quick contact"
           className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 gap-2 bg-ink p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
@@ -67,7 +68,7 @@ export function MobileActionBar() {
           >
             Book a consultation
           </Link>
-        </motion.div>
+        </motion.aside>
       )}
     </AnimatePresence>
   );

@@ -54,7 +54,7 @@ function Choice({
 
 function Group({ legend, error, id, children }: { legend: string; error?: string; id: string; children: ReactNode }) {
   return (
-    <fieldset aria-labelledby={`${id}-title`} aria-describedby={error ? `${id}-error` : undefined}>
+    <fieldset id={id} aria-labelledby={`${id}-title`} aria-describedby={error ? `${id}-error` : undefined}>
       <h3 id={`${id}-title`} className="text-h3">
         {legend}
       </h3>
@@ -86,8 +86,24 @@ export function Contact() {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState<Errors>({});
+  // The first invalid field after a failed Continue or Send; the effect below focuses it once the right step is drawn.
+  const focusAfter = useRef<keyof Errors | null>(null);
 
-  // Field names only exist on the visible inputs before the script runs; afterwards hidden inputs carry them.
+  function fail(found: Errors) {
+    setErrors(found);
+    focusAfter.current = (Object.keys(found)[0] as keyof Errors | undefined) ?? null;
+  }
+
+  useEffect(() => {
+    const key = focusAfter.current;
+    if (!key) return;
+    focusAfter.current = null;
+    const el = document.getElementById(`contact-${key}`);
+    (el instanceof HTMLFieldSetElement ? el.querySelector<HTMLElement>('input') : el)?.focus();
+  }, [errors, step]);
+
+  // Field names only exist on the visible text inputs and checkboxes before the script runs; afterwards hidden inputs carry them.
+  // Radios always keep their name so each set is a real radio group (arrow keys move between choices).
   const n = (fieldName: string) => (mounted ? undefined : fieldName);
 
   function check(which: number): Errors {
@@ -109,8 +125,11 @@ export function Contact() {
   function go(next: number) {
     if (next > step) {
       const found = check(step);
+      if (Object.keys(found).length) {
+        fail(found);
+        return;
+      }
       setErrors(found);
-      if (Object.keys(found).length) return;
     } else {
       setErrors({});
     }
@@ -125,7 +144,7 @@ export function Contact() {
         const found = check(s);
         if (Object.keys(found).length) {
           event.preventDefault();
-          setErrors(found);
+          fail(found);
           setStep(s);
           return;
         }
@@ -153,7 +172,7 @@ export function Contact() {
   const steps = [
     <Group key="type" id="contact-type" legend="Who is this for?" error={errors.type}>
       {clientTypes.map((v) => (
-        <Choice key={v} type="radio" name={n('client_type')} value={v} checked={type === v} onChange={() => setType(v)} />
+        <Choice key={v} type="radio" name="client_type" value={v} checked={type === v} onChange={() => setType(v)} />
       ))}
     </Group>,
     <Group key="needs" id="contact-needs" legend="What do you need help with?" error={errors.needs}>
@@ -171,12 +190,12 @@ export function Contact() {
     <div key="when" className="grid gap-10">
       <Group id="contact-timing" legend="When would you like to start?" error={errors.timing}>
         {timings.map((v) => (
-          <Choice key={v} type="radio" name={n('timing')} value={v} checked={timing === v} onChange={() => setTiming(v)} />
+          <Choice key={v} type="radio" name="timing" value={v} checked={timing === v} onChange={() => setTiming(v)} />
         ))}
       </Group>
       <Group id="contact-reach" legend="How should we reach you?" error={errors.reach}>
         {reaches.map((v) => (
-          <Choice key={v} type="radio" name={n('reach')} value={v} checked={reach === v} onChange={() => setReach(v)} />
+          <Choice key={v} type="radio" name="reach" value={v} checked={reach === v} onChange={() => setReach(v)} />
         ))}
       </Group>
     </div>,
@@ -194,6 +213,7 @@ export function Contact() {
             name={n('name')}
             type="text"
             autoComplete="name"
+            aria-required="true"
             value={name}
             onChange={(e) => setName(e.target.value)}
             aria-invalid={errors.name ? true : undefined}
@@ -215,6 +235,7 @@ export function Contact() {
             name={n('email')}
             type="email"
             autoComplete="email"
+            aria-required="true"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             aria-invalid={errors.email ? true : undefined}
@@ -237,6 +258,7 @@ export function Contact() {
           name={n('phone')}
           type="tel"
           autoComplete="tel"
+          aria-required={reach === 'Phone call' ? true : undefined}
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           aria-invalid={errors.phone ? true : undefined}
@@ -388,7 +410,10 @@ export function Contact() {
               </div>
             )}
           </form>
-          <ExampleNotice ref={notice} />
+          <ExampleNotice
+            ref={notice}
+            onClose={() => panel.current?.querySelector<HTMLElement>('input, textarea')?.focus()}
+          />
           <div className="mt-10 md:mt-12">
             <AreaMap />
           </div>

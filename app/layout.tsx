@@ -88,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <Motion>
           <Navbar />
-          <main id="main">{children}</main>
+          <main id="main" tabIndex={-1} className="outline-none focus-visible:shadow-none">{children}</main>
           <Footer />
           <MobileActionBar />
         </Motion>

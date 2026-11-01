@@ -34,6 +34,12 @@ function arrowTarget(key: string, index: number, last: number) {
 
 export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
   const [audience, setAudience] = useState<Audience>(defaultAudience);
+  // The status line stays silent until the visitor changes something, so nothing is read out on load.
+  const [changed, setChanged] = useState(false);
+  const pickAudience = (next: Audience) => {
+    setChanged(true);
+    setAudience(next);
+  };
   const [today, setToday] = useState<Ymd>(buildToday);
   // `turns` counts steps around the wheel without wrapping, so December to January turns forward.
   const [turns, setTurns] = useState(buildToday.m - 1);
@@ -59,6 +65,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
   }, [angle]);
 
   function turnTo(next: number) {
+    setChanged(true);
     setTurns(next);
     animate(angle, -next * STEP, reduced ? { duration: 0 } : { type: 'spring', stiffness: 120, damping: 20 });
   }
@@ -97,7 +104,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
     const next = arrowTarget(event.key, index, audiences.length - 1);
     if (next < 0) return;
     event.preventDefault();
-    setAudience(audiences[next].id);
+    pickAudience(audiences[next].id);
     audienceRefs.current[next]?.focus();
   }
 
@@ -157,7 +164,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
                   role="radio"
                   aria-checked={selected}
                   tabIndex={selected ? 0 : -1}
-                  onClick={() => setAudience(a.id)}
+                  onClick={() => pickAudience(a.id)}
                   onKeyDown={(e) => onAudienceKey(e, i)}
                   className={`min-h-12 px-5 py-3 font-medium transition-colors duration-200 active:translate-y-px ${
                     selected ? 'bg-bg text-delta' : 'bg-bg/10 text-bg hover:bg-bg/20'
@@ -271,7 +278,12 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
         </Rise>
 
         <Rise className="mt-12 md:mt-16">
-          <div aria-live="polite" className="grid gap-10 lg:grid-cols-12 lg:gap-8">
+          <p role="status" className="sr-only">
+            {changed
+              ? `${monthNames[month - 1]} ${year}: ${deadlines.length === 0 ? 'no federal dates' : deadlines.length === 1 ? '1 federal date' : `${deadlines.length} federal dates`} for a ${who}.`
+              : ''}
+          </p>
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-5">
               <h3 className="text-h2">
                 {monthNames[month - 1]} {year}

@@ -16,7 +16,7 @@ const topLink =
 /** A thin strip above the header with the details existing clients come looking for. Desktop only. */
 function UtilityBar() {
   return (
-    <div className="hidden bg-ink text-small text-bg xl:block">
+    <aside aria-label="Firm details" className="hidden bg-ink text-small text-bg xl:block">
       <div className="mx-auto flex max-w-page items-center justify-between gap-6 px-8 py-1.5">
         <p>
           Serving {contactInfo.area}. {contactInfo.hours}
@@ -36,14 +36,22 @@ function UtilityBar() {
           ))}
         </ul>
       </div>
-    </div>
+    </aside>
   );
 }
 
 function MenuPanel({ group, id }: { group: NavGroup; id: string }) {
+  const box = useRef<HTMLDivElement>(null);
+  // Opening the panel moves focus into it, so the keyboard lands on its first link.
+  useEffect(() => {
+    box.current?.querySelector<HTMLElement>('a')?.focus({ preventScroll: true });
+  }, []);
+
   return (
-    <motion.div
+    <motion.nav
+      ref={box}
       id={id}
+      aria-label={`${group.label} menu`}
       className="absolute inset-x-0 top-full bg-bg shadow-lift"
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
@@ -73,7 +81,7 @@ function MenuPanel({ group, id }: { group: NavGroup; id: string }) {
           ))}
         </ul>
       </div>
-    </motion.div>
+    </motion.nav>
   );
 }
 
@@ -99,10 +107,16 @@ export function Navbar() {
       setOpen(false);
       toggleRef.current?.focus();
     };
+    // Tabbing out of the header would otherwise leave the menu open over the page the focus moved into.
+    const onFocus = (event: FocusEvent) => {
+      if (!headerRef.current?.contains(event.target as Node)) setOpen(false);
+    };
     document.addEventListener('keydown', onKey);
+    document.addEventListener('focusin', onFocus);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
+      document.removeEventListener('focusin', onFocus);
       document.body.style.overflow = '';
     };
   }, [open]);
@@ -207,7 +221,7 @@ export function Navbar() {
               type="button"
               aria-expanded={open}
               aria-controls="mobile-menu"
-              aria-label={open ? 'Close menu' : 'Open menu'}
+              aria-label="Menu"
               onClick={() => setOpen((v) => !v)}
               className="-mr-2 flex h-12 w-12 items-center justify-center xl:hidden"
             >
@@ -231,8 +245,9 @@ export function Navbar() {
 
         <AnimatePresence>
           {open && (
-            <motion.div
+            <motion.nav
               id="mobile-menu"
+              aria-label="Site menu"
               className="fixed inset-x-0 bottom-0 top-[var(--header-h)] overflow-y-auto bg-bg px-5 pb-10 pt-6 md:px-8 xl:hidden"
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -302,7 +317,7 @@ export function Navbar() {
               <Link href="/contact" onClick={() => setOpen(false)} className={`${buttonClass} mt-6`}>
                 Book a consultation
               </Link>
-            </motion.div>
+            </motion.nav>
           )}
         </AnimatePresence>
       </header>

@@ -1,8 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Rise, RiseGroup } from './Reveal';
 import { ParallaxPhoto } from './ParallaxPhoto';
+import { textLink } from './Button';
+import { DepthPhoto } from './Depth';
 
-const subhead = 'font-display text-[clamp(1.875rem,3.6vw,3rem)] font-semibold leading-[1.05] tracking-[-0.02em]';
+const subhead = 'font-display text-h2 font-semibold';
 
 const businessNeeds = [
   'Monthly bookkeeping and payroll',
@@ -16,7 +19,7 @@ export function WhoWeServe() {
     <section id="who-we-serve" aria-labelledby="serve-title" className="mx-auto max-w-page scroll-mt-24 pb-24 md:pb-40">
       <RiseGroup>
         <div className="grid gap-8 px-5 md:grid-cols-12 md:gap-8 md:px-8">
-          <Rise className="md:col-span-5">
+          <Rise className="md:col-span-5" mask>
             <h2 id="serve-title" className="text-h2">
               Who we serve
             </h2>
@@ -32,13 +35,13 @@ export function WhoWeServe() {
       {/* Farms and wineries: a full-bleed photograph with the copy set on a flat panel across its lower edge. */}
       <div className="mt-14 md:mt-24">
         <ParallaxPhoto
-          src="/photos/serve-farm.jpg"
-          alt="Late sun over open farmland with a lone tree, a small farmhouse and cattle grazing in the distance"
+          src="/photos/rows-aerial.jpg"
+          alt="Long rows of grapevines seen from the air, split by a line of trees"
           sizes="100vw"
           className="h-[52svh] md:h-[72svh]"
         />
         <RiseGroup>
-          <div className="relative -mt-20 bg-surface p-6 md:-mt-40 md:ml-[8.3333%] md:w-7/12 md:p-12">
+          <div className="relative -mt-20 bg-delta p-6 text-bg shadow-lift md:-mt-48 md:ml-[8.3333%] md:w-7/12 md:p-12">
             <Rise>
               <h3 className={subhead}>Farms and wineries</h3>
             </Rise>
@@ -55,6 +58,14 @@ export function WhoWeServe() {
                 entity returns and the succession paperwork alongside your attorney.
               </p>
             </Rise>
+            <Rise>
+              <Link
+                href="/industries/farms-wineries"
+                className="mt-4 inline-block py-3 font-medium underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
+              >
+                How we work with farms and wineries
+              </Link>
+            </Rise>
           </div>
         </RiseGroup>
       </div>
@@ -62,13 +73,13 @@ export function WhoWeServe() {
       {/* Small businesses: copy and a plain list on one side, a tall photograph on the other. */}
       <RiseGroup>
         <div className="mt-20 grid gap-10 px-5 md:mt-40 md:grid-cols-12 md:items-center md:gap-8 md:px-8">
-          <Rise className="relative aspect-[4/3] md:order-2 md:col-span-5 md:col-start-8 md:aspect-[4/5]">
-            <Image
+          <Rise className="md:order-2 md:col-span-5 md:col-start-8">
+            <DepthPhoto
               src="/photos/serve-business.jpg"
-              alt="A row of brick storefronts on a small-town main street in low evening light"
-              fill
+              alt="Two shop owners in aprons standing outside their storefront, one holding a Yes We’re Open sign"
               sizes="(min-width: 768px) 41vw, 100vw"
-              className="object-cover object-[62%_50%]"
+              className="aspect-[4/3] md:aspect-[4/5]"
+              imageClassName="object-[47%_50%]"
             />
           </Rise>
           <div className="md:order-1 md:col-span-6">
@@ -91,6 +102,11 @@ export function WhoWeServe() {
                   </li>
                 ))}
               </ul>
+            </Rise>
+            <Rise>
+              <Link href="/industries/small-business" className={`${textLink} mt-6`}>
+                How we work with small businesses
+              </Link>
             </Rise>
           </div>
         </div>
@@ -116,6 +132,9 @@ export function WhoWeServe() {
                 federal and California returns, plan around the big events, and explain the numbers in plain words. If a
                 family business or farm is part of the picture, we look at the household and the business together.
               </p>
+              <Link href="/industries/families" className={`${textLink} mt-2`}>
+                How we work with families
+              </Link>
             </div>
           </Rise>
         </div>

@@ -1,0 +1,1660 @@
+{
+ "url": "http://localhost:4317/credits",
+ "at": "2026-11-01T00:07:52.797Z",
+ "allow": [
+  "shadow",
+  "covered-text"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.38,
+    0.65,
+    0.98,
+    0.99
+   ],
+   "motion": {
+    "elements": 4,
+    "css": 0,
+    "transitions": 1,
+    "scripted": 3,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2800,
+     "screens": 3.1,
+     "words": 334,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Photo credits",
+     "words": 2,
+     "chars": 13,
+     "lines": 1,
+     "size": 129.6,
+     "vw": 9,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 250,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Photo credits",
+     "words": 2,
+     "lines": 1,
+     "size": 129.6,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 65,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Photo credits",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 129.6,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 250,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The photographers and filmmakers whose work appears on this site, all through Pexels.",
+      "words": 13,
+      "chars": 85,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 425,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Talk to us before December 31.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 129.6,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1424,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The fall planning meeting is where this year’s tax bill is decided. The first conversation is free.",
+      "words": 17,
+      "chars": 99,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 1726,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1932,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The seasonal letter",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2314,
+      "tag": "label",
+      "kind": "heading"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 162.8,
+      "vw": 11.3,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.04,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2551,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      28,
+      34,
+      130,
+      163
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 162.8,
+      "vw": 11.3,
+      "font": "__Fraunces_4db2f8",
+      "text": "Ashford and Reyes"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#15201b",
+       "top": 1296,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#15201b",
+       "share": 0.5
+      },
+      {
+       "color": "#f3f4f0",
+       "share": 0.25
+      },
+      {
+       "color": "#f3f5f0",
+       "share": 0.25
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 92,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2800,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "main#main",
+      "tag": "main",
+      "top": 138,
+      "height": 1158,
+      "words": 154,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Photo credits",
+       "size": 130,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 50,
+      "textLeft": 32,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 1296,
+      "height": 596,
+      "words": 28,
+      "media": 0,
+      "middle": 59,
+      "heading": {
+       "text": "Talk to us before December 31.",
+       "size": 130,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 1892,
+      "height": 563,
+      "words": 95,
+      "media": 0,
+      "middle": 26,
+      "heading": {
+       "text": "Ashford and Reyes CPAs",
+       "size": 34,
+       "tag": "p"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 2455,
+      "height": 234,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Photo credits",
+      "size": 130,
+      "top": 250,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 1
+     },
+     {
+      "x": 619,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 840,
+     "y": 120,
+     "w": 600,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.29,
+    0.71,
+    0.97,
+    0.94
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 3,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3265,
+     "screens": 3.2,
+     "words": 302,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Photo credits",
+     "words": 2,
+     "chars": 13,
+     "lines": 1,
+     "size": 69.1,
+     "vw": 9,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 196,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Photo credits",
+     "words": 2,
+     "lines": 1,
+     "size": 69.1,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 14,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Photo credits",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 69.1,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 196,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The photographers and filmmakers whose work appears on this site, all through Pexels.",
+      "words": 13,
+      "chars": 85,
+      "lines": 3,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.52,
+      "top": 312,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Talk to us before December 31.",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1597,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The fall planning meeting is where this year’s tax bill is decided. The first conversation is free.",
+      "words": 17,
+      "chars": 99,
+      "lines": 5,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 1683,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 83.3,
+      "vw": 10.8,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.04,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3037,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 5,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.93,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.07,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      24,
+      28,
+      38,
+      69,
+      83
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 83.3,
+      "vw": 10.8,
+      "font": "__Fraunces_4db2f8",
+      "text": "Ashford and Reyes"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#15201b",
+       "top": 1469,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#15201b",
+       "share": 0.52
+      },
+      {
+       "color": "#f3f4f0",
+       "share": 0.27
+      },
+      {
+       "color": "#f3f5f0",
+       "share": 0.21
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 84,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3265,
+    "margins": {
+     "left": 32,
+     "right": 37
+    },
+    "sections": [
+     {
+      "sel": "main#main",
+      "tag": "main",
+      "top": 84,
+      "height": 1385,
+      "words": 154,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Photo credits",
+       "size": 69,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 38,
+      "textLeft": 32,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 1469,
+      "height": 485,
+      "words": 28,
+      "media": 0,
+      "middle": 43,
+      "heading": {
+       "text": "Talk to us before December 31.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 1954,
+      "height": 986,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Services",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 2941,
+      "height": 167,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.flex",
+      "tag": "div",
+      "top": 3108,
+      "height": 157,
+      "words": 13,
+      "media": 0,
+      "middle": 104,
+      "heading": null,
+      "left": 32,
+      "right": 102,
+      "textLeft": 32,
+      "textRight": 102,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Photo credits",
+      "size": 69,
+      "top": 196,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 1
+     },
+     {
+      "x": 339,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.45,
+    0.36,
+    0.79,
+    0.99,
+    0.97
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 3,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3653,
+     "screens": 4.3,
+     "words": 271,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Photo credits",
+     "words": 2,
+     "chars": 13,
+     "lines": 1,
+     "size": 48,
+     "vw": 12.3,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 140,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Photo credits",
+     "words": 2,
+     "lines": 1,
+     "size": 48,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 14,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Photo credits",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 140,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The photographers and filmmakers whose work appears on this site, all through Pexels.",
+      "words": 13,
+      "chars": 85,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 219,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Talk to us before December 31.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2028,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The fall planning meeting is where this year’s tax bill is decided. The first conversation is free.",
+      "words": 17,
+      "chars": 99,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2132,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2450,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The seasonal letter",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 3097,
+      "tag": "label",
+      "kind": "heading"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 41.4,
+      "vw": 10.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.04,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3411,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.93,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.07,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      22,
+      24,
+      36,
+      41,
+      48
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "__Fraunces_4db2f8",
+      "text": "Photo credits"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#15201b",
+       "top": 1948,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#15201b",
+       "share": 0.52
+      },
+      {
+       "color": "#f3f4f0",
+       "share": 0.28
+      },
+      {
+       "color": "#f3f5f0",
+       "share": 0.2
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 0,
+     "radius": 0,
+     "height": 60,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3653,
+    "margins": {
+     "left": 20,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 76,
+      "height": 320,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Photo credits",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 37,
+      "textLeft": 20,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 396,
+      "height": 1552,
+      "words": 131,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 44,
+      "right": 25,
+      "textLeft": 44,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 1948,
+      "height": 478,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Talk to us before December 31.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 43,
+      "textLeft": 20,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 2426,
+      "height": 921,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 44,
+      "right": 44,
+      "textLeft": 44,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.flex",
+      "tag": "div",
+      "top": 3446,
+      "height": 208,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 54,
+      "textLeft": 20,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Photo credits",
+      "size": 48,
+      "top": 140,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 4 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "statement-length",
+   "width": 768,
+   "message": "1 large-set statement(s) run past 3 lines at 768px: \"The fall planning meeting is where this …\" → 5 lines at 28px",
+   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 390,
+   "message": "No visible button in the first phone screen.",
+   "fix": "On a phone the first screen still holds the headline, the supporting sentence and the action; move navigation into one row or a menu so it does not push them down."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-credits\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-credits\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-credits\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-credits\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-credits\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-credits\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

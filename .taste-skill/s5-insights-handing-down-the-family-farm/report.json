@@ -1,0 +1,2229 @@
+{
+ "url": "http://localhost:4317/insights/handing-down-the-family-farm",
+ "at": "2026-11-01T00:06:48.839Z",
+ "allow": [
+  "shadow",
+  "covered-text"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.63,
+    0.4,
+    0.39,
+    0.52,
+    0.98,
+    0.99
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 0,
+    "transitions": 1,
+    "scripted": 8,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5008,
+     "screens": 5.6,
+     "words": 707,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "vines-dormant.jpg",
+      "team-01.jpg",
+      "desk-tax.jpg",
+      "harvest-hands.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Handing down the family farm",
+     "words": 5,
+     "chars": 28,
+     "lines": 1,
+     "size": 72,
+     "vw": 5,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.81,
+     "top": 250,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Handing down the family farm",
+     "words": 5,
+     "lines": 1,
+     "size": 72,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 65,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Handing down the family farm",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 250,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Most succession plans fail because they start too late. Here are the first conversations to have, and the order we usually have them in.",
+      "words": 24,
+      "chars": 136,
+      "lines": 3,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.5,
+      "top": 1069,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Marcus Hale",
+      "words": 2,
+      "chars": 11,
+      "lines": 2,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 1101,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Start with people, not tax",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 1299,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Separate the land from the operation",
+      "words": 6,
+      "chars": 36,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 1564,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The federal estate tax, today",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 1829,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Treating children fairly, not equally",
+      "words": 5,
+      "chars": 37,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 2177,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Who should be in the room",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.55,
+      "top": 2370,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "More insights",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2711,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Before December 31: a year-end checklist",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 3104,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Estimated taxes when income comes at harvest",
+      "words": 7,
+      "chars": 44,
+      "lines": 2,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.3,
+      "top": 3104,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Talk to us before December 31.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 129.6,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3633,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The fall planning meeting is where this year’s tax bill is decided. The first conversation is free.",
+      "words": 17,
+      "chars": 99,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 3935,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 4141,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The seasonal letter",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 4522,
+      "tag": "label",
+      "kind": "heading"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 162.8,
+      "vw": 11.3,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.04,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4760,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 17,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      28,
+      34,
+      72,
+      130,
+      163
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 162.8,
+      "vw": 11.3,
+      "font": "__Fraunces_4db2f8",
+      "text": "Ashford and Reyes"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#15201b",
+       "top": 3505,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#15201b",
+       "share": 0.75
+      },
+      {
+       "color": "#f3f4f0",
+       "share": 0.12
+      },
+      {
+       "color": "#f3f5f0",
+       "share": 0.12
+      },
+      {
+       "color": "#7a1f34",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.42
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 92,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5008,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 138,
+      "height": 931,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Handing down the family farm",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 61,
+      "textLeft": 32,
+      "textRight": 400,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-page",
+      "tag": "div",
+      "top": 1069,
+      "height": 1642,
+      "words": 413,
+      "media": 1,
+      "middle": 213,
+      "heading": {
+       "text": "Start with people, not tax",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 64,
+      "right": 84,
+      "textLeft": 240,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 2711,
+      "height": 794,
+      "words": 79,
+      "media": 2,
+      "middle": 32,
+      "heading": {
+       "text": "Before December 31: a year-end checklist",
+       "size": 34,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 501,
+      "textLeft": 32,
+      "textRight": 537,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 3505,
+      "height": 596,
+      "words": 28,
+      "media": 0,
+      "middle": 59,
+      "heading": {
+       "text": "Talk to us before December 31.",
+       "size": 130,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 4101,
+      "height": 563,
+      "words": 95,
+      "media": 0,
+      "middle": 26,
+      "heading": {
+       "text": "Ashford and Reyes CPAs",
+       "size": 34,
+       "tag": "p"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 4664,
+      "height": 234,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Handing down the family farm",
+      "size": 72,
+      "top": 250,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 619,
+      "n": 15
+     },
+     {
+      "x": 32,
+      "n": 2
+     },
+     {
+      "x": 240,
+      "n": 1
+     },
+     {
+      "x": 637,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.13,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 1440,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.57,
+    0.52,
+    0.56,
+    0.28,
+    0.96,
+    0.94
+   ],
+   "motion": {
+    "elements": 8,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 8,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5863,
+     "screens": 5.7,
+     "words": 675,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "vines-dormant.jpg",
+      "team-01.jpg",
+      "desk-tax.jpg",
+      "harvest-hands.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Handing down the family farm",
+     "words": 5,
+     "chars": 28,
+     "lines": 1,
+     "size": 38.4,
+     "vw": 5,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.81,
+     "top": 196,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Handing down the family farm",
+     "words": 5,
+     "lines": 1,
+     "size": 38.4,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 14,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Handing down the family farm",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 196,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Most succession plans fail because they start too late. Here are the first conversations to have, and the order we usually have them in.",
+      "words": 24,
+      "chars": 136,
+      "lines": 5,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.52,
+      "top": 1055,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Talk to us before December 31.",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4195,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The fall planning meeting is where this year’s tax bill is decided. The first conversation is free.",
+      "words": 17,
+      "chars": 99,
+      "lines": 5,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 4281,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 83.3,
+      "vw": 10.8,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.04,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5635,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 5,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      24,
+      28,
+      38,
+      83
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 83.3,
+      "vw": 10.8,
+      "font": "__Fraunces_4db2f8",
+      "text": "Ashford and Reyes"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#15201b",
+       "top": 4067,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#15201b",
+       "share": 0.77
+      },
+      {
+       "color": "#f3f4f0",
+       "share": 0.13
+      },
+      {
+       "color": "#f3f5f0",
+       "share": 0.09
+      },
+      {
+       "color": "#7a1f34",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.52
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 84,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5863,
+    "margins": {
+     "left": 32,
+     "right": 33
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 84,
+      "height": 971,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Handing down the family farm",
+       "size": 38,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 40,
+      "textLeft": 32,
+      "textRight": 198,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-page",
+      "tag": "div",
+      "top": 1055,
+      "height": 2240,
+      "words": 413,
+      "media": 1,
+      "middle": 32,
+      "heading": {
+       "text": "Most succession plans fail because they start too ",
+       "size": 28,
+       "tag": "p"
+      },
+      "left": 64,
+      "right": 33,
+      "textLeft": 240,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 3295,
+      "height": 772,
+      "words": 81,
+      "media": 2,
+      "middle": 32,
+      "heading": {
+       "text": "More insights",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 277,
+      "textLeft": 32,
+      "textRight": 279,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 4067,
+      "height": 485,
+      "words": 28,
+      "media": 0,
+      "middle": 43,
+      "heading": {
+       "text": "Talk to us before December 31.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 4552,
+      "height": 986,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Services",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 5539,
+      "height": 167,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.flex",
+      "tag": "div",
+      "top": 5706,
+      "height": 157,
+      "words": 13,
+      "media": 0,
+      "middle": 104,
+      "heading": null,
+      "left": 32,
+      "right": 102,
+      "textLeft": 32,
+      "textRight": 102,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Handing down the family farm",
+      "size": 38,
+      "top": 196,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 339,
+      "n": 15
+     },
+     {
+      "x": 32,
+      "n": 2
+     },
+     {
+      "x": 240,
+      "n": 1
+     },
+     {
+      "x": 357,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.69,
+    0.63,
+    0.74,
+    0.69,
+    0.79,
+    0.83,
+    0.98,
+    0.97
+   ],
+   "motion": {
+    "elements": 6,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 6,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6234,
+     "screens": 7.4,
+     "words": 644,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "vines-dormant.jpg",
+      "desk-tax.jpg",
+      "harvest-hands.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Handing down the family farm",
+     "words": 5,
+     "chars": 28,
+     "lines": 1,
+     "size": 24,
+     "vw": 6.2,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.015,
+     "leading": 1.1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 140,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Handing down the family farm",
+     "words": 5,
+     "lines": 1,
+     "size": 24,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 14,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Handing down the family farm",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 140,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Most succession plans fail because they start too late. Here are the first conversations to have, and the order we usually have them in.",
+      "words": 24,
+      "chars": 136,
+      "lines": 4,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 677,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Start with people, not tax",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 934,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Separate the land from the operation",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1356,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The federal estate tax, today",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1747,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Treating children fairly, not equally",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2280,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Who should be in the room",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2600,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Marcus Hale",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 2978,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "More insights",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3335,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Before December 31: a year-end checklist",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3659,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Estimated taxes when income comes at harvest",
+      "words": 7,
+      "chars": 44,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4191,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Talk to us before December 31.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4608,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The fall planning meeting is where this year’s tax bill is decided. The first conversation is free.",
+      "words": 17,
+      "chars": 99,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4712,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 5030,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The seasonal letter",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 5677,
+      "tag": "label",
+      "kind": "heading"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 41.4,
+      "vw": 10.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.04,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5991,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 17,
+     "maxLines": 4,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      22,
+      24,
+      36,
+      41
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.3
+     },
+     "measureChars": 39,
+     "max": {
+      "size": 41.4,
+      "vw": 10.6,
+      "font": "__Fraunces_4db2f8",
+      "text": "Ashford and Reyes"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#15201b",
+       "top": 4528,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#15201b",
+       "share": 0.77
+      },
+      {
+       "color": "#f3f4f0",
+       "share": 0.13
+      },
+      {
+       "color": "#f3f5f0",
+       "share": 0.09
+      },
+      {
+       "color": "#7a1f34",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 0,
+     "radius": 0,
+     "height": 60,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.36
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6234,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 76,
+      "height": 601,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Handing down the family farm",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-page",
+      "tag": "div",
+      "top": 677,
+      "height": 2658,
+      "words": 413,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with people, not tax",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 3335,
+      "height": 1193,
+      "words": 81,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "More insights",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 4528,
+      "height": 478,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Talk to us before December 31.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 43,
+      "textLeft": 20,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-[90rem]",
+      "tag": "div",
+      "top": 5006,
+      "height": 921,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 44,
+      "right": 44,
+      "textLeft": 44,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.flex",
+      "tag": "div",
+      "top": 6026,
+      "height": 208,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 54,
+      "textLeft": 20,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Handing down the family farm",
+      "size": 24,
+      "top": 140,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 17
+     },
+     {
+      "x": 38,
+      "n": 1
+     },
+     {
+      "x": 172,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 9 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "WARN",
+   "id": "statement-length",
+   "width": 768,
+   "message": "2 large-set statement(s) run past 3 lines at 768px: \"Most succession plans fail because they …\" → 5 lines at 28px; \"The fall planning meeting is where this …\" → 5 lines at 28px",
+   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 390,
+   "message": "No visible button in the first phone screen.",
+   "fix": "On a phone the first screen still holds the headline, the supporting sentence and the action; move navigation into one row or a menu so it does not push them down."
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 390,
+   "message": "The h1 is 24px (\"Handing down the family farm\").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\desktop-page-01.jpg",
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\s5-insights-handing-down-the-family-farm\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,2089 @@
+{
+ "url": "http://localhost:4317/how-it-works",
+ "at": "2026-10-31T23:22:57.686Z",
+ "allow": [
+  "shadow",
+  "covered-text"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.49,
+    0.71,
+    0.76,
+    0.66,
+    0.92,
+    0.91,
+    0.98
+   ],
+   "motion": {
+    "elements": 12,
+    "css": 0,
+    "transitions": 1,
+    "scripted": 11,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5892,
+     "screens": 6.5,
+     "words": 535,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "meeting-couple.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "How we work",
+     "words": 3,
+     "chars": 11,
+     "lines": 1,
+     "size": 129.6,
+     "vw": 9,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 250,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "How we work",
+     "words": 3,
+     "lines": 1,
+     "size": 129.6,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 65,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "How we work",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 129.6,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 250,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Five steps. Each says what we need from you and what you get back.",
+      "words": 14,
+      "chars": 66,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 425,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A first conversation",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 1347,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gather your records",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 1739,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "We prepare and review",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2131,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sign and file",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2523,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Check in through the year",
+      "words": 5,
+      "chars": 25,
+      "lines": 3,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2915,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a consultation",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3539,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Who is this for?",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.17,
+      "top": 3625,
+      "tag": "legend",
+      "kind": "heading"
+     },
+     {
+      "text": "A first conversation is free. Four quick questions, and we reply within one business day.",
+      "words": 15,
+      "chars": 89,
+      "lines": 3,
+      "size": 28,
+      "vw": 1.9,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3707,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Tax, bookkeeping, advisory and succession planning in Lodi, California.",
+      "words": 9,
+      "chars": 71,
+      "lines": 3,
+      "size": 34,
+      "vw": 2.4,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4855,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 129.6,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5631,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      28,
+      34,
+      72,
+      130
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.5
+     },
+     "measureChars": 39,
+     "max": {
+      "size": 129.6,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "text": "How we work"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e3e8df",
+       "top": 1299,
+       "hsl": {
+        "h": 93,
+        "s": 0.16,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#15201b",
+       "top": 1691,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#7a1f34",
+       "top": 2867,
+       "hsl": {
+        "h": 346,
+        "s": 0.59,
+        "l": 0.3
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f3f5f0",
+       "share": 0.6
+      },
+      {
+       "color": "#15201b",
+       "share": 0.38
+      },
+      {
+       "color": "#2e5b52",
+       "share": 0.01
+      },
+      {
+       "color": "#7a1f34",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 1,
+     "shadowOverlay": 5,
+     "shadowSamples": [
+      "form.bg-bg.p-6 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(21, 32,"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.23
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 92,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5892,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 138,
+      "height": 1161,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "How we work",
+       "size": 130,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 79,
+      "textLeft": 32,
+      "textRight": 216,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 1299,
+      "height": 2080,
+      "words": 263,
+      "media": 0,
+      "middle": 118,
+      "heading": {
+       "text": "A first conversation",
+       "size": 72,
+       "tag": "h3"
+      },
+      "left": 80,
+      "right": 97,
+      "textLeft": 80,
+      "textRight": 97,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.scroll-mt-24.bg-surface",
+      "tag": "section",
+      "top": 3379,
+      "height": 1348,
+      "words": 66,
+      "media": 1,
+      "middle": 51,
+      "heading": {
+       "text": "Book a consultation",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-ink.px-5",
+      "tag": "footer",
+      "top": 4727,
+      "height": 1165,
+      "words": 116,
+      "media": 0,
+      "middle": 24,
+      "heading": {
+       "text": "Tax, bookkeeping, advisory and succession planning",
+       "size": 34,
+       "tag": "p"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "How we work",
+      "size": 130,
+      "top": 250,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 3
+     },
+     {
+      "x": 619,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.13,
+    "voidBox": {
+     "x": 0,
+     "y": 540,
+     "w": 1440,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.51,
+    0.81,
+    0.74,
+    0.73,
+    0.98,
+    0.88
+   ],
+   "motion": {
+    "elements": 11,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 11,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5989,
+     "screens": 5.8,
+     "words": 504,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "meeting-couple.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "How we work",
+     "words": 3,
+     "chars": 11,
+     "lines": 1,
+     "size": 69.1,
+     "vw": 9,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 196,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "How we work",
+     "words": 3,
+     "lines": 1,
+     "size": 69.1,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes CPAs",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 14,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "How we work",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 69.1,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 196,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Five steps. Each says what we need from you and what you get back.",
+      "words": 14,
+      "chars": 66,
+      "lines": 3,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.52,
+      "top": 312,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A first conversation",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 1353,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gather your records",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 1767,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "We prepare and review",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2180,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sign and file",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2572,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Check in through the year",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2964,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a consultation",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3588,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A first conversation is free. Four quick questions, and we reply within one business day.",
+      "words": 15,
+      "chars": 89,
+      "lines": 5,
+      "size": 28,
+      "vw": 3.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3689,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 69.1,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5787,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 5,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      24,
+      28,
+      38,
+      69
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.5
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 69.1,
+      "vw": 9,
+      "font": "__Fraunces_4db2f8",
+      "text": "How we work"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e3e8df",
+       "top": 1305,
+       "hsl": {
+        "h": 93,
+        "s": 0.16,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#15201b",
+       "top": 1719,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#7a1f34",
+       "top": 2916,
+       "hsl": {
+        "h": 346,
+        "s": 0.59,
+        "l": 0.3
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f3f5f0",
+       "share": 0.6
+      },
+      {
+       "color": "#15201b",
+       "share": 0.38
+      },
+      {
+       "color": "#2e5b52",
+       "share": 0.01
+      },
+      {
+       "color": "#7a1f34",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 1,
+     "shadowOverlay": 5,
+     "shadowSamples": [
+      "form.bg-bg.p-6 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(21, 32,"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.38
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 84,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5989,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 84,
+      "height": 1221,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "How we work",
+       "size": 69,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 49,
+      "textLeft": 32,
+      "textRight": 62,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 1305,
+      "height": 2124,
+      "words": 263,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A first conversation",
+       "size": 38,
+       "tag": "h3"
+      },
+      "left": 80,
+      "right": 97,
+      "textLeft": 80,
+      "textRight": 97,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.scroll-mt-24.bg-surface",
+      "tag": "section",
+      "top": 3428,
+      "height": 1172,
+      "words": 66,
+      "media": 1,
+      "middle": 37,
+      "heading": {
+       "text": "Book a consultation",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-ink.px-5",
+      "tag": "footer",
+      "top": 4601,
+      "height": 1388,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "How we work",
+      "size": 69,
+      "top": 196,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 3
+     },
+     {
+      "x": 339,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.68,
+    0.88,
+    0.84,
+    0.77,
+    0.86,
+    0.85,
+    0.85,
+    0.97
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 5,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6645,
+     "screens": 7.9,
+     "words": 500,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "meeting-couple.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "How we work",
+     "words": 3,
+     "chars": 11,
+     "lines": 1,
+     "size": 48,
+     "vw": 12.3,
+     "font": "__Fraunces_4db2f8",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 140,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "How we work",
+     "words": 3,
+     "lines": 1,
+     "size": 48,
+     "font": "__Fraunces_4db2f8"
+    },
+    "headings": [
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 14,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "How we work",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 140,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Five steps. Each says what we need from you and what you get back.",
+      "words": 14,
+      "chars": 66,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 219,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A first conversation",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 781,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gather your records",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1320,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "We prepare and review",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1915,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sign and file",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2398,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Check in through the year",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2845,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a consultation",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3480,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A first conversation is free. Four quick questions, and we reply within one business day.",
+      "words": 15,
+      "chars": 89,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "__Figtree_b2808e",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3540,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Who you are, part 1 of 4 Who is this for? Farm or winery Small business Family Something else Continue",
+      "words": 20,
+      "chars": 102,
+      "lines": 7,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3978,
+      "mixedFonts": [
+       "__Fraunces_4db2f8",
+       "__Figtree_b2808e"
+      ],
+      "tag": "form",
+      "kind": "heading"
+     },
+     {
+      "text": "Tax, bookkeeping, advisory and succession planning in Lodi, California.",
+      "words": 9,
+      "chars": 71,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5007,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Ashford and Reyes",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "__Fraunces_4db2f8",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6436,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 7,
+     "over2Lines": 1,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 1
+    },
+    "type": {
+     "families": [
+      {
+       "family": "__Figtree_b2808e",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "__Fraunces_4db2f8",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      22,
+      24,
+      36,
+      48
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "__Figtree_b2808e",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.5
+     },
+     "measureChars": 34,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "__Fraunces_4db2f8",
+      "text": "How we work"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f0",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e3e8df",
+       "top": 757,
+       "hsl": {
+        "h": 93,
+        "s": 0.16,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#15201b",
+       "top": 1296,
+       "hsl": {
+        "h": 153,
+        "s": 0.21,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#7a1f34",
+       "top": 2821,
+       "hsl": {
+        "h": 346,
+        "s": 0.59,
+        "l": 0.3
+       }
+      },
+      {
+       "color": "#f3f5f0",
+       "top": 3978,
+       "hsl": {
+        "h": 84,
+        "s": 0.2,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f3f5f0",
+       "share": 0.59
+      },
+      {
+       "color": "#15201b",
+       "share": 0.39
+      },
+      {
+       "color": "#2e5b52",
+       "share": 0.01
+      },
+      {
+       "color": "#7a1f34",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#7a1f34",
+      "hsl": {
+       "h": 346,
+       "s": 0.59,
+       "l": 0.3
+      },
+      "fg": "#f3f5f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 0,
+     "radius": 0,
+     "height": 60,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.grid.origin-top → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(21, 32,",
+      "div.grid.origin-top → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(21, 32,",
+      "div.grid.origin-top → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(21, 32,",
+      "div.grid.origin-top → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(21, 32,"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "__fraunces_4db2f8",
+     "__fraunces_fallback_4db2f8",
+     "__figtree_b2808e",
+     "__figtree_fallback_b2808e"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6645,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header.mx-auto.max-w-page",
+      "tag": "header",
+      "top": 76,
+      "height": 681,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "How we work",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.mx-auto.max-w-page",
+      "tag": "section",
+      "top": 757,
+      "height": 2626,
+      "words": 263,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A first conversation",
+       "size": 36,
+       "tag": "h3"
+      },
+      "left": 44,
+      "right": 45,
+      "textLeft": 44,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.scroll-mt-24.bg-surface",
+      "tag": "section",
+      "top": 3384,
+      "height": 1543,
+      "words": 66,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Book a consultation",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-ink.px-5",
+      "tag": "footer",
+      "top": 4927,
+      "height": 1719,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 43,
+      "textLeft": 20,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "How we work",
+      "size": 48,
+      "top": 140,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Check in through the year\" → 3 lines (5 words, 72px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (1 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"A first conversation\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 12 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "WARN",
+   "id": "statement-length",
+   "width": 768,
+   "message": "1 large-set statement(s) run past 3 lines at 768px: \"A first conversation is free. Four quick…\" → 5 lines at 28px",
+   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Who you are, part 1 of 4 Who is this for? Farm o\" → 7 lines (20 words, 24px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 390,
+   "message": "1 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words."
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 390,
+   "message": "No visible button in the first phone screen.",
+   "fix": "On a phone the first screen still holds the headline, the supporting sentence and the action; move navigation into one row or a menu so it does not push them down."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\desktop-page-01.jpg",
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Dev\\Ashford & Reyes CPAs\\.taste-skill\\after-how-it-works\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

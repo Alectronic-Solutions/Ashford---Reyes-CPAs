@@ -1,10 +1,21 @@
 'use client';
 
-import { motion, type Variants } from 'framer-motion';
+import { motion, useReducedMotion, type Variants } from 'framer-motion';
 
 const rise: Variants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+};
+
+/** A headline rising out of a slot: the line is masked below its baseline and slides up into view. */
+const maskRise: Variants = {
+  hidden: { clipPath: 'inset(0% 0% 100% 0%)', y: 40 },
+  show: {
+    clipPath: 'inset(-25% -5% -35% -5%)',
+    y: 0,
+    transition: { duration: 0.85, ease: [0.22, 1, 0.36, 1] },
+    transitionEnd: { clipPath: 'none' },
+  },
 };
 
 const stagger: Variants = {
@@ -40,11 +51,11 @@ export function RisePart({
   className,
   children,
 }: {
-  as?: 'h3' | 'p';
+  as?: 'h3' | 'p' | 'div';
   className?: string;
   children: React.ReactNode;
 }) {
-  const Tag = as === 'h3' ? motion.h3 : motion.p;
+  const Tag = as === 'h3' ? motion.h3 : as === 'div' ? motion.div : motion.p;
   return (
     <Tag className={className} variants={riseChild} data-reveal>
       {children}
@@ -80,15 +91,19 @@ export function RiseGroup({
 export function Rise({
   as = 'div',
   className,
+  mask = false,
   children,
 }: {
   as?: 'div' | 'li';
   className?: string;
+  /** For section headlines: rise out of a masked slot instead of fading up. */
+  mask?: boolean;
   children: React.ReactNode;
 }) {
+  const reduced = useReducedMotion();
   const Tag = as === 'li' ? motion.li : motion.div;
   return (
-    <Tag className={className} variants={rise} data-reveal>
+    <Tag className={className} variants={mask && !reduced ? maskRise : rise} data-reveal>
       {children}
     </Tag>
   );

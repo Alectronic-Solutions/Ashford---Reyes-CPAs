@@ -17,6 +17,7 @@ const types = {
   '.woff2': 'font/woff2',
   '.ico': 'image/x-icon',
   '.txt': 'text/plain',
+  '.xml': 'application/xml',
 };
 
 createServer((req, res) => {
@@ -49,6 +50,13 @@ createServer((req, res) => {
       createReadStream(file).pipe(res);
     }
   } catch {
-    res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found');
+    // Cloudflare Pages answers unknown paths with the exported 404 page.
+    const notFound = join(root, '404.html');
+    if (existsSync(notFound)) {
+      res.writeHead(404, { 'Content-Type': types['.html'] });
+      createReadStream(notFound).pipe(res);
+    } else {
+      res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found');
+    }
   }
 }).listen(port, () => console.log(`Serving out/ at http://localhost:${port}`));

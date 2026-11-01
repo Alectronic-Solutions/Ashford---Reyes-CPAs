@@ -1,0 +1,20 @@
+/* Every photograph and clip on the site, with its maker. All are used under the Pexels licence. */
+export const credits: { what: string; who: string; url: string }[] = [
+  { what: 'Hero video: a walk down an autumn vine row', who: 'Tjasa Strehar', url: 'https://www.pexels.com/video/5694810/' },
+  { what: 'Vineyard rows in winter fog', who: 'Regina Tommasi', url: 'https://www.pexels.com/photo/30367678/' },
+  { what: 'Old head-trained vines after harvest', who: 'Álvaro Carrilho', url: 'https://www.pexels.com/photo/10969992/' },
+  { what: 'A grassy path between rows of vines', who: 'Christopher Politano', url: 'https://www.pexels.com/photo/28384559/' },
+  { what: 'A tractor in a vineyard row', who: 'Richard Frazier', url: 'https://www.pexels.com/photo/27260999/' },
+  { what: 'Hands lifting harvested grapes', who: 'Grape Things', url: 'https://www.pexels.com/photo/3840334/' },
+  { what: 'Rows of oak barrels in a winery', who: 'Pixabay', url: 'https://www.pexels.com/photo/434311/' },
+  { what: 'Barrels in a dim cellar', who: 'Matteo Mazza', url: 'https://www.pexels.com/photo/31086289/' },
+  { what: 'A farmhouse among vineyards, from above', who: 'Ben Young', url: 'https://www.pexels.com/photo/31953682/' },
+  { what: 'Vineyard rows from the air', who: 'Mark Stebnicki', url: 'https://www.pexels.com/photo/33790879/' },
+  { what: 'An accountant working through a tax form', who: 'Mikhail Nilov', url: 'https://www.pexels.com/photo/8296970/' },
+  { what: 'Receipts and a calculator', who: 'Kaboompics', url: 'https://www.pexels.com/photo/7680736/' },
+  { what: 'An advisor with a client', who: 'RDNE Stock project', url: 'https://www.pexels.com/photo/7821671/' },
+  { what: 'A couple with an adviser', who: 'Kindel Media', url: 'https://www.pexels.com/photo/7979404/' },
+  { what: 'Tax forms on a desk (frequently asked questions)', who: 'RDNE Stock project', url: 'https://www.pexels.com/@rdne/' },
+  { what: 'Shop owners outside their storefront (small businesses)', who: 'silverkblack', url: 'https://www.pexels.com/photo/small-business-owners-displaying-open-sign-36729522/' },
+  { what: 'The family table and team portraits', who: 'Photographers on Pexels', url: 'https://www.pexels.com' },
+];

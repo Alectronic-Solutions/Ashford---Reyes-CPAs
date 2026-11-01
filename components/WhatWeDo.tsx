@@ -1,31 +1,28 @@
-import { Rise, RiseGroup, RiseRow, RisePart } from './Reveal';
+'use client';
 
-const services = [
-  {
-    name: 'Tax',
-    text: 'Federal and California returns for farms, wineries, partnerships, S corporations and families. We handle quarterly estimates and plan through the year, so April holds no surprises.',
-  },
-  {
-    name: 'Bookkeeping',
-    text: 'Monthly books kept current through harvest and crush, when cash moves fast. Payroll, sales tax, bank reconciliations and the year-end close, in QuickBooks or the system you already use.',
-  },
-  {
-    name: 'Advisory',
-    text: 'Straight answers before you commit: which entity fits, how to finance a press or new acreage, what a tasting room or a second location does to your taxes, and how to budget around the season.',
-  },
-  {
-    name: 'Estate and succession',
-    text: 'Handing the farm, the winery or the shop to whoever comes next takes years of planning. We work alongside your attorney on succession, buy-sell agreements, and the tax side of gifts and transfers.',
-  },
-];
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Rise, RiseGroup } from './Reveal';
+import { useDepth } from './Depth';
+import { services } from '@/lib/services';
+
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export function WhatWeDo() {
+  const [active, setActive] = useState(0);
+  const { scroll } = useDepth();
+  const current = services[active];
+
   return (
-    <section id="what-we-do" className="mx-auto max-w-page scroll-mt-24 px-5 py-24 md:px-8 md:py-40">
+    <section id="what-we-do" aria-labelledby="what-title" className="mx-auto max-w-page scroll-mt-24 px-5 py-24 md:px-8 md:py-40">
       <RiseGroup>
         <div className="grid gap-8 md:grid-cols-12 md:gap-8">
-          <Rise className="md:col-span-5">
-            <h2 className="text-h2">What we do</h2>
+          <Rise className="md:col-span-5" mask>
+            <h2 id="what-title" className="text-h2">
+              What we do
+            </h2>
           </Rise>
           <Rise className="md:col-span-7 md:pt-3">
             <p className="max-w-[36ch] text-statement">
@@ -34,18 +31,70 @@ export function WhatWeDo() {
           </Rise>
         </div>
       </RiseGroup>
-      <RiseGroup as="ul" className="mt-12 grid gap-10 md:mt-20 md:gap-14">
-        {services.map((s) => (
-          <RiseRow key={s.name} className="grid gap-3 md:grid-cols-12 md:gap-8">
-            <RisePart as="h3" className="text-statement md:col-span-5">
-              {s.name}
-            </RisePart>
-            <RisePart as="p" className="max-w-[60ch] md:col-span-7">
-              {s.text}
-            </RisePart>
-          </RiseRow>
-        ))}
-      </RiseGroup>
+
+      <div className="mt-12 grid gap-8 md:mt-20 md:grid-cols-12 md:gap-8">
+        {/* The picture for whichever service is in hand turns into place like a page. Desktop only. */}
+        <div className="hidden md:col-span-5 md:block">
+          <div className="sticky top-28 aspect-[4/5] [perspective:1400px]">
+            <AnimatePresence initial={false} mode="popLayout">
+              <motion.div
+                key={current.slug}
+                className="absolute inset-0 origin-left overflow-hidden bg-surface shadow-lift"
+                initial={scroll ? { rotateY: -70, opacity: 0, x: -40 } : { opacity: 0 }}
+                animate={{ rotateY: 0, opacity: 1, x: 0 }}
+                exit={scroll ? { rotateY: 40, opacity: 0, x: 40 } : { opacity: 0 }}
+                transition={{ duration: 0.7, ease }}
+              >
+                <Image
+                  src={current.photo.src}
+                  alt={current.photo.alt}
+                  fill
+                  sizes="(min-width: 1504px) 600px, 40vw"
+                  className="object-cover"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
+
+        <RiseGroup as="ul" className="grid gap-4 md:col-span-7 md:gap-2">
+          {services.map((s, i) => {
+            const on = i === active;
+            return (
+              <Rise
+                as="li"
+                key={s.slug}
+                className={`group relative transition-colors duration-300 md:px-8 md:py-10 ${on ? 'md:bg-surface' : ''}`}
+              >
+                <motion.div
+                  onPointerEnter={() => setActive(i)}
+                  onFocusCapture={() => setActive(i)}
+                  onViewportEnter={() => setActive(i)}
+                  viewport={{ amount: 0.5, margin: '-30% 0px -30% 0px' }}
+                  className="grid gap-4"
+                >
+                  <div className="relative aspect-[3/2] overflow-hidden md:hidden">
+                    <Image src={s.photo.src} alt={s.photo.alt} fill sizes="100vw" className="object-cover" />
+                  </div>
+                  <span
+                    aria-hidden="true"
+                    className={`absolute left-0 top-0 hidden h-full w-1.5 origin-top bg-accent transition-transform duration-300 md:block ${on ? 'scale-y-100' : 'scale-y-0'}`}
+                  />
+                  <h3 className="text-h2">{s.name}</h3>
+                  <p className="max-w-[56ch]">{s.summary}</p>
+                  <Link
+                    href={`/services/${s.slug}`}
+                    className="inline-block self-start py-2 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"
+                  >
+                    More on {s.name.toLowerCase()}
+                    <span className="sr-only"> services</span>
+                  </Link>
+                </motion.div>
+              </Rise>
+            );
+          })}
+        </RiseGroup>
+      </div>
     </section>
   );
 }

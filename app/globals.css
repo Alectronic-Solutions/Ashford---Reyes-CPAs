@@ -36,6 +36,32 @@
     @apply font-display font-semibold;
   }
 
+  /*
+    Line breaks. Headings, statements and quotes balance their lines, so no title ends on one word.
+    Running text avoids a lone last word too. Browsers without support simply wrap as before.
+  */
+  h1,
+  h2,
+  h3,
+  h4,
+  legend,
+  blockquote,
+  .text-statement,
+  .text-h2,
+  .text-h3,
+  .text-display {
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  dd,
+  dt,
+  figcaption,
+  label {
+    text-wrap: pretty;
+  }
+
   ::selection {
     @apply bg-accent text-bg;
   }
@@ -49,27 +75,68 @@
 }
 
 /*
-  The one gradient on the page, allowed for the hero by the brief. A dark #15201B scrim,
-  strongest behind the text and fading toward the right on desktop, strongest at the bottom on phones.
-  Opacities began as a contrast measurement over every frame of the clips, then went up 0.06
-  after the held final frame measured about 4.8:1 at its brightest pixel.
+  The footer's closing wordmark fills its measure exactly at every width. "Ashford and Reyes" in
+  Fraunces SemiBold at -0.04em tracking is 8.39em wide; 8.45 leaves a hair of room for rounding.
+  Container units size it from the real column, so a desktop scrollbar never pushes it over.
 */
+.footer-wordmark {
+  font-size: calc((min(100vw, 90rem) - 2.5rem) / 8.45);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+@supports (font-size: 1cqi) {
+  .footer-wordmark-frame {
+    container-type: inline-size;
+  }
+
+  .footer-wordmark {
+    font-size: calc(100cqi / 8.45);
+  }
+}
+
+/*
+  The one gradient on the page, allowed for the hero by the brief: a dark #15201B scrim under the text.
+  The vineyard clip is bright at the top (sky) and busy in the middle (vines), so the scrim is light
+  over the sky and deepest along the bottom and left, where the headline and the buttons sit.
+*/
+/*
+  Colour grade for the vineyard clip. The raw footage is canary yellow and lime green, louder than the
+  muted sage, forest and burgundy of the rest of the site. Mute it, then wash it toward the site teal.
+*/
+.hero-grade {
+  filter: saturate(0.6) contrast(0.95) brightness(0.96);
+}
+
+.hero-tint {
+  background-color: #2e5b52;
+  mix-blend-mode: color;
+  opacity: 0.3;
+}
+
 .hero-scrim {
   background-image: linear-gradient( /* taste-skill-ignore: hero scrim, allowed by the brief */
     180deg,
-    rgb(21 32 27 / 0.2) 0%,
-    rgb(21 32 27 / 0.66) 30%,
-    rgb(21 32 27 / 0.66) 100%
+    rgb(21 32 27 / 0.25) 0%,
+    rgb(21 32 27 / 0.45) 35%,
+    rgb(21 32 27 / 0.86) 72%,
+    rgb(21 32 27 / 0.92) 100%
   );
 }
 
 @media (min-width: 768px) {
   .hero-scrim {
-    background-image: linear-gradient( /* taste-skill-ignore: hero scrim, allowed by the brief */
-      90deg,
-      rgb(21 32 27 / 0.66) 0%,
-      rgb(21 32 27 / 0.66) 62%,
-      rgb(21 32 27 / 0.12) 100%
-    );
+    background-image:
+      linear-gradient( /* taste-skill-ignore: hero scrim, allowed by the brief */
+        90deg,
+        rgb(21 32 27 / 0.72) 0%,
+        rgb(21 32 27 / 0.5) 55%,
+        rgb(21 32 27 / 0.1) 100%
+      ),
+      linear-gradient( /* taste-skill-ignore: hero scrim, allowed by the brief */
+        180deg,
+        rgb(21 32 27 / 0) 30%,
+        rgb(21 32 27 / 0.7) 100%
+      );
   }
 }

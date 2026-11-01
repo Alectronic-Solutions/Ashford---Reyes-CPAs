@@ -53,7 +53,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
           <div className="md:sticky md:top-28">
             {home ? (
               <>
-                <Rise>
+                <Rise mask>
                   <h2 id="faq-title" className="text-h2">
                     Questions we hear
                   </h2>
@@ -83,7 +83,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
             <div className="grid gap-1.5">
               {shown.map((item) => (
                 <details key={item.q} className="group bg-surface">
-                  <summary className="flex min-h-[44px] cursor-pointer list-none items-start justify-between gap-6 px-5 py-5 font-display text-[clamp(1.25rem,1.9vw,1.625rem)] font-semibold leading-[1.2] tracking-[-0.01em] [&::-webkit-details-marker]:hidden">
+                  <summary className="flex min-h-[44px] cursor-pointer list-none items-start justify-between gap-6 px-5 py-5 font-display text-h3 font-semibold [&::-webkit-details-marker]:hidden">
                     <span>{item.q}</span>
                     <span aria-hidden="true" className="relative mt-2 h-4 w-4 shrink-0">
                       <span className="absolute left-0 top-1/2 h-0.5 w-4 -translate-y-1/2 bg-accent" />

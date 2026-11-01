@@ -1,5 +1,9 @@
-import Image from 'next/image';
+'use client';
+
+import { useRef } from 'react';
+import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion';
 import { Rise, RiseGroup } from './Reveal';
+import { useDepth } from './Depth';
 
 const steps = [
   {
@@ -27,77 +31,99 @@ const steps = [
       'Your federal and California returns filed, a copy for your records, and a dated list of any payments coming due.',
   },
   {
-    title: 'Check in through the year',
+    title: 'Check in all year',
     you: 'Call before the big move: new equipment, a hire, a land purchase, a second location.',
     receive:
       'A quick answer before you sign, and a planning meeting each fall while there is still time to act on it.',
   },
 ];
 
+// Each sheet's colours, so the pile reads as separate pages rather than one block.
+const tones = [
+  'bg-surface text-ink',
+  'bg-ink text-bg',
+  'bg-surface text-ink',
+  'bg-ink text-bg',
+  'bg-accent text-bg',
+];
+
+/** One ledger sheet. It pins near the top, and tips back and shrinks as the sheets after it land. */
+function Sheet({
+  step,
+  index,
+  progress,
+  depth,
+}: {
+  step: (typeof steps)[number];
+  index: number;
+  progress: MotionValue<number>;
+  depth: boolean;
+}) {
+  const below = steps.length - 1 - index;
+  const start = index / steps.length;
+  const scale = useTransform(progress, [start, 1], [1, 1 - below * 0.04]);
+  const rotateX = useTransform(progress, [start, 1], [0, below * 3]);
+  const dark = !tones[index].startsWith('bg-surface');
+
+  return (
+    <li
+      className="md:sticky md:[perspective:1600px]"
+      style={{ top: `calc(var(--header-h) + 2rem + ${index * 1.75}rem)` }}
+    >
+      <motion.div
+        className={`grid origin-top gap-6 p-6 shadow-lift md:min-h-[22rem] md:gap-8 md:p-12 lg:grid-cols-12 ${tones[index]}`}
+        style={depth ? { scale, rotateX } : undefined}
+      >
+        <h3 className="text-h2 lg:col-span-5">{step.title}</h3>
+        <dl className="grid gap-6 md:grid-cols-2 md:gap-8 lg:col-span-7">
+          <div>
+            <dt className={`font-medium ${dark ? '' : 'text-accent'}`}>What you do</dt>
+            <dd className="mt-2 max-w-[40ch]">{step.you}</dd>
+          </div>
+          <div>
+            <dt className={`font-medium ${dark ? '' : 'text-delta'}`}>What you receive</dt>
+            <dd className={`mt-2 max-w-[40ch] p-4 ${dark ? 'bg-bg/10' : 'bg-bg'}`}>{step.receive}</dd>
+          </div>
+        </dl>
+      </motion.div>
+    </li>
+  );
+}
+
 export function Engagement({ variant = 'home' }: { variant?: 'home' | 'page' }) {
   const home = variant === 'home';
+  const listRef = useRef<HTMLOListElement>(null);
+  const { scroll } = useDepth();
+  const { scrollYProgress } = useScroll({ target: listRef, offset: ['start start', 'end end'] });
+
   return (
     <section
       id="how-it-works"
       aria-labelledby={home ? 'engagement-title' : undefined}
       aria-label={home ? undefined : 'The five steps'}
-      className={`mx-auto max-w-page scroll-mt-24 px-5 pb-24 md:px-8 md:pb-40 ${home ? 'pt-8 md:pt-16' : ''}`}
+      className={`mx-auto max-w-page scroll-mt-24 px-5 pb-24 md:px-8 md:pb-40 ${home ? 'pt-24 md:pt-40' : ''}`}
     >
-      <div className="grid gap-12 md:grid-cols-12 md:gap-8">
-        <RiseGroup className="md:col-span-5">
-          <div className="md:sticky md:top-28">
-            {home ? (
-              <>
-                <Rise>
-                  <h2 id="engagement-title" className="text-h2">
-                    How an engagement works
-                  </h2>
-                </Rise>
-                <Rise>
-                  <p className="mt-6 max-w-[34ch] text-statement">
-                    Five steps. Each says what we need and what you get.
-                  </p>
-                </Rise>
-              </>
-            ) : (
-              <Rise className="relative aspect-[4/3] md:aspect-[4/5]">
-                <Image
-                  src="/photos/serve-family.jpg"
-                  alt="People gathered around a wooden kitchen table, raising their glasses"
-                  fill
-                  sizes="(min-width: 768px) 40vw, 100vw"
-                  className="object-cover"
-                />
-              </Rise>
-            )}
+      {home && (
+        <RiseGroup>
+          <div className="mb-12 grid gap-8 md:mb-20 md:grid-cols-12 md:gap-8">
+            <Rise className="md:col-span-5" mask>
+              <h2 id="engagement-title" className="text-h2">
+                How we work
+              </h2>
+            </Rise>
+            <Rise className="md:col-span-7 md:pt-3">
+              <p className="max-w-[34ch] text-statement">Five steps. Each says what we need and what you get.</p>
+            </Rise>
           </div>
         </RiseGroup>
+      )}
 
-        {/* The order is the list's own: a real ol, spaced apart, with no numerals. */}
-        <RiseGroup as="ol" className="list-none md:col-span-7">
-          {steps.map((step, i) => (
-            <Rise
-              as="li"
-              key={step.title}
-              className={`${i === steps.length - 1 ? '' : 'mb-14 md:mb-20'} ${i === 0 ? 'md:mt-3' : ''}`}
-            >
-              <h3 className="font-display text-[clamp(1.5rem,2.6vw,2.25rem)] font-semibold leading-[1.1] tracking-[-0.02em]">
-                {step.title}
-              </h3>
-              <dl className="mt-5 grid gap-5 lg:grid-cols-2 lg:gap-8">
-                <div>
-                  <dt className="font-medium text-accent">What you do</dt>
-                  <dd className="mt-1.5 max-w-[40ch]">{step.you}</dd>
-                </div>
-                <div>
-                  <dt className="font-medium text-delta">What you receive</dt>
-                  <dd className="mt-1.5 max-w-[40ch] bg-surface px-4 py-3.5">{step.receive}</dd>
-                </div>
-              </dl>
-            </Rise>
-          ))}
-        </RiseGroup>
-      </div>
+      {/* The order is the list's own: a real ol, with no numerals. */}
+      <ol ref={listRef} className="grid list-none gap-4 md:gap-10">
+        {steps.map((step, i) => (
+          <Sheet key={step.title} step={step} index={i} progress={scrollYProgress} depth={scroll} />
+        ))}
+      </ol>
     </section>
   );
 }

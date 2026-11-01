@@ -278,7 +278,7 @@ export function Contact() {
             Book a consultation
           </h2>
           <p className="mt-6 max-w-[38ch] text-statement">
-            A free first conversation, and a reply within one business day.
+            Your first conversation is free, and we reply within one business day.
           </p>
           <dl className="mt-10 grid gap-x-8 gap-y-4 sm:grid-cols-2">
             <div>

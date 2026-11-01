@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useRef, useState, type PointerEvent, type ReactNode } from 'react';
-import { motion, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useInView, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 /**
@@ -99,6 +99,9 @@ export function DepthPhoto({
   const rotateX = useTransform(scrollYProgress, [0, 1], [22, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], [0.88, 1]);
   const reduced = useReducedMotion();
+  // Watched on the wrapper, not the picture: a picture clipped to nothing never counts as in view.
+  const inView = useInView(ref, { once: true, amount: 0.15 });
+  const open = reduced || priority || inView;
 
   return (
     <div ref={ref} className={`[perspective:1400px] ${className ?? ''}`}>
@@ -107,8 +110,7 @@ export function DepthPhoto({
         style={scroll ? { rotateX, scale } : undefined}
         // The picture also wipes open from the bottom the first time it scrolls in, on every screen size.
         initial={reduced || priority ? false : { clipPath: 'inset(100% 0% 0% 0%)' }}
-        whileInView={{ clipPath: 'inset(0% 0% 0% 0%)' }}
-        viewport={{ once: true, amount: 0.15 }}
+        animate={{ clipPath: open ? 'inset(0% 0% 0% 0%)' : 'inset(100% 0% 0% 0%)' }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         data-reveal
       >

@@ -49,7 +49,7 @@ export function WhoWeServe() {
               <p className="mt-6 max-w-[52ch]">
                 Grapes, cherries, almonds and walnuts each keep their own calendar, and the cash arrives in a few big
                 months. We keep your books through harvest and crush, plan equipment and land purchases before they
-                happen, and set estimated payments around when you actually get paid.
+                happen, and set estimated payments around when you get paid.
               </p>
             </Rise>
             <Rise>

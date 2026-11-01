@@ -89,7 +89,7 @@ export function AreaMap({ tone = 'light' }: { tone?: 'light' | 'dark' }) {
         </text>
       </svg>
       <figcaption className="mt-3 max-w-[52ch] text-small">
-        Serving {contactInfo.area}. We come to you, or meet at our Lodi office by appointment.
+        We serve {contactInfo.area}.
       </figcaption>
     </figure>
   );

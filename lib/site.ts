@@ -25,7 +25,7 @@ export const contactInfo = {
   place: 'Lodi, California',
   area: 'Lodi and San Joaquin County',
   towns: ['Lodi', 'Woodbridge', 'Acampo', 'Lockeford', 'Victor', 'Clements', 'Galt', 'Stockton'],
-  meetings: 'Meetings by appointment, at our Lodi office or at your farm, shop or kitchen table.',
+  meetings: 'We meet by appointment, at our Lodi office or at your farm, shop or kitchen table.',
   hours: 'Monday to Friday, 8 a.m. to 5 p.m.',
   // FormSubmit posts each form to this address. Swap for the real inbox before launch.
   formAction: 'https://formsubmit.co/office@ashfordreyes.example',

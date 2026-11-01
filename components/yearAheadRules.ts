@@ -55,12 +55,12 @@ const rules: Rule[] = glue([
       business: {
         label: 'Fourth-quarter estimated tax',
         handles:
-          'We set each owner’s payment from year-to-date profit, not from guesswork, and send the amount and the payment instructions.',
+          'We set each owner’s payment from year-to-date profit, then send the amount and the payment instructions.',
       },
       family: {
         label: 'Fourth-quarter estimated tax',
         handles:
-          'If you have side income, rental income or investment gains, we work out what you owe so the last payment is neither short nor padded.',
+          'If you have side income, rental income or investment gains, we work out what you owe so the last payment matches it.',
       },
     },
   },
@@ -156,7 +156,7 @@ const rules: Rule[] = glue([
       farm: {
         label: 'Second-quarter estimated tax',
         handles:
-          'We check the year so far against your plan and set a payment that matches how the season is actually going.',
+          'We check the year so far against your plan and set a payment that matches how the season is going.',
       },
       business: {
         label: 'Second-quarter estimated tax',

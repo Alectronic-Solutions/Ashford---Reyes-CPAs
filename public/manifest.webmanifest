@@ -1,0 +1,13 @@
+{
+  "name": "Ashford and Reyes CPAs",
+  "short_name": "Ashford and Reyes",
+  "description": "Tax, bookkeeping, advisory and succession planning for Lodi farms, wineries, small businesses and families.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#F3F5F0",
+  "theme_color": "#F3F5F0",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -4,6 +4,8 @@ import { createReadStream, existsSync, statSync } from 'node:fs';
 import { extname, join, normalize } from 'node:path';
 
 const root = join(process.cwd(), 'out');
+// Set BASE_PATH to preview a build made for a subpath, the way GitHub Pages serves it.
+const base = (process.env.BASE_PATH ?? '').replace(/\/$/, '');
 const port = Number(process.env.PORT) || 3000;
 const types = {
   '.html': 'text/html; charset=utf-8',
@@ -18,17 +20,21 @@ const types = {
   '.ico': 'image/x-icon',
   '.txt': 'text/plain',
   '.xml': 'application/xml',
+  '.webp': 'image/webp',
+  '.webmanifest': 'application/manifest+json',
 };
 
 createServer((req, res) => {
   const url = new URL(req.url, 'http://localhost');
-  let file = normalize(join(root, decodeURIComponent(url.pathname)));
+  const path = decodeURIComponent(url.pathname);
+  const inside = !base || path === base || path.startsWith(`${base}/`);
+  let file = normalize(join(root, inside ? path.slice(base.length) : '/__outside__'));
   if (!file.startsWith(root)) {
     res.writeHead(403).end();
     return;
   }
   try {
-    // Clean URLs like Cloudflare Pages: /faq or /faq/ serves faq.html.
+    // Clean URLs, as both hosts do: /faq or /faq/ serves faq.html.
     const bare = file.replace(/[\\/]+$/, '');
     if (!extname(bare) && existsSync(`${bare}.html`)) file = `${bare}.html`;
     else if (statSync(file).isDirectory()) file = join(file, 'index.html');
@@ -50,7 +56,7 @@ createServer((req, res) => {
       createReadStream(file).pipe(res);
     }
   } catch {
-    // Cloudflare Pages answers unknown paths with the exported 404 page.
+    // GitHub Pages and Cloudflare Pages answer unknown paths with the exported 404 page.
     const notFound = join(root, '404.html');
     if (existsSync(notFound)) {
       res.writeHead(404, { 'Content-Type': types['.html'] });
@@ -59,4 +65,4 @@ createServer((req, res) => {
       res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found');
     }
   }
-}).listen(port, () => console.log(`Serving out/ at http://localhost:${port}`));
+}).listen(port, () => console.log(`Serving out/ at http://localhost:${port}${base}/`));

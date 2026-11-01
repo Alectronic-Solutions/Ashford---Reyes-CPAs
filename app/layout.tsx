@@ -5,6 +5,7 @@ import { Motion } from '@/components/Motion';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { MobileActionBar } from '@/components/MobileActionBar';
+import { withBase } from '@/lib/basePath';
 import { contactInfo, site } from '@/lib/site';
 
 const fraunces = Fraunces({
@@ -22,19 +23,21 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  // Origin only: Next already puts the base path on the card image files, so a path here would double it.
+  metadataBase: new URL(new URL(site.url).origin),
   title: {
     default: `${site.name} | Tax and advisory in Lodi, California`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
-  alternates: { canonical: '/' },
+  alternates: { canonical: withBase('/') },
+  manifest: withBase('/manifest.webmanifest'),
   openGraph: {
     type: 'website',
     siteName: site.name,
     locale: site.locale,
-    url: '/',
+    url: withBase('/'),
     title: `${site.name} | Tax and advisory in Lodi, California`,
     description: site.description,
   },

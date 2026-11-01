@@ -7,7 +7,7 @@ export const site = {
   shortName: 'Ashford and Reyes',
   description:
     'Tax, bookkeeping, advisory and succession planning for Lodi farms, wineries, small businesses and families.',
-  // Set NEXT_PUBLIC_SITE_URL in the Cloudflare Pages build settings once the domain is live.
+  // The GitHub Pages workflow sets NEXT_PUBLIC_SITE_URL. Set it to the real domain once that is live.
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.ashfordreyes.example').replace(/\/$/, ''),
   locale: 'en_US',
   // While false, forms stop at a notice and nothing is sent. Flip to true at launch.

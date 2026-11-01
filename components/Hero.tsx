@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState, type PointerEvent } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { withBase } from '@/lib/basePath';
 import { buttonClass, buttonOutlineClass } from './Button';
 import { useDepth } from './Depth';
 import { daysAwayText, localToday, monthName, nextDeadlines, type Ymd } from './yearAheadRules';
@@ -128,8 +129,8 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
         <motion.div className="absolute inset-0" style={depth.pointer ? { x: mediaX, y: mediaPY } : undefined}>
           {/* Both posters are lazy, so the hidden one is never fetched. The media-scoped preloads below
               start the visible one early at high priority, and only that one. */}
-          <link rel="preload" as="image" href={DESKTOP.poster} media={DESKTOP_QUERY} fetchPriority="high" />
-          <link rel="preload" as="image" href={MOBILE.poster} media={`not ${DESKTOP_QUERY}`} fetchPriority="high" />
+          <link rel="preload" as="image" href={withBase(DESKTOP.poster)} media={DESKTOP_QUERY} fetchPriority="high" />
+          <link rel="preload" as="image" href={withBase(MOBILE.poster)} media={`not ${DESKTOP_QUERY}`} fetchPriority="high" />
           <Image
             src={reduced ? DESKTOP.end : DESKTOP.poster}
             alt=""
@@ -151,8 +152,8 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
               key={source.video}
               ref={videoRef}
               className="absolute inset-0 h-full w-full object-cover"
-              src={source.video}
-              poster={source.poster}
+              src={withBase(source.video)}
+              poster={withBase(source.poster)}
               autoPlay
               muted
               playsInline

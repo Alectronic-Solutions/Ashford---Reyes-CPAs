@@ -31,9 +31,9 @@ export default function Page() {
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className={`aspect-[4/3] md:col-span-6 ${n % 2 === 1 ? 'md:order-2 md:col-start-7' : ''}`}
               />
-              <div className={`md:col-span-5 ${n % 2 === 1 ? 'md:order-1' : 'md:col-start-8'}`}>
+              <div className={`text-center md:col-span-5 md:text-left ${n % 2 === 1 ? 'md:order-1' : 'md:col-start-8'}`}>
                 <h2 className="text-h2">{i.name}</h2>
-                <p className="mt-5 max-w-[36ch] text-statement">{i.lede}</p>
+                <p className="mx-auto mt-5 max-w-[36ch] text-statement md:mx-0">{i.lede}</p>
                 <Link href={`/industries/${i.slug}`} className={`${textLink} mt-4`}>
                   {glue(`How we work with ${i.name.toLowerCase()}`)}
                 </Link>

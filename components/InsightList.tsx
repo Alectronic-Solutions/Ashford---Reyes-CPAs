@@ -10,7 +10,7 @@ export function InsightCards({ items, heading: Title = 'h3' }: { items: Insight[
   return (
     <RiseGroup as="ul" className={`grid gap-x-8 gap-y-14 ${items.length > 1 ? 'md:grid-cols-3' : ''}`}>
       {items.map((a) => (
-        <Rise as="li" key={a.slug}>
+        <Rise as="li" key={a.slug} className="text-center md:text-left">
           <Tilt max={6}>
             <Link prefetch={false}
               href={`/insights/${a.slug}`}
@@ -35,7 +35,7 @@ export function InsightCards({ items, heading: Title = 'h3' }: { items: Insight[
               {a.title}
             </Link>
           </Title>
-          <p className="mt-4 max-w-[46ch]">{a.summary}</p>
+          <p className="mx-auto mt-4 max-w-[46ch] md:mx-0">{a.summary}</p>
           <p className="mt-4 text-small">
             <span className="font-medium text-accent">{a.topic}</span>. <time dateTime={a.date}>{formatDate(a.date)}</time>,{' '}
             {a.minutes} minute read
@@ -52,14 +52,14 @@ export function InsightsTeaser({ items }: { items: Insight[] }) {
     <section id="insights" aria-labelledby="insights-title" className="slab scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40">
       <div className="mx-auto max-w-[90rem]">
         <RiseGroup>
-          <div className="mb-12 grid gap-8 md:mb-20 md:grid-cols-12 md:gap-8">
+          <div className="mb-12 grid gap-8 text-center md:mb-20 md:grid-cols-12 md:gap-8 md:text-left">
             <Rise className="md:col-span-5" mask>
               <h2 id="insights-title" className="text-h2">
                 Insights
               </h2>
             </Rise>
             <Rise className="md:col-span-7 md:pt-3">
-              <p className="max-w-[36ch] text-statement">Short pieces on what to do this season, written for Lodi.</p>
+              <p className="mx-auto max-w-[36ch] text-statement md:mx-0">Short pieces on what to do this season, written for Lodi.</p>
               <Link prefetch={false} href="/insights" className={`${textLink} mt-4`}>
                 All insights
               </Link>

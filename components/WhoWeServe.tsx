@@ -18,14 +18,14 @@ export function WhoWeServe() {
   return (
     <section id="who-we-serve" aria-labelledby="serve-title" className="mx-auto max-w-page scroll-mt-24 pb-24 md:pb-40">
       <RiseGroup>
-        <div className="grid gap-8 px-5 md:grid-cols-12 md:gap-8 md:px-8">
+        <div className="grid gap-8 px-5 text-center md:grid-cols-12 md:gap-8 md:px-8 md:text-left">
           <Rise className="md:col-span-5" mask>
             <h2 id="serve-title" className="text-h2">
               Who we serve
             </h2>
           </Rise>
           <Rise className="md:col-span-7 md:pt-3">
-            <p className="max-w-[36ch] text-statement">
+            <p className="mx-auto max-w-[36ch] text-statement md:mx-0">
               Three kinds of clients, three different years. We learn yours before we give advice.
             </p>
           </Rise>
@@ -41,19 +41,19 @@ export function WhoWeServe() {
           className="h-[52svh] md:h-[72svh]"
         />
         <RiseGroup>
-          <div className="relative -mt-20 rounded-3xl bg-delta p-6 text-bg shadow-lift md:-mt-48 md:ml-[8.3333%] md:w-7/12 md:p-12">
+          <div className="relative -mt-20 rounded-3xl bg-delta p-6 text-center text-bg shadow-lift md:-mt-48 md:text-left md:ml-[8.3333%] md:w-7/12 md:p-12">
             <Rise>
               <h3 className={subhead}>Farms and wineries</h3>
             </Rise>
             <Rise>
-              <p className="mt-6 max-w-[52ch]">
+              <p className="mx-auto mt-6 max-w-[52ch] md:mx-0">
                 Grapes, cherries, almonds and walnuts each keep their own calendar, and the cash arrives in a few big
                 months. We keep your books through harvest and crush, plan equipment and land purchases before they
                 happen, and set estimated payments around when you get paid.
               </p>
             </Rise>
             <Rise>
-              <p className="mt-4 max-w-[52ch]">
+              <p className="mx-auto mt-4 max-w-[52ch] md:mx-0">
                 Many Lodi growers also run a tasting room, a packing shed or a family partnership. We handle the
                 entity returns and the succession paperwork alongside your attorney.
               </p>
@@ -82,19 +82,19 @@ export function WhoWeServe() {
               imageClassName="object-[47%_50%]"
             />
           </Rise>
-          <div className="md:order-1 md:col-span-5 md:col-start-2">
+          <div className="text-center md:order-1 md:col-span-5 md:col-start-2 md:text-left">
             <Rise>
               <h3 className={subhead}>Small businesses</h3>
             </Rise>
             <Rise>
-              <p className="mt-6 max-w-[48ch]">
+              <p className="mx-auto mt-6 max-w-[48ch] md:mx-0">
                 Shops, contractors, restaurants, clinics and the people who work in them. You want one accountant who
                 knows your books, picks up the phone, and tells you what a new hire or a second location will do to
                 your taxes before you sign anything.
               </p>
             </Rise>
             <Rise>
-              <ul className="mt-8 grid max-w-[48ch] gap-3">
+              <ul className="mx-auto mt-8 grid w-fit max-w-[48ch] gap-3 text-left md:mx-0 md:w-auto">
                 {businessNeeds.map((need) => (
                   <li key={need} className="flex items-baseline gap-4 font-medium">
                     <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 translate-y-[-1px] rounded-full bg-accent" />
@@ -126,9 +126,9 @@ export function WhoWeServe() {
                 className="object-cover"
               />
             </div>
-            <div className="md:col-span-8 md:pr-10 lg:col-span-9">
+            <div className="text-center md:col-span-8 md:pr-10 md:text-left lg:col-span-9">
               <h3 className="text-statement">Families</h3>
-              <p className="mt-3 max-w-[62ch]">
+              <p className="mx-auto mt-3 max-w-[62ch] md:mx-0">
                 Wages, a rental, a side business, a child heading to college, a parent who needs help. We prepare your
                 federal and California returns, plan around the big events, and explain the numbers in plain words. If a
                 family business or farm is part of the picture, we look at the household and the business together.

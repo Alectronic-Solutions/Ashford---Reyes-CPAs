@@ -15,24 +15,24 @@ export function ProofStrip() {
         <h2 id="proof-title" className="sr-only">
           The firm in numbers
         </h2>
-        <RiseGroup as="ul" className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4 md:gap-x-8">
+        <RiseGroup as="ul" className="grid grid-cols-2 gap-x-6 gap-y-12 text-center md:grid-cols-4 md:gap-x-8 md:text-left">
           {stats.map((s) => (
             <Rise as="li" key={s.label}>
               <CountUp
                 value={s.value}
                 className="block font-display text-h2 font-semibold xl:text-display"
               />
-              <p className="mt-4 max-w-[20ch]">{s.label}</p>
+              <p className="mx-auto mt-4 max-w-[20ch] md:mx-0">{s.label}</p>
             </Rise>
           ))}
         </RiseGroup>
         <RiseGroup>
-          <Rise className="mt-16 grid gap-8 rounded-3xl bg-bg/10 p-6 md:mt-24 md:grid-cols-12 md:items-center md:gap-8 md:p-8">
-            <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-5 md:col-span-4">
+          <Rise className="mt-16 grid gap-8 rounded-3xl bg-bg/10 p-6 text-center md:mt-24 md:text-left md:grid-cols-12 md:items-center md:gap-8 md:p-8">
+            <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-5 md:col-span-4 md:justify-start">
               <span className="font-display text-h2 font-semibold">{rating.score}</span>
               <span>
                 <Stars value={Number(rating.score)} size={24} />
-                <span className="mt-2 flex items-center gap-2 text-small">
+                <span className="mt-2 flex items-center justify-center gap-2 text-small md:justify-start">
                   <GoogleMark size={20} />
                   <span>
                     {rating.count} {rating.source}
@@ -68,15 +68,15 @@ export function Stories({
     <section aria-labelledby="stories-title" className="slab bg-accent px-5 py-24 text-bg md:px-8 md:py-40">
       <div className="mx-auto max-w-[90rem]">
         <RiseGroup>
-          <div className="grid gap-8 md:grid-cols-12 md:gap-8">
+          <div className="grid gap-8 text-center md:grid-cols-12 md:gap-8 md:text-left">
             <Rise className="md:col-span-5" mask>
               <h2 id="stories-title" className="text-h2">
                 {title}
               </h2>
             </Rise>
             <Rise className="md:col-span-7 md:pt-3">
-              <p className="max-w-[36ch] text-statement">{lede}</p>
-              <p className="mt-4 max-w-[46ch] whitespace-pre-line text-small">{sampleNote}</p>
+              <p className="mx-auto max-w-[36ch] text-statement md:mx-0">{lede}</p>
+              <p className="mx-auto mt-4 max-w-[46ch] whitespace-pre-line text-small md:mx-0">{sampleNote}</p>
             </Rise>
           </div>
         </RiseGroup>
@@ -93,7 +93,7 @@ export function Stories({
                   className="object-cover"
                 />
               </div>
-              <div className="flex flex-col p-6 md:p-10">
+              <div className="flex flex-col items-center p-6 text-center md:items-stretch md:p-10 md:text-left">
                 <CountUp
                   value={lead.result}
                   className="block font-display text-h2 font-semibold text-accent"
@@ -105,7 +105,7 @@ export function Stories({
                 {linkOut && (
                   <Link prefetch={false}
                     href={`/industries/${lead.industry}`}
-                    className="mt-auto inline-block self-start pt-6 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"
+                    className="mt-auto inline-block self-center pt-6 md:self-start font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"
                   >
                     More on {industry(lead.industry)?.name.toLowerCase()}
                   </Link>
@@ -117,7 +117,7 @@ export function Stories({
             <div className="grid gap-12 md:grid-cols-2 md:gap-8 lg:col-span-5 lg:grid-cols-1">
               {rest.map((s) => (
                 <Tilt key={s.title} max={5}>
-                  <Rise className="flex h-full flex-col rounded-3xl bg-ink p-6 text-bg shadow-lift md:p-8">
+                  <Rise className="flex h-full flex-col items-center rounded-3xl bg-ink p-6 text-center text-bg shadow-lift md:items-stretch md:p-8 md:text-left">
                     <CountUp value={s.result} className="block font-display text-h2 font-semibold" />
                     <p className="mt-2 max-w-[30ch] font-medium">{s.resultLabel}</p>
                     <h3 className="mt-6 text-h3">{s.title}</h3>
@@ -126,7 +126,7 @@ export function Stories({
                     {linkOut && (
                       <Link prefetch={false}
                         href={`/industries/${s.industry}`}
-                        className="mt-auto inline-block self-start pt-5 font-medium underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
+                        className="mt-auto inline-block self-center pt-5 md:self-start font-medium underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
                       >
                         More on {industry(s.industry)?.name.toLowerCase()}
                       </Link>
@@ -149,25 +149,25 @@ export function Testimonials({ quotes }: { quotes: Testimonial[] }) {
     <section aria-labelledby="quotes-title" className="slab bg-ink px-5 py-24 text-bg md:px-8 md:py-40">
       <div className="mx-auto max-w-[90rem]">
         <RiseGroup>
-          <div className="grid gap-8 md:grid-cols-12 md:gap-8">
+          <div className="grid gap-8 text-center md:grid-cols-12 md:gap-8 md:text-left">
             <Rise className="md:col-span-5" mask>
               <h2 id="quotes-title" className="text-h2">
                 In their words
               </h2>
-              <div className="mt-6 flex items-center gap-4">
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-4 md:justify-start">
                 <Stars value={Number(rating.score)} size={24} />
                 <span className="inline-flex items-center gap-2">
                   <GoogleMark size={18} />
                   {rating.score} from {rating.count} {rating.source}
                 </span>
               </div>
-              <p className="mt-4 max-w-[40ch] text-small">
+              <p className="mx-auto mt-4 max-w-[40ch] text-small md:mx-0">
                 Sample quotes and rating for demonstration. These people are not real clients.
               </p>
             </Rise>
             <Rise className="md:col-span-7">
               <figure>
-                <blockquote className="max-w-[30ch] font-display text-h3 font-semibold">
+                <blockquote className="mx-auto max-w-[30ch] font-display text-h3 font-semibold md:mx-0">
                   <p>“{lead.quote}”</p>
                 </blockquote>
                 <figcaption className="mt-6">
@@ -182,7 +182,7 @@ export function Testimonials({ quotes }: { quotes: Testimonial[] }) {
           <RiseGroup as="ul" className="mt-16 grid gap-4 md:mt-24 md:grid-cols-3 md:gap-8">
             {rest.map((t) => (
               <Tilt as="li" key={t.name} max={5}>
-                <figure className="flex h-full flex-col rounded-2xl bg-bg/10 p-6 shadow-rest md:p-8">
+                <figure className="flex h-full flex-col items-center rounded-2xl bg-bg/10 p-6 text-center shadow-rest md:items-stretch md:p-8 md:text-left">
                   <Stars />
                   <blockquote className="mt-5 max-w-[40ch]">
                     <p>“{t.quote}”</p>

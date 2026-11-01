@@ -42,11 +42,11 @@ export function NewsletterForm() {
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value={`${site.url}/thanks`} />
         <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" />
-        <div className="lg:col-span-5">
+        <div className="text-center lg:col-span-5 lg:text-left">
           <label htmlFor="newsletter-email" className="block font-display text-h3 font-semibold">
             The seasonal letter
           </label>
-          <p id="newsletter-help" className="mt-2 max-w-[40ch] text-bg/85">
+          <p id="newsletter-help" className="mx-auto mt-2 max-w-[40ch] text-bg/85 lg:mx-0">
             Four short emails a year, timed to the deadlines that matter in Lodi.
           </p>
         </div>
@@ -71,7 +71,7 @@ export function NewsletterForm() {
           </button>
         </div>
         {error && (
-          <p id="newsletter-error" role="alert" className="font-medium lg:col-span-7 lg:col-start-6">
+          <p id="newsletter-error" role="alert" className="text-center font-medium lg:text-left lg:col-span-7 lg:col-start-6">
             {error}
           </p>
         )}

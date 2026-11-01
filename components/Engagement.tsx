@@ -73,18 +73,18 @@ function Sheet({
       style={{ top: `calc(var(--header-h) + 2rem + ${index * 1.75}rem)` }}
     >
       <motion.div
-        className={`grid origin-top gap-6 rounded-3xl p-6 shadow-lift md:min-h-[22rem] md:gap-8 md:p-12 lg:grid-cols-12 ${tones[index]}`}
+        className={`grid origin-top gap-6 rounded-3xl p-6 text-center shadow-lift md:min-h-[22rem] md:gap-8 md:p-12 md:text-left lg:grid-cols-12 ${tones[index]}`}
         style={depth ? { scale, rotateX } : undefined}
       >
         <Title className="text-h2 lg:col-span-5">{step.title}</Title>
         <dl className="grid gap-6 md:grid-cols-2 md:gap-8 lg:col-span-7">
           <div>
             <dt className={`font-medium ${dark ? '' : 'text-accent'}`}>What you do</dt>
-            <dd className="mt-2 max-w-[40ch]">{step.you}</dd>
+            <dd className="mx-auto mt-2 max-w-[40ch] md:mx-0">{step.you}</dd>
           </div>
           <div>
             <dt className={`font-medium ${dark ? '' : 'text-delta'}`}>What you receive</dt>
-            <dd className={`mt-2 max-w-[40ch] p-4 ${dark ? 'bg-bg/10' : 'bg-bg'}`}>{step.receive}</dd>
+            <dd className={`mx-auto mt-2 max-w-[40ch] p-4 md:mx-0 ${dark ? 'bg-bg/10' : 'bg-bg'}`}>{step.receive}</dd>
           </div>
         </dl>
       </motion.div>
@@ -107,14 +107,14 @@ export function Engagement({ variant = 'home' }: { variant?: 'home' | 'page' }) 
     >
       {home && (
         <RiseGroup>
-          <div className="mb-12 grid gap-8 md:mb-20 md:grid-cols-12 md:gap-8">
+          <div className="mb-12 grid gap-8 text-center md:mb-20 md:grid-cols-12 md:gap-8 md:text-left">
             <Rise className="md:col-span-5" mask>
               <h2 id="engagement-title" className="text-h2">
                 How we work
               </h2>
             </Rise>
             <Rise className="md:col-span-7 md:pt-3">
-              <p className="max-w-[34ch] text-statement">Five steps. Each says what we need and what you get.</p>
+              <p className="mx-auto max-w-[34ch] text-statement md:mx-0">Five steps. Each says what we need and what you get.</p>
             </Rise>
           </div>
         </RiseGroup>

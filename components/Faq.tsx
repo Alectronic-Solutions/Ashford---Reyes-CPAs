@@ -50,7 +50,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
     >
       <div className="grid gap-10 md:grid-cols-12 md:gap-8">
         <RiseGroup className={home ? 'md:col-span-4' : 'md:col-span-4 lg:col-span-5'}>
-          <div className="md:sticky md:top-28">
+          <div className="text-center md:sticky md:top-28 md:text-left">
             {home ? (
               <>
                 <Rise mask>
@@ -59,7 +59,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
                   </h2>
                 </Rise>
                 <Rise>
-                  <p className="mt-6 max-w-[30ch] text-small">
+                  <p className="mx-auto mt-6 max-w-[30ch] text-small md:mx-0">
                     Sample content for demonstration. These answers are general and are not advice for your situation.
                   </p>
                 </Rise>
@@ -96,7 +96,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
             </div>
           </Rise>
           {home && (
-            <Rise className="mt-6">
+            <Rise className="mt-6 text-center md:text-left">
               <Link prefetch={false} href="/faq" className={textLink}>
                 All {questions.length} questions
               </Link>

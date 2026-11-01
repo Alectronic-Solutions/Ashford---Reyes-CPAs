@@ -18,14 +18,14 @@ export function WhatWeDo() {
   return (
     <section id="what-we-do" aria-labelledby="what-title" className="mx-auto max-w-page scroll-mt-24 px-5 py-24 md:px-8 md:py-40">
       <RiseGroup>
-        <div className="grid gap-8 md:grid-cols-12 md:gap-8">
+        <div className="grid gap-8 text-center md:grid-cols-12 md:gap-8 md:text-left">
           <Rise className="md:col-span-5" mask>
             <h2 id="what-title" className="text-h2">
               What we do
             </h2>
           </Rise>
           <Rise className="md:col-span-7 md:pt-3">
-            <p className="max-w-[36ch] text-statement">
+            <p className="mx-auto max-w-[36ch] text-statement md:mx-0">
               Lodi runs on harvest, crush and quarter end. Our work follows the same calendar.
             </p>
           </Rise>
@@ -64,7 +64,7 @@ export function WhatWeDo() {
               <Rise
                 as="li"
                 key={s.slug}
-                className={`group relative transition-colors duration-300 rounded-2xl md:px-8 md:py-10 ${on ? 'md:bg-surface md:shadow-rest' : ''}`}
+                className={`group relative rounded-2xl text-center transition-colors duration-300 md:px-8 md:text-left md:py-10 ${on ? 'md:bg-surface md:shadow-rest' : ''}`}
               >
                 <motion.div
                   onPointerEnter={() => setActive(i)}
@@ -81,7 +81,7 @@ export function WhatWeDo() {
                     className={`absolute left-3 top-6 hidden h-[calc(100%-3rem)] w-1.5 origin-top rounded-full bg-accent transition-transform duration-300 md:block ${on ? 'scale-y-100' : 'scale-y-0'}`}
                   />
                   <h3 className="text-h2">{s.name}</h3>
-                  <p className="max-w-[56ch]">{s.summary}</p>
+                  <p className="mx-auto max-w-[56ch] md:mx-0">{s.summary}</p>
                   <Link prefetch={false}
                     href={`/services/${s.slug}`}
                     className="inline-block self-start py-2 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"

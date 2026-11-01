@@ -36,14 +36,14 @@ export default function Page() {
                   <Image src={s.photo.src} alt={s.photo.alt} fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
                 </div>
               </Tilt>
-              <div className="md:col-span-6 md:col-start-7">
+              <div className="text-center md:col-span-6 md:col-start-7 md:text-left">
                 <h2 className="text-h2">
                   <Link href={`/services/${s.slug}`} className="hover:text-accent">
                     {s.name}
                   </Link>
                 </h2>
-                <p className="mt-5 max-w-[36ch] text-statement">{s.lede}</p>
-                <ul className="mt-6 grid max-w-[44rem] gap-x-8 gap-y-2 sm:grid-cols-2">
+                <p className="mx-auto mt-5 max-w-[36ch] text-statement md:mx-0">{s.lede}</p>
+                <ul className="mx-auto mt-6 grid w-fit max-w-[44rem] gap-x-8 gap-y-2 text-left sm:grid-cols-2 md:mx-0 md:w-auto">
                   {s.included.map((item) => (
                     <li key={item.name} className="flex items-baseline gap-3">
                       <span aria-hidden="true" className="h-2 w-2 shrink-0 translate-y-[-2px] rounded-full bg-accent" />

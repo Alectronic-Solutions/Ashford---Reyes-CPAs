@@ -17,15 +17,15 @@ export function PageHeader({
   photo?: { src: string; alt: string; position?: string };
 }) {
   return (
-    <header className="mx-auto max-w-page px-5 pb-14 pt-16 md:px-8 md:pb-24 md:pt-28">
+    <header className="mx-auto max-w-page px-5 pb-14 pt-16 text-center md:px-8 md:pb-24 md:pt-28 md:text-left">
       <RiseGroup>
         <Rise mask>
-          <h1 className="max-w-[14ch] text-display">{title}</h1>
+          <h1 className="mx-auto max-w-[14ch] text-display md:mx-0">{title}</h1>
         </Rise>
         <div className="mt-8 grid md:mt-12 md:grid-cols-12 md:gap-8">
           <Rise className="md:col-span-7 md:col-start-6">
-            <p className="max-w-[36ch] text-statement">{lede}</p>
-            {note && <p className="mt-4 max-w-[46ch] text-small">{note}</p>}
+            <p className="mx-auto max-w-[36ch] text-statement md:mx-0">{lede}</p>
+            {note && <p className="mx-auto mt-4 max-w-[46ch] text-small md:mx-0">{note}</p>}
           </Rise>
         </div>
       </RiseGroup>

@@ -18,17 +18,17 @@ export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
     >
       {variant === 'home' && (
         <RiseGroup>
-          <div className="mb-14 grid gap-8 md:mb-24 md:grid-cols-12 md:gap-8">
+          <div className="mb-14 grid gap-8 text-center md:mb-24 md:grid-cols-12 md:gap-8 md:text-left">
             <Rise className="md:col-span-5" mask>
               <h2 id="team-title" className="text-h2">
                 The team
               </h2>
             </Rise>
             <Rise className="md:col-span-7 md:pt-3">
-              <p className="max-w-[36ch] text-statement">
+              <p className="mx-auto max-w-[36ch] text-statement md:mx-0">
                 The people you will actually talk to, each with a specialty you can ask for by name.
               </p>
-              <p className="mt-4 max-w-[46ch] text-small">
+              <p className="mx-auto mt-4 max-w-[46ch] text-small md:mx-0">
                 Sample team for demonstration. These names, titles and portraits are placeholders, not real staff.
               </p>
             </Rise>
@@ -39,7 +39,7 @@ export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
       {/* Every second column sits a little lower, a steady rhythm rather than a scatter. */}
       <RiseGroup as="ul" className="grid list-none grid-cols-2 gap-x-4 gap-y-12 md:grid-cols-4 md:gap-x-8 md:gap-y-20">
         {shown.map((person, i) => (
-          <Rise as="li" key={person.name} className={i % 2 === 1 ? 'md:mt-16' : ''}>
+          <Rise as="li" key={person.name} className={`text-center md:text-left ${i % 2 === 1 ? 'md:mt-16' : ''}`}>
             <Tilt max={7}>
               <Link prefetch={false} href={`/team/${person.slug}`} tabIndex={-1} aria-hidden="true" className="relative block aspect-[4/5] overflow-hidden rounded-2xl bg-surface shadow-rest">
                 <Image
@@ -57,7 +57,7 @@ export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
               </Link>
             </Name>
             <p className="mt-0.5 font-medium">{person.title}</p>
-            <p className="mt-1.5 max-w-[34ch] text-small">{person.specialty}</p>
+            <p className="mx-auto mt-1.5 max-w-[34ch] text-small md:mx-0">{person.specialty}</p>
             <a
               href={askHref(person)}
               className="mt-1 inline-block py-2 text-small font-medium underline decoration-accent underline-offset-4 hover:decoration-ink"
@@ -70,7 +70,7 @@ export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
 
       {variant === 'home' && (
         <RiseGroup>
-          <Rise className="mt-14 md:mt-8">
+          <Rise className="mt-14 text-center md:mt-8 md:text-left">
             <Link prefetch={false} href="/team" className={textLink}>
               Meet the whole team
             </Link>

@@ -55,7 +55,7 @@ function Choice({
 function Group({ legend, error, id, children }: { legend: string; error?: string; id: string; children: ReactNode }) {
   return (
     <fieldset id={id} aria-labelledby={`${id}-title`} aria-describedby={error ? `${id}-error` : undefined}>
-      <h3 id={`${id}-title`} className="text-h3">
+      <h3 id={`${id}-title`} className="text-center text-h3 md:text-left">
         {legend}
       </h3>
       <div className="mt-5 grid gap-2 sm:grid-cols-2">{children}</div>
@@ -200,7 +200,7 @@ export function Contact() {
       </Group>
     </div>,
     <fieldset key="details" aria-labelledby="contact-details-title" className="grid gap-6">
-      <h3 id="contact-details-title" className="text-h3">
+      <h3 id="contact-details-title" className="text-center text-h3 md:text-left">
         Your details
       </h3>
       <div className="mt-5 grid gap-6 md:grid-cols-2">
@@ -295,11 +295,11 @@ export function Contact() {
       className="slab scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40"
     >
       <RiseGroup className="mx-auto grid max-w-[90rem] gap-12 md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-8 md:gap-y-12">
-        <Rise className="md:col-span-5 md:col-start-1 md:row-start-1" mask>
+        <Rise className="text-center md:col-span-5 md:col-start-1 md:row-start-1 md:text-left" mask>
           <h2 id="contact-title" className="text-h2">
             Book a consultation
           </h2>
-          <p className="mt-6 max-w-[38ch] text-statement">
+          <p className="mx-auto mt-6 max-w-[38ch] text-statement md:mx-0">
             Your first conversation is free, and we reply within one business day.
           </p>
           <dl className="mt-10 grid gap-x-8 gap-y-4 sm:grid-cols-2">
@@ -378,7 +378,7 @@ export function Contact() {
                     {steps[step]}
                   </motion.div>
                 </div>
-                <div className="mt-10 flex flex-wrap items-center gap-4">
+                <div className="mt-10 flex flex-wrap items-center justify-center gap-4 md:justify-start">
                   {step > 0 && (
                     <button
                       type="button"
@@ -402,7 +402,7 @@ export function Contact() {
             ) : (
               <div className="grid gap-12">
                 {steps}
-                <div>
+                <div className="text-center md:text-left">
                   <button type="submit" className={buttonClass}>
                     Send request
                   </button>

@@ -28,13 +28,13 @@ export function Footer() {
   return (
     <footer className="slab overflow-hidden bg-ink text-bg">
       {/* The close: one last, plain ask before the details. */}
-      <div className="mx-auto max-w-[90rem] px-5 pb-16 pt-20 md:px-8 md:pb-24 md:pt-32">
+      <div className="mx-auto max-w-[90rem] px-5 pb-16 pt-20 text-center md:px-8 md:pb-24 md:pt-32 md:text-left">
         <h2 className="text-h2 lg:text-display">Talk to us before December&nbsp;31.</h2>
         <div className="mt-8 flex flex-col gap-6 md:mt-12 md:flex-row md:items-center md:justify-between md:gap-8">
-          <p className="max-w-[44ch] text-statement">
+          <p className="mx-auto max-w-[44ch] text-statement md:mx-0">
             The fall planning meeting is where this year&rsquo;s tax bill is decided. The first conversation is free.
           </p>
-          <div className="flex shrink-0 flex-wrap items-center gap-x-6 gap-y-3">
+          <div className="flex shrink-0 flex-wrap items-center justify-center gap-x-6 gap-y-3">
             <Link prefetch={false} href="/contact" className={buttonClass}>
               Book a consultation
             </Link>
@@ -48,15 +48,15 @@ export function Footer() {
       <div className="mx-auto max-w-[90rem] px-5 md:px-8">
         <div className="grid gap-12 rounded-3xl bg-bg/[0.06] p-6 md:p-10 lg:grid-cols-12 lg:gap-8">
           {/* The firm, where it works, and how to reach it. */}
-          <div className="lg:col-span-4">
+          <div className="text-center md:text-left lg:col-span-4">
             <Link href="/" aria-label="Ashford and Reyes CPAs, home" className="inline-block">
               <Logo light size="lg" />
             </Link>
-            <p className="mt-3 max-w-[36ch] text-bg/85">
+            <p className="mx-auto mt-3 max-w-[36ch] text-bg/85 md:mx-0">
               Tax, bookkeeping, advisory and succession planning for farms, wineries, businesses and families.
             </p>
             <p className="mt-6 font-medium">Serving {contactInfo.area}</p>
-            <p className="mt-1 max-w-[36ch] text-small text-bg/85">{contactInfo.towns.join(', ')}.</p>
+            <p className="mx-auto mt-1 max-w-[36ch] text-small text-bg/85 md:mx-0">{contactInfo.towns.join(', ')}.</p>
             <dl className="mt-6 grid gap-3 text-small">
               <div>
                 <dt className="sr-only">Hours</dt>
@@ -102,7 +102,7 @@ export function Footer() {
             <div className="grid gap-2 md:hidden">
               {columns.map((c) => (
                 <details key={c.title} className="group rounded-2xl bg-bg/[0.06]">
-                  <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between px-4 font-medium [&::-webkit-details-marker]:hidden">
+                  <summary className="flex min-h-14 cursor-pointer list-none items-center justify-center gap-3 px-4 font-medium [&::-webkit-details-marker]:hidden">
                     {c.title}
                     <svg
                       width="16"
@@ -117,7 +117,7 @@ export function Footer() {
                       <path d="M8 2v12M2 8h12" />
                     </svg>
                   </summary>
-                  <ul className="px-4 pb-4">
+                  <ul className="px-4 pb-4 text-center">
                     {c.links.map((l) => (
                       <li key={l.href}>
                         <Link prefetch={false} href={l.href} className={`${listLink} py-2`}>
@@ -146,8 +146,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-[90rem] flex-col gap-x-8 gap-y-3 px-5 pb-8 pt-6 text-small md:flex-row md:items-center md:justify-between md:px-8 md:pb-10">
-        <ul className="flex flex-wrap gap-x-6">
+      <div className="mx-auto flex max-w-[90rem] flex-col gap-x-8 gap-y-3 px-5 pb-8 pt-6 text-center text-small md:flex-row md:text-left md:items-center md:justify-between md:px-8 md:pb-10">
+        <ul className="flex flex-wrap justify-center gap-x-6 md:justify-start">
           {legalLinks.map((l) => (
             <li key={l.href}>
               <Link prefetch={false} href={l.href} className="inline-block py-3 text-bg/85 hover:text-bg hover:underline">
@@ -156,7 +156,7 @@ export function Footer() {
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap items-center gap-x-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 md:justify-start">
           <a href="#main" className="inline-block py-3 text-bg/85 hover:text-bg hover:underline">
             Back to top
           </a>

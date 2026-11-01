@@ -208,13 +208,13 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
 
       <div className="relative mx-auto grid w-full max-w-[90rem] gap-10 md:grid-cols-12 md:items-end md:gap-8">
         <motion.div
-          className="text-bg md:col-span-8"
+          className="text-center text-bg md:col-span-8 md:text-left"
           style={depth.scroll ? { y: textY, opacity: textOpacity } : undefined}
         >
           <motion.h1
             id="hero-title"
             data-reveal
-            className="max-w-[12ch] text-display"
+            className="mx-auto max-w-[12ch] text-display md:mx-0"
             style={{ fontSize: 'clamp(3rem, min(9vw, 17svh), 9rem)' }}
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
@@ -223,7 +223,7 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
             Steady books, every season.
           </motion.h1>
           <motion.p
-            className="mt-6 max-w-[40ch] text-statement md:mt-8"
+            className="mx-auto mt-6 max-w-[40ch] text-statement md:mx-0 md:mt-8"
             data-reveal
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -232,7 +232,7 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
             Tax, books and advice for Lodi farms, wineries, businesses and families, all year long.
           </motion.p>
           <motion.div
-            className="mt-8 flex flex-wrap gap-3 md:mt-10 md:gap-4"
+            className="mt-8 flex flex-wrap justify-center gap-3 md:mt-10 md:justify-start md:gap-4"
             data-reveal
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}

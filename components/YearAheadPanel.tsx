@@ -137,21 +137,21 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
       className="slab scroll-mt-24 overflow-hidden bg-delta px-5 pb-20 pt-24 text-bg md:px-8 md:pb-32 md:pt-40"
     >
       <RiseGroup className="mx-auto max-w-[90rem]">
-        <div className="grid gap-8 md:grid-cols-12 md:gap-8">
+        <div className="grid gap-8 text-center md:grid-cols-12 md:gap-8 md:text-left">
           <Rise className="md:col-span-5" mask>
             <h2 id="year-ahead-title" className="text-h2">
               The year ahead
             </h2>
           </Rise>
           <Rise className="md:col-span-7 md:pt-3">
-            <p className="max-w-[38ch] text-statement">
+            <p className="mx-auto max-w-[38ch] text-statement md:mx-0">
               Turn the wheel to any month and see what it asks of you, and what we do about it.
             </p>
           </Rise>
         </div>
 
         <Rise className="mt-10 md:mt-14">
-          <div role="radiogroup" aria-label="Who the dates are for" className="flex flex-wrap gap-2">
+          <div role="radiogroup" aria-label="Who the dates are for" className="flex flex-wrap justify-center gap-2 md:justify-start">
             {audiences.map((a, i) => {
               const selected = a.id === audience;
               return (
@@ -223,7 +223,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
       </div>
 
       <RiseGroup className="mx-auto max-w-[90rem]">
-        <Rise className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4 md:mt-12">
+        <Rise className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:mt-12 md:justify-start">
           <div className="flex gap-2">
             <button
               type="button"
@@ -284,21 +284,21 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
               : ''}
           </p>
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-            <div className="lg:col-span-5">
+            <div className="text-center lg:col-span-5 lg:text-left">
               <h3 className="text-h2">
                 {monthNames[month - 1]} {year}
               </h3>
-              <p className="mt-5 max-w-[40ch] text-statement">{monthNotes[audience][month - 1]}</p>
+              <p className="mx-auto mt-5 max-w-[40ch] text-statement lg:mx-0">{monthNotes[audience][month - 1]}</p>
             </div>
             <div className="min-w-0 lg:col-span-7">
               {deadlines.length === 0 ? (
-                <p className="rounded-2xl bg-bg/10 p-6 md:p-8">
+                <p className="rounded-2xl bg-bg/10 p-6 text-center md:p-8 md:text-left">
                   No federal deadlines for a {who} in {monthNames[month - 1]}. A good month to get ahead of the next one.
                 </p>
               ) : (
                 <ol className="grid gap-4">
                   {deadlines.map((d) => (
-                    <li key={d.id} className="grid gap-4 rounded-2xl bg-bg p-6 text-ink shadow-rest md:grid-cols-[9rem_1fr] md:gap-8 md:p-8">
+                    <li key={d.id} className="grid gap-4 rounded-2xl bg-bg p-6 text-center text-ink shadow-rest md:grid-cols-[9rem_1fr] md:gap-8 md:p-8 md:text-left">
                       <div>
                         <time dateTime={iso(d.date)} className="block font-display text-h3 font-semibold">
                           {monthName(d.date.m)} {d.date.d}
@@ -309,7 +309,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
                       </div>
                       <div>
                         <p className="font-display text-h3 font-semibold">{d.label}</p>
-                        <p className="mt-3 max-w-[56ch]">{d.handles}</p>
+                        <p className="mx-auto mt-3 max-w-[56ch] md:mx-0">{d.handles}</p>
                       </div>
                     </li>
                   ))}
@@ -318,7 +318,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
               <button
                 type="button"
                 onClick={download}
-                className="mt-6 inline-flex items-center gap-3 py-3 text-left font-medium underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
+                className="mt-6 flex items-center justify-center gap-3 py-3 text-left font-medium lg:inline-flex lg:justify-start underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
               >
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
                   <rect x="2.5" y="4" width="15" height="13.5" />
@@ -330,8 +330,8 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
           </div>
         </Rise>
 
-        <Rise className="mt-14 md:mt-20">
-          <p className="max-w-[60ch] text-small">
+        <Rise className="mt-14 text-center md:mt-20 md:text-left">
+          <p className="mx-auto max-w-[60ch] text-small md:mx-0">
             Sample dates for demonstration. A CPA must verify deadlines before launch. Federal dates only, and a date
             that falls on a weekend moves to the next Monday.
           </p>

@@ -39,7 +39,7 @@ export function WhatWeDo() {
             <AnimatePresence initial={false} mode="popLayout">
               <motion.div
                 key={current.slug}
-                className="absolute inset-0 origin-left overflow-hidden bg-surface shadow-lift"
+                className="absolute inset-0 origin-left overflow-hidden rounded-3xl bg-surface shadow-lift"
                 initial={scroll ? { rotateY: -70, opacity: 0, x: -40 } : { opacity: 0 }}
                 animate={{ rotateY: 0, opacity: 1, x: 0 }}
                 exit={scroll ? { rotateY: 40, opacity: 0, x: 40 } : { opacity: 0 }}
@@ -64,7 +64,7 @@ export function WhatWeDo() {
               <Rise
                 as="li"
                 key={s.slug}
-                className={`group relative transition-colors duration-300 md:px-8 md:py-10 ${on ? 'md:bg-surface' : ''}`}
+                className={`group relative transition-colors duration-300 rounded-2xl md:px-8 md:py-10 ${on ? 'md:bg-surface md:shadow-rest' : ''}`}
               >
                 <motion.div
                   onPointerEnter={() => setActive(i)}
@@ -73,12 +73,12 @@ export function WhatWeDo() {
                   viewport={{ amount: 0.5, margin: '-30% 0px -30% 0px' }}
                   className="grid gap-4"
                 >
-                  <div className="relative aspect-[3/2] overflow-hidden md:hidden">
+                  <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-rest md:hidden">
                     <Image src={s.photo.src} alt={s.photo.alt} fill sizes="100vw" className="object-cover" />
                   </div>
                   <span
                     aria-hidden="true"
-                    className={`absolute left-0 top-0 hidden h-full w-1.5 origin-top bg-accent transition-transform duration-300 md:block ${on ? 'scale-y-100' : 'scale-y-0'}`}
+                    className={`absolute left-3 top-6 hidden h-[calc(100%-3rem)] w-1.5 origin-top rounded-full bg-accent transition-transform duration-300 md:block ${on ? 'scale-y-100' : 'scale-y-0'}`}
                   />
                   <h3 className="text-h2">{s.name}</h3>
                   <p className="max-w-[56ch]">{s.summary}</p>

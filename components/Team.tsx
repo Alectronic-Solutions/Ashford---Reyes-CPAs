@@ -39,7 +39,7 @@ export function Team({ variant = 'home' }: { variant?: 'home' | 'page' }) {
         {shown.map((person, i) => (
           <Rise as="li" key={person.name} className={i % 2 === 1 ? 'md:mt-16' : ''}>
             <Tilt max={7}>
-              <Link prefetch={false} href={`/team/${person.slug}`} tabIndex={-1} aria-hidden="true" className="relative block aspect-[4/5] overflow-hidden bg-surface">
+              <Link prefetch={false} href={`/team/${person.slug}`} tabIndex={-1} aria-hidden="true" className="relative block aspect-[4/5] overflow-hidden rounded-2xl bg-surface shadow-rest">
                 <Image
                   src={person.src}
                   alt=""

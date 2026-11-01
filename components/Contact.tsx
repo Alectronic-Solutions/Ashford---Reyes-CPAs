@@ -20,7 +20,7 @@ const stepNames = ['Who you are', 'What you need', 'When and how', 'Your details
 type Errors = Partial<Record<'type' | 'needs' | 'timing' | 'reach' | 'name' | 'email' | 'phone', string>>;
 
 const field =
-  'mt-2 block w-full border border-ink/60 bg-bg px-4 py-3.5 text-body text-ink placeholder:text-ink/70';
+  'mt-2 block w-full rounded-xl border border-ink/60 bg-bg px-4 py-3.5 text-body text-ink shadow-well placeholder:text-ink/70';
 const label = 'block text-small font-medium';
 const errorText = 'mt-2 text-small font-medium text-accent';
 const contactLink = 'inline-block py-2.5 underline underline-offset-4 hover:no-underline';
@@ -42,7 +42,7 @@ function Choice({
 }) {
   return (
     <label
-      className={`flex min-h-14 cursor-pointer items-center gap-3 px-4 py-3 font-medium transition-colors duration-200 has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ink ${
+      className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-xl px-4 py-3 shadow-rest font-medium transition-colors duration-200 has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ink ${
         checked ? 'bg-ink text-bg' : 'bg-surface hover:bg-ink/15'
       }`}
     >
@@ -292,7 +292,7 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40"
+      className="slab scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40"
     >
       <RiseGroup className="mx-auto grid max-w-[90rem] gap-12 md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-8 md:gap-y-12">
         <Rise className="md:col-span-5 md:col-start-1 md:row-start-1" mask>
@@ -334,7 +334,7 @@ export function Contact() {
             method="POST"
             noValidate
             onSubmit={onSubmit}
-            className="bg-bg p-6 shadow-lift md:p-10"
+            className="rounded-3xl bg-bg p-6 shadow-lift md:p-10"
           >
             <input type="hidden" name="_subject" value="New consultation request" />
             <input type="hidden" name="_captcha" value="false" />
@@ -383,7 +383,7 @@ export function Contact() {
                     <button
                       type="button"
                       onClick={() => go(step - 1)}
-                      className="inline-flex items-center px-5 py-4 font-medium underline underline-offset-4 hover:no-underline"
+                      className="inline-flex items-center rounded-xl px-5 py-4 font-medium underline underline-offset-4 hover:no-underline"
                     >
                       Back
                     </button>

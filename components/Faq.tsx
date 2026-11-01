@@ -65,7 +65,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
                 </Rise>
               </>
             ) : (
-              <Rise className="relative aspect-[4/3] md:aspect-[4/5]">
+              <Rise className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-lift md:aspect-[4/5]">
                 <Image
                   src="/photos/hero-end.jpg"
                   alt="A W-9 and a 1040 form lying on a desk"
@@ -82,12 +82,12 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
           <Rise>
             <div className="grid gap-1.5">
               {shown.map((item) => (
-                <details key={item.q} className="group bg-surface">
+                <details key={item.q} className="group rounded-2xl bg-surface shadow-rest">
                   <summary className="flex min-h-[44px] cursor-pointer list-none items-start justify-between gap-6 px-5 py-5 font-display text-h3 font-semibold [&::-webkit-details-marker]:hidden">
                     <span>{item.q}</span>
                     <span aria-hidden="true" className="relative mt-2 h-4 w-4 shrink-0">
-                      <span className="absolute left-0 top-1/2 h-0.5 w-4 -translate-y-1/2 bg-accent" />
-                      <span className="absolute left-1/2 top-0 h-4 w-0.5 -translate-x-1/2 bg-accent group-open:hidden" />
+                      <span className="absolute left-0 top-1/2 h-0.5 w-4 -translate-y-1/2 rounded-full bg-accent" />
+                      <span className="absolute left-1/2 top-0 h-4 w-0.5 -translate-x-1/2 rounded-full bg-accent group-open:hidden" />
                     </span>
                   </summary>
                   <p className="max-w-[56ch] px-5 pb-7 pr-10">{item.a}</p>

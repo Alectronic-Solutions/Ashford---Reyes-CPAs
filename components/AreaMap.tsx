@@ -1,47 +1,25 @@
 import { contactInfo } from '@/lib/site';
 import { Tilt } from './Depth';
+import { mapPaths as m, mapPlaces as at } from './areaMapData';
 
 /*
-  A drawn road map of the area the firm serves, laid out from real positions at about 28px to a
-  mile. It reads like a plain road map: pale land, a few farmland areas, county roads, the
-  Mokelumne River and Lodi Lake, towns as grey built-up areas, and Interstate 5 and Highways 99 and
-  12 in amber. It shows no office: the firm meets clients across the county. Drawn rather than
-  embedded, so the page loads nothing from a map service and tracks no one.
+  A road map of the area the firm serves, drawn from OpenStreetMap data (see areaMapData.ts) at
+  about 28px to a mile, so the towns, highways, river and built-up areas sit where they really are.
+  It shows no office: the firm meets clients across the county. Drawn rather than embedded, so the
+  page loads nothing from a map service and tracks no one.
 */
-const river = 'M600 226 C540 232 500 236 450 244 S400 256 360 260 S290 268 250 271 S198 270 170 266 S130 278 110 292 S70 318 40 336 S15 352 0 362';
-
-const urban = {
-  Lodi: 'M166 290 C180 284 200 283 224 284 C246 285 258 292 264 308 C268 326 262 344 248 352 C228 358 200 356 182 348 C168 340 160 322 160 308 C160 300 162 294 166 290 Z',
-  Galt: 'M148 66 L180 64 L184 90 L152 94 Z',
-  Acampo: 'M226 184 L246 184 L246 200 L226 200 Z',
-  Woodbridge: 'M154 246 L178 244 L180 261 L156 263 Z',
-  Victor: 'M351 270 L373 268 L374 288 L352 289 Z',
-  Lockeford: 'M386 226 L409 224 L410 243 L387 244 Z',
-  Clements: 'M486 184 L505 183 L506 201 L487 202 Z',
-};
-
-const places: { name: string; x: number; y: number; anchor?: 'start' | 'middle' | 'end' }[] = [
-  { name: 'Galt', x: 196, y: 84 },
-  { name: 'Acampo', x: 254, y: 196 },
-  { name: 'Woodbridge', x: 167, y: 236, anchor: 'middle' },
-  { name: 'Victor', x: 362, y: 310, anchor: 'middle' },
-  { name: 'Lockeford', x: 398, y: 214, anchor: 'middle' },
-  { name: 'Clements', x: 496, y: 174, anchor: 'middle' },
-];
-
-const highways = [
-  'M96 0 C100 90 104 150 112 220 S124 340 142 440',
-  'M168 0 C176 56 200 130 238 192 S226 262 214 306 S192 392 184 440',
-  'M0 346 C60 322 110 320 150 312 L214 306 C270 302 310 300 362 282 S440 232 495 198 S560 186 600 184',
+const places: { name: keyof typeof at; dx: number; dy: number; anchor?: 'start' | 'middle' | 'end' }[] = [
+  { name: 'Galt', dx: -9, dy: 4, anchor: 'end' },
+  { name: 'Acampo', dx: 9, dy: 4 },
+  { name: 'Woodbridge', dx: -9, dy: 4, anchor: 'end' },
+  { name: 'Victor', dx: 0, dy: 22, anchor: 'middle' },
+  { name: 'Lockeford', dx: 10, dy: 22 },
+  { name: 'Clements', dx: 0, dy: -11, anchor: 'middle' },
 ];
 
 const font = 'var(--font-figtree), system-ui, sans-serif';
 const halo = { paintOrder: 'stroke' as const, stroke: '#F4F5EE', strokeWidth: 3.5, strokeLinejoin: 'round' as const };
-
-/** County roads on a two-mile grid, the way a road map shows farm country. */
-const gridX = Array.from({ length: 11 }, (_, i) => 28 + i * 56);
-const gridY = Array.from({ length: 8 }, (_, i) => 20 + i * 56);
-const grid = [...gridX.map((x) => `M${x} 0V440`), ...gridY.map((y) => `M0 ${y}H600`)].join('');
+const water = '#93C3D0';
 
 function Shield({ x, y, label, interstate = false }: { x: number; y: number; label: string; interstate?: boolean }) {
   return (
@@ -57,106 +35,94 @@ function Shield({ x, y, label, interstate = false }: { x: number; y: number; lab
 
 export function AreaMap() {
   const labelClass = 'text-[13px] max-md:text-[16px]';
+  const lodi = at.Lodi;
 
   return (
     <figure>
       <Tilt max={3}>
-        <div className="overflow-hidden border border-ink/40 bg-bg shadow-lift">
+        <div className="overflow-hidden rounded-3xl border border-ink/40 bg-bg shadow-lift">
           <svg viewBox="0 0 600 440" role="img" aria-labelledby="area-title area-desc" className="block h-auto w-full">
             <title id="area-title">The area we serve</title>
             <desc id="area-desc">
-              A map of the Lodi area: Lodi in the middle, Galt and Acampo to the north, Woodbridge to the northwest,
+              A map of the Lodi area: Lodi in the middle, Acampo and Galt to the north, Woodbridge to the northwest,
               Victor, Lockeford and Clements to the east, and Stockton twelve miles to the south, with the Mokelumne
-              River, Interstate 5 and Highways 99 and 12.
+              River, Interstate 5 and Highways 99, 12 and 88.
             </desc>
             <defs>
-              <pattern id="vines" width="5" height="5" patternUnits="userSpaceOnUse">
-                <path d="M0 2.5H5" stroke="#B7CC9C" strokeWidth="1.1" />
-              </pattern>
-              <pattern id="streets" width="6" height="6" patternUnits="userSpaceOnUse">
-                <path d="M0 0H6M0 0V6" stroke="#D2CCBB" strokeWidth="0.9" />
-              </pattern>
               <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
                 <stop offset="0.65" stopColor="#15201B" stopOpacity="0" />
                 <stop offset="1" stopColor="#15201B" stopOpacity="0.12" />
               </radialGradient>
-              <path id="river-label" d="M256 262 C290 260 330 254 370 248" />
             </defs>
 
             <rect width="600" height="440" fill="#F1F0E7" />
+            <path d={m.orchard} fill="#E4ECD2" />
+            <path d={m.vineyard} fill="#D8E5C3" />
 
-            {/* Farmland: the Lodi vineyards, and orchard country to the north. */}
-            <path d="M120 236 C200 214 330 206 450 236 C510 252 540 300 500 352 C440 410 300 414 210 400 C140 388 100 330 120 236 Z" fill="#E2EAD2" />
-            <path d="M120 236 C200 214 330 206 450 236 C510 252 540 300 500 352 C440 410 300 414 210 400 C140 388 100 330 120 236 Z" fill="url(#vines)" />
-            <path d="M120 20 C220 8 340 24 380 70 C400 110 340 150 250 150 C170 150 110 110 120 20 Z" fill="#E6EDD8" />
-            <path d="M440 70 C500 56 570 72 580 110 C586 150 520 160 470 148 C430 136 420 90 440 70 Z" fill="#E6EDD8" />
-
-            {/* County roads. */}
-            <path d={grid} stroke="#CFCCBC" strokeWidth="3.4" fill="none" />
-            <path d={grid} stroke="#FFFFFF" strokeWidth="2" fill="none" />
-
-            {/* The Mokelumne River with a side channel, and Lodi Lake. */}
-            <g fill="none" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M78 312 C54 324 28 318 0 322" stroke="#9CC7D3" strokeWidth="4" />
-              <path d={river} stroke="#9CC7D3" strokeWidth="6.5" />
+            {/* Water. */}
+            <g fill="none" strokeLinecap="round" strokeLinejoin="round" stroke={water}>
+              <path d={m.cosumnes} strokeWidth="4" />
+              <path d={m.creek} strokeWidth="2" />
+              <path d={m.slough} strokeWidth="3" />
+              <path d={m.river} strokeWidth="4.5" />
             </g>
-            <path
-              d="M188 273 C192 266 204 264 216 266 C226 268 228 276 220 281 C210 285 194 284 188 273 Z"
-              fill="#9CC7D3"
-            />
+            <path d={m.riverArea} fill={water} stroke={water} strokeWidth="1" />
+            <path d={m.lake} fill={water} stroke={water} strokeWidth="1" />
 
-            {/* Towns. */}
-            {Object.entries(urban).map(([name, d]) => (
-              <g key={name}>
-                <path d={d} fill="#E3DFD2" stroke="#CBC4B1" strokeWidth="1.5" strokeLinejoin="round" />
-                <path d={d} fill="url(#streets)" />
-              </g>
-            ))}
+            {/* Built-up areas. */}
+            <path d={m.urban} fill="#E2DED1" stroke="#CBC4B1" strokeWidth="0.8" strokeLinejoin="round" />
 
-            {/* Highways: a dark casing under an amber line, as road maps draw them. */}
+            {/* Streets and county roads. */}
+            <path d={m.streets} fill="none" stroke="#FFFFFF" strokeWidth="1.1" strokeLinecap="round" strokeLinejoin="round" />
+            <path d={m.roads} fill="none" stroke="#D3CFBF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <path d={m.roads} fill="none" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+
+            {/* State routes in amber over a darker casing. */}
+            <path d={m.minor} fill="none" stroke="#CFCCBC" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d={m.minor} fill="none" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
             <g fill="none" strokeLinecap="round" strokeLinejoin="round">
-              {highways.map((d) => (
-                <g key={d}>
-                  <path d={d} stroke="#B07F25" strokeWidth="7" />
-                  <path d={d} stroke="#F8C957" strokeWidth="4.6" />
+              {[m.h88, m.h12, m.h99, m.i5].map((d, i) => (
+                <g key={i}>
+                  <path d={d} stroke="#B07F25" strokeWidth="6.4" />
+                  <path d={d} stroke="#F8C957" strokeWidth="4" />
                 </g>
               ))}
             </g>
-            <Shield x={100} y={50} label="5" interstate />
-            <Shield x={130} y={372} label="5" interstate />
-            <Shield x={184} y={118} label="99" />
-            <Shield x={204} y={392} label="99" />
-            <Shield x={440} y={226} label="12" />
-            <Shield x={62} y={334} label="12" />
+            <Shield x={50} y={378} label="5" interstate />
+            <Shield x={190} y={76} label="99" />
+            <Shield x={233} y={410} label="99" />
+            <Shield x={36} y={321} label="12" />
+            <Shield x={553} y={160} label="12" />
+            <Shield x={520} y={147} label="88" />
 
-            {/* Labels. */}
+            {/* Towns and labels. */}
             <g fontFamily={font} fontWeight="600" fill="#15201B" className={labelClass} {...halo}>
               {places.map((p) => (
-                <text key={p.name} x={p.x} y={p.y} textAnchor={p.anchor ?? 'start'}>
-                  {p.name}
-                </text>
+                <g key={p.name}>
+                  <circle cx={at[p.name][0]} cy={at[p.name][1]} r="3.6" fill="#15201B" stroke="#FFFFFF" strokeWidth="1.5" />
+                  <text x={at[p.name][0] + p.dx} y={at[p.name][1] + p.dy} textAnchor={p.anchor ?? 'start'}>
+                    {p.name}
+                  </text>
+                </g>
               ))}
             </g>
-            <text fontFamily={font} fontWeight="600" fontStyle="italic" fill="#3B7585" className="text-[12px] max-md:text-[15px]" {...halo}>
-              <textPath href="#river-label">Mokelumne River</textPath>
+            <text x="305" y="246" textAnchor="middle" transform="rotate(-4 305 246)" fontFamily={font} fontWeight="600" fontStyle="italic" fill="#3B7585" className="text-[12px] max-md:text-[15px]" {...halo}>
+              Mokelumne River
             </text>
-            <text x="184" y="288" textAnchor="end" fontFamily={font} fontWeight="600" fontStyle="italic" fill="#3B7585" className="text-[10px] max-md:text-[13px]" {...halo}>
-              Lodi Lake
-            </text>
-            <text x="352" y="372" textAnchor="middle" fontFamily={font} fontWeight="600" fill="#5C7A44" letterSpacing="2.5" className="text-[11px] max-md:text-[14px]" {...halo}>
+            <text x="350" y="338" textAnchor="middle" fontFamily={font} fontWeight="600" fill="#5C7A44" letterSpacing="2.5" className="text-[11px] max-md:text-[14px]" {...halo}>
               LODI WINE COUNTRY
             </text>
 
             {/* Lodi: the accent pin. */}
-            <ellipse cx="212" cy="334" rx="11" ry="3.5" fill="#15201B" opacity="0.22" />
-            <circle cx="212" cy="326" r="11" fill="#7A1F34" stroke="#FFFFFF" strokeWidth="3" />
-            <circle cx="212" cy="326" r="3.6" fill="#FFFFFF" />
-            <text x="230" y="336" fill="#15201B" fontFamily="var(--font-fraunces), Georgia, serif" fontWeight="700" className="text-[22px] max-md:text-[28px]" {...halo}>
+            <ellipse cx={lodi[0]} cy={lodi[1] + 8} rx="11" ry="3.5" fill="#15201B" opacity="0.22" />
+            <circle cx={lodi[0]} cy={lodi[1]} r="11" fill="#7A1F34" stroke="#FFFFFF" strokeWidth="3" />
+            <circle cx={lodi[0]} cy={lodi[1]} r="3.6" fill="#FFFFFF" />
+            <text x={lodi[0] - 16} y={lodi[1] + 28} textAnchor="end" fill="#15201B" fontFamily="var(--font-fraunces), Georgia, serif" fontWeight="700" className="text-[22px] max-md:text-[28px]" {...halo}>
               Lodi
             </text>
 
             {/* The way south. */}
-            <text x="226" y="428" fontFamily={font} fontWeight="600" fill="#15201B" className="text-[12px] max-md:text-[15px]" {...halo}>
+            <text x="248" y="430" fontFamily={font} fontWeight="600" fill="#15201B" className="text-[12px] max-md:text-[15px]" {...halo}>
               South to Stockton, 12 mi
             </text>
 
@@ -180,7 +146,9 @@ export function AreaMap() {
           </svg>
         </div>
       </Tilt>
-      <figcaption className="mt-4 max-w-[52ch] text-small">We serve {contactInfo.area}.</figcaption>
+      <figcaption className="mt-4 max-w-[52ch] text-small">
+        We serve {contactInfo.area}. Map data from OpenStreetMap contributors.
+      </figcaption>
     </figure>
   );
 }

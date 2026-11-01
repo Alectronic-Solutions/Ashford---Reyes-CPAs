@@ -41,7 +41,7 @@ export function WhoWeServe() {
           className="h-[52svh] md:h-[72svh]"
         />
         <RiseGroup>
-          <div className="relative -mt-20 bg-delta p-6 text-bg shadow-lift md:-mt-48 md:ml-[8.3333%] md:w-7/12 md:p-12">
+          <div className="relative -mt-20 rounded-3xl bg-delta p-6 text-bg shadow-lift md:-mt-48 md:ml-[8.3333%] md:w-7/12 md:p-12">
             <Rise>
               <h3 className={subhead}>Farms and wineries</h3>
             </Rise>
@@ -97,7 +97,7 @@ export function WhoWeServe() {
               <ul className="mt-8 grid max-w-[48ch] gap-3">
                 {businessNeeds.map((need) => (
                   <li key={need} className="flex items-baseline gap-4 font-medium">
-                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 translate-y-[-1px] bg-accent" />
+                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 translate-y-[-1px] rounded-full bg-accent" />
                     {need}
                   </li>
                 ))}
@@ -115,8 +115,8 @@ export function WhoWeServe() {
       {/* Families: a smaller, quieter row, since a household does not need a campaign. */}
       <RiseGroup>
         <div className="mx-5 mt-20 md:mx-8 md:mt-40">
-          <Rise className="grid items-center gap-6 bg-surface p-6 md:grid-cols-12 md:gap-10 md:p-10">
-            <div className="relative aspect-[3/2] md:col-span-4 lg:col-span-3">
+          <Rise className="grid items-center gap-6 rounded-3xl bg-surface p-6 shadow-rest md:grid-cols-12 md:gap-10 md:p-10">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl md:col-span-4 lg:col-span-3">
               <Image
                 src="/photos/serve-family.jpg"
                 alt="Family and friends reaching across a wooden dinner table to raise their glasses"

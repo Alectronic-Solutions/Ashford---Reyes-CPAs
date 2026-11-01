@@ -47,7 +47,7 @@ export default function Page() {
       <section aria-label="Client tasks" className="mx-auto max-w-page px-5 pb-24 md:px-8 md:pb-32">
         <RiseGroup as="ul" className="grid gap-4 md:grid-cols-3 md:gap-8">
           {tasks.map((t) => (
-            <Rise as="li" key={t.id} className="flex flex-col bg-surface p-6 md:p-8">
+            <Rise as="li" key={t.id} className="flex flex-col rounded-2xl bg-surface p-6 shadow-rest md:p-8">
               <h2 id={t.id} className="scroll-mt-28 text-h3">
                 {t.title}
               </h2>

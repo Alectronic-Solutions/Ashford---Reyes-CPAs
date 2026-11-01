@@ -19,7 +19,7 @@ export default function Page() {
       <section aria-label="Credits" className="mx-auto max-w-page px-5 pb-24 md:px-8 md:pb-40">
         <ul className="grid gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
           {credits.map((c) => (
-            <li key={c.what} className="border-l-4 border-accent pl-5">
+            <li key={c.what} className="rounded-lg border-l-4 border-accent pl-5">
               <p className="font-medium">{c.what}</p>
               <p className="mt-1">
                 <a href={c.url} className="underline underline-offset-4 hover:no-underline">

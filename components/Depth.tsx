@@ -68,7 +68,7 @@ export function Tilt({
       onPointerLeave={onLeave}
     >
       <motion.div
-        className={`h-full transition-shadow duration-300 [transform-style:preserve-3d] ${lifted ? 'shadow-lift' : ''}`}
+        className={`h-full rounded-2xl transition-shadow duration-300 [transform-style:preserve-3d] ${lifted ? 'shadow-lift' : ''}`}
         style={pointer ? { rotateX: rx, rotateY: ry, z } : undefined}
       >
         {children}
@@ -106,7 +106,7 @@ export function DepthPhoto({
   return (
     <div ref={ref} className={`[perspective:1400px] ${className ?? ''}`}>
       <motion.div
-        className="relative h-full w-full origin-bottom overflow-hidden"
+        className="relative h-full w-full origin-bottom overflow-hidden rounded-2xl shadow-rest"
         style={scroll ? { rotateX, scale } : undefined}
         // The picture also wipes open from the bottom the first time it scrolls in, on every screen size.
         initial={reduced || priority ? false : { clipPath: 'inset(100% 0% 0% 0%)' }}

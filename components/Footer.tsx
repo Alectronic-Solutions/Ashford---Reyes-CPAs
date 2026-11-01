@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { contactInfo } from '@/lib/site';
 import { buttonClass } from './Button';
+import { Logo } from './Logo';
 import { navGroups, navLinks, utilityLinks } from './navLinks';
 import { NewsletterForm } from './NewsletterForm';
 
@@ -25,7 +26,7 @@ const plainLink = 'underline decoration-bg/40 underline-offset-4 transition-colo
 
 export function Footer() {
   return (
-    <footer className="bg-ink text-bg">
+    <footer className="slab overflow-hidden bg-ink text-bg">
       {/* The close: one last, plain ask before the details. */}
       <div className="mx-auto max-w-[90rem] px-5 pb-16 pt-20 md:px-8 md:pb-24 md:pt-32">
         <h2 className="text-h2 lg:text-display">Talk to us before December&nbsp;31.</h2>
@@ -45,10 +46,12 @@ export function Footer() {
       </div>
 
       <div className="mx-auto max-w-[90rem] px-5 md:px-8">
-        <div className="grid gap-12 bg-bg/[0.06] p-6 md:p-10 lg:grid-cols-12 lg:gap-8">
+        <div className="grid gap-12 rounded-3xl bg-bg/[0.06] p-6 md:p-10 lg:grid-cols-12 lg:gap-8">
           {/* The firm, where it works, and how to reach it. */}
           <div className="lg:col-span-4">
-            <p className="font-display text-h3 font-semibold">Ashford and Reyes CPAs</p>
+            <Link href="/" aria-label="Ashford and Reyes CPAs, home" className="inline-block">
+              <Logo light size="lg" />
+            </Link>
             <p className="mt-3 max-w-[36ch] text-bg/85">
               Tax, bookkeeping, advisory and succession planning for farms, wineries, businesses and families.
             </p>
@@ -98,7 +101,7 @@ export function Footer() {
             </div>
             <div className="grid gap-2 md:hidden">
               {columns.map((c) => (
-                <details key={c.title} className="group bg-bg/[0.06]">
+                <details key={c.title} className="group rounded-2xl bg-bg/[0.06]">
                   <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between px-4 font-medium [&::-webkit-details-marker]:hidden">
                     {c.title}
                     <svg

@@ -60,12 +60,12 @@ export function NewsletterForm() {
             required
             aria-invalid={error ? true : undefined}
             aria-describedby={error ? 'newsletter-help newsletter-error' : 'newsletter-help'}
-            className="min-h-14 min-w-0 flex-1 basis-56 border border-bg/60 bg-transparent px-4 py-3 text-bg placeholder:text-bg/70"
+            className="min-h-14 min-w-0 flex-1 basis-56 rounded-xl border border-bg/60 bg-transparent px-4 py-3 text-bg placeholder:text-bg/70"
             placeholder="you@example.com"
           />
           <button
             type="submit"
-            className="min-h-14 bg-bg px-7 py-3 font-medium text-ink transition duration-200 hover:bg-surface active:translate-y-px"
+            className="min-h-14 rounded-xl bg-bg px-7 py-3 font-medium text-ink shadow-key transition duration-200 hover:bg-surface active:translate-y-px"
           >
             Sign up
           </button>

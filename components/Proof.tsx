@@ -10,7 +10,7 @@ import { industry } from '@/lib/industries';
 /** The firm in four figures, set large on ink straight after the hero. */
 export function ProofStrip() {
   return (
-    <section aria-labelledby="proof-title" className="bg-ink px-5 py-20 text-bg md:px-8 md:py-28">
+    <section aria-labelledby="proof-title" className="slab bg-ink px-5 py-20 text-bg md:px-8 md:py-28">
       <div className="mx-auto max-w-[90rem]">
         <h2 id="proof-title" className="sr-only">
           The firm in numbers
@@ -27,7 +27,7 @@ export function ProofStrip() {
           ))}
         </RiseGroup>
         <RiseGroup>
-          <Rise className="mt-16 grid gap-8 bg-bg/10 p-6 md:mt-24 md:grid-cols-12 md:items-center md:gap-8 md:p-8">
+          <Rise className="mt-16 grid gap-8 rounded-3xl bg-bg/10 p-6 md:mt-24 md:grid-cols-12 md:items-center md:gap-8 md:p-8">
             <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-5 md:col-span-4">
               <span className="font-display text-h2 font-semibold">{rating.score}</span>
               <span>
@@ -65,7 +65,7 @@ export function Stories({
   const [lead, ...rest] = stories;
 
   return (
-    <section aria-labelledby="stories-title" className="bg-accent px-5 py-24 text-bg md:px-8 md:py-40">
+    <section aria-labelledby="stories-title" className="slab bg-accent px-5 py-24 text-bg md:px-8 md:py-40">
       <div className="mx-auto max-w-[90rem]">
         <RiseGroup>
           <div className="grid gap-8 md:grid-cols-12 md:gap-8">
@@ -83,7 +83,7 @@ export function Stories({
 
         <RiseGroup className="mt-12 grid gap-12 md:mt-20 md:gap-8 lg:grid-cols-12">
           <Tilt max={4} className={rest.length ? 'lg:col-span-7' : 'lg:col-span-12'}>
-            <Rise className="grid h-full bg-bg text-ink md:grid-cols-2">
+            <Rise className="grid h-full overflow-hidden rounded-3xl bg-bg text-ink shadow-lift md:grid-cols-2">
               <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[32rem]">
                 <Image
                   src={lead.photo.src}
@@ -117,7 +117,7 @@ export function Stories({
             <div className="grid gap-12 md:grid-cols-2 md:gap-8 lg:col-span-5 lg:grid-cols-1">
               {rest.map((s) => (
                 <Tilt key={s.title} max={5}>
-                  <Rise className="flex h-full flex-col bg-ink p-6 text-bg md:p-8">
+                  <Rise className="flex h-full flex-col rounded-3xl bg-ink p-6 text-bg shadow-lift md:p-8">
                     <CountUp value={s.result} className="block font-display text-h2 font-semibold" />
                     <p className="mt-2 max-w-[30ch] font-medium">{s.resultLabel}</p>
                     <h3 className="mt-6 text-h3">{s.title}</h3>
@@ -146,7 +146,7 @@ export function Stories({
 export function Testimonials({ quotes }: { quotes: Testimonial[] }) {
   const [lead, ...rest] = quotes;
   return (
-    <section aria-labelledby="quotes-title" className="bg-ink px-5 py-24 text-bg md:px-8 md:py-40">
+    <section aria-labelledby="quotes-title" className="slab bg-ink px-5 py-24 text-bg md:px-8 md:py-40">
       <div className="mx-auto max-w-[90rem]">
         <RiseGroup>
           <div className="grid gap-8 md:grid-cols-12 md:gap-8">
@@ -182,7 +182,7 @@ export function Testimonials({ quotes }: { quotes: Testimonial[] }) {
           <RiseGroup as="ul" className="mt-16 grid gap-4 md:mt-24 md:grid-cols-3 md:gap-8">
             {rest.map((t) => (
               <Tilt as="li" key={t.name} max={5}>
-                <figure className="flex h-full flex-col bg-bg/10 p-6 md:p-8">
+                <figure className="flex h-full flex-col rounded-2xl bg-bg/10 p-6 shadow-rest md:p-8">
                   <Stars />
                   <blockquote className="mt-5 max-w-[40ch]">
                     <p>“{t.quote}”</p>

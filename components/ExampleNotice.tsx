@@ -30,7 +30,7 @@ export const ExampleNotice = forwardRef<ExampleNoticeHandle, { onClose?: () => v
         // A click on the backdrop lands on the dialog element itself.
         if (event.target === dialog.current) dialog.current.close();
       }}
-      className="m-auto w-[calc(100%-2.5rem)] max-w-lg bg-bg p-0 text-ink backdrop:bg-ink/70"
+      className="m-auto w-[calc(100%-2.5rem)] max-w-lg overflow-hidden rounded-3xl bg-bg p-0 text-ink shadow-lift backdrop:bg-ink/70"
     >
       <div className="p-6 md:p-10">
         <h2 id={titleId} className="font-display text-h3">

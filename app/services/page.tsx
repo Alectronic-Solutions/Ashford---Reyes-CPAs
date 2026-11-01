@@ -32,7 +32,7 @@ export default function Page() {
               className="grid gap-6 md:grid-cols-12 md:items-center md:gap-8"
             >
               <Tilt max={5} className="md:col-span-5">
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-rest">
                   <Image src={s.photo.src} alt={s.photo.alt} fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
                 </div>
               </Tilt>
@@ -46,7 +46,7 @@ export default function Page() {
                 <ul className="mt-6 grid max-w-[44rem] gap-x-8 gap-y-2 sm:grid-cols-2">
                   {s.included.map((item) => (
                     <li key={item.name} className="flex items-baseline gap-3">
-                      <span aria-hidden="true" className="h-2 w-2 shrink-0 translate-y-[-2px] bg-accent" />
+                      <span aria-hidden="true" className="h-2 w-2 shrink-0 translate-y-[-2px] rounded-full bg-accent" />
                       {item.name}
                     </li>
                   ))}

@@ -71,7 +71,7 @@ function Sheet({
       style={{ top: `calc(var(--header-h) + 2rem + ${index * 1.75}rem)` }}
     >
       <motion.div
-        className={`grid origin-top gap-6 p-6 shadow-lift md:min-h-[22rem] md:gap-8 md:p-12 lg:grid-cols-12 ${tones[index]}`}
+        className={`grid origin-top gap-6 rounded-3xl p-6 shadow-lift md:min-h-[22rem] md:gap-8 md:p-12 lg:grid-cols-12 ${tones[index]}`}
         style={depth ? { scale, rotateX } : undefined}
       >
         <h3 className="text-h2 lg:col-span-5">{step.title}</h3>

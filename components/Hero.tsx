@@ -35,7 +35,7 @@ function NextDate({ buildToday }: { buildToday: Ymd }) {
   const [next] = nextDeadlines('business', today, 1);
   if (!next) return null;
   return (
-    <div className="bg-bg p-6 text-ink shadow-lift md:p-7">
+    <div className="rounded-3xl bg-bg p-6 text-ink shadow-lift md:p-7">
       <p className="font-display text-h2 font-semibold">
         {monthName(next.date.m)} {next.date.d}
       </p>
@@ -119,7 +119,7 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
       ref={sectionRef}
       aria-labelledby="hero-title"
       onPointerMove={onPointerMove}
-      className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ink px-5 pb-10 pt-28 md:min-h-[calc(100svh-var(--chrome-h))] md:px-8 md:pb-12 md:pt-24 xl:pb-14"
+      className="slab relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ink px-5 pb-10 pt-28 md:min-h-[calc(100svh-var(--chrome-h))] md:px-8 md:pb-12 md:pt-24 xl:pb-14"
     >
       <motion.div
         className="hero-grade absolute -inset-[4%] -z-20"
@@ -174,7 +174,7 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
           type="button"
           onClick={toggle}
           aria-label={label}
-          className={`absolute right-5 top-5 z-10 flex h-12 min-w-12 items-center justify-center gap-2 bg-ink/80 text-bg transition duration-200 hover:bg-ink md:right-8 md:top-8 ${status === 'ended' ? 'px-4' : ''}`}
+          className={`absolute right-5 top-5 z-10 flex h-12 min-w-12 items-center justify-center gap-2 rounded-xl bg-ink/80 text-bg shadow-key transition duration-200 hover:bg-ink md:right-8 md:top-8 ${status === 'ended' ? 'px-4' : ''}`}
         >
           {status === 'playing' ? (
             <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" fill="currentColor">

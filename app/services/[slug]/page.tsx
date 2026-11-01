@@ -55,7 +55,7 @@ export default function Page({ params }: Props) {
           </RiseGroup>
           <RiseGroup as="ul" className="grid gap-10 md:col-span-7 md:gap-12 lg:grid-cols-2 lg:gap-x-8">
             {s.included.map((item) => (
-              <Rise as="li" key={item.name} className="border-l-4 border-accent pl-5">
+              <Rise as="li" key={item.name} className="rounded-lg border-l-4 border-accent pl-5">
                 <h3 className="font-display text-h3">
                   {item.name}
                 </h3>
@@ -66,7 +66,7 @@ export default function Page({ params }: Props) {
         </div>
       </section>
 
-      <section aria-labelledby="for-whom-title" className="bg-surface px-5 py-24 md:px-8 md:py-32">
+      <section aria-labelledby="for-whom-title" className="slab bg-surface px-5 py-24 md:px-8 md:py-32">
         <div className="mx-auto max-w-[90rem]">
           <RiseGroup>
             <Rise mask>
@@ -78,7 +78,7 @@ export default function Page({ params }: Props) {
           <RiseGroup as="ul" className="mt-10 grid gap-4 md:mt-14 md:grid-cols-3 md:gap-8">
             {forWhom.map((i) => (
               <Rise as="li" key={i.slug}>
-                <Link href={`/industries/${i.slug}`} className="group block h-full bg-bg">
+                <Link href={`/industries/${i.slug}`} className="group block h-full overflow-hidden rounded-2xl bg-bg shadow-rest">
                   <span className="relative block aspect-[3/2] overflow-hidden">
                     <Image
                       src={i.photo.src}

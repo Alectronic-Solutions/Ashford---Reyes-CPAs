@@ -38,7 +38,7 @@ export default function Page({ params }: Props) {
           <RiseGroup className="md:col-span-5">
             <Rise>
               <Tilt max={6}>
-                <div className="relative aspect-[4/5] overflow-hidden bg-surface">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-surface shadow-rest">
                   <Image
                     src={p.src}
                     alt={p.alt}
@@ -65,7 +65,7 @@ export default function Page({ params }: Props) {
               </Rise>
             ))}
             <Rise className="mt-10 grid gap-8 sm:grid-cols-2">
-              <div className="border-l-4 border-accent pl-5">
+              <div className="rounded-lg border-l-4 border-accent pl-5">
                 <h2 className="font-medium">Background</h2>
                 <ul className="mt-2 grid gap-1.5">
                   {p.background.map((b) => (
@@ -73,7 +73,7 @@ export default function Page({ params }: Props) {
                   ))}
                 </ul>
               </div>
-              <div className="border-l-4 border-delta pl-5">
+              <div className="rounded-lg border-l-4 border-delta pl-5">
                 <h2 className="font-medium">Outside the office</h2>
                 <p className="mt-2">{p.outside}</p>
               </div>
@@ -96,7 +96,7 @@ export default function Page({ params }: Props) {
         </div>
       </article>
 
-      <section aria-labelledby="others-title" className="bg-surface px-5 py-24 md:px-8 md:py-32">
+      <section aria-labelledby="others-title" className="slab bg-surface px-5 py-24 md:px-8 md:py-32">
         <div className="mx-auto max-w-[90rem]">
           <div className="flex flex-wrap items-baseline justify-between gap-4">
             <h2 id="others-title" className="text-h2">
@@ -110,7 +110,7 @@ export default function Page({ params }: Props) {
             {others.map((o) => (
               <li key={o.slug}>
                 <Tilt max={7}>
-                  <Link href={`/team/${o.slug}`} tabIndex={-1} aria-hidden="true" className="relative block aspect-[4/5] overflow-hidden">
+                  <Link href={`/team/${o.slug}`} tabIndex={-1} aria-hidden="true" className="relative block aspect-[4/5] overflow-hidden rounded-2xl shadow-rest">
                     <Image src={o.src} alt="" fill sizes="(min-width: 768px) 23vw, 50vw" className={`object-cover ${o.focus ?? ''}`} />
                   </Link>
                 </Tilt>

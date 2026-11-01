@@ -71,6 +71,19 @@
     text-wrap: pretty;
   }
 
+  /* Nothing on the site has a square corner: form controls, dialogs and media start round. */
+  input:not([type='checkbox']):not([type='radio']):not([type='hidden']),
+  select,
+  textarea,
+  button {
+    @apply rounded-xl;
+  }
+
+  dialog,
+  video {
+    @apply rounded-2xl;
+  }
+
   ::selection {
     @apply bg-accent text-bg;
   }
@@ -80,6 +93,16 @@
     outline: 2px solid #15201b;
     outline-offset: 3px;
     box-shadow: 0 0 0 3px #f3f5f0; /* taste-skill-ignore: focus state only */
+  }
+}
+
+/*
+  A full-width band set in from the screen edge as a rounded slab, so no section meets the viewport
+  with a square corner. Adjacent slabs share one gap, because vertical margins collapse.
+*/
+@layer components {
+  .slab {
+    @apply mx-3 my-3 rounded-3xl shadow-rest md:mx-5 md:my-5 md:rounded-[2rem];
   }
 }
 

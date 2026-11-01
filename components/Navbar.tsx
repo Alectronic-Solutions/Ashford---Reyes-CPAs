@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { contactInfo } from '@/lib/site';
 import { buttonClass, buttonCompactClass } from './Button';
+import { Logo } from './Logo';
 import { navGroups, navLinks, utilityLinks, type NavGroup } from './navLinks';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -16,7 +17,7 @@ const topLink =
 /** A thin strip above the header with the details existing clients come looking for. Desktop only. */
 function UtilityBar() {
   return (
-    <aside aria-label="Firm details" className="hidden bg-ink text-small text-bg xl:block">
+    <aside aria-label="Firm details" className="mx-5 hidden rounded-b-2xl bg-ink text-small text-bg xl:block">
       <div className="mx-auto flex max-w-page items-center justify-between gap-6 px-8 py-1.5">
         <p>
           Serving {contactInfo.area}. {contactInfo.hours}
@@ -52,7 +53,7 @@ function MenuPanel({ group, id }: { group: NavGroup; id: string }) {
       ref={box}
       id={id}
       aria-label={`${group.label} menu`}
-      className="absolute inset-x-0 top-full bg-bg shadow-lift"
+      className="absolute inset-x-0 top-full rounded-b-3xl bg-bg shadow-lift"
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
@@ -159,16 +160,13 @@ export function Navbar() {
   return (
     <>
       <UtilityBar />
-      <header ref={headerRef} className="sticky top-0 z-40 bg-bg">
+      <header ref={headerRef} className="sticky top-0 z-40 rounded-b-3xl bg-bg shadow-rest">
         <nav
           aria-label="Primary"
           className={`mx-auto flex max-w-page items-center justify-between gap-4 px-5 py-3.5 transition-[padding] duration-300 md:gap-6 md:px-8 md:py-4 ${scrolled ? 'xl:py-2.5' : 'xl:py-5'}`}
         >
-          <Link
-            href="/"
-            className="-my-2.5 whitespace-nowrap py-2.5 font-display text-statement font-semibold leading-tight tracking-tight"
-          >
-            Ashford and Reyes <span className="hidden min-[400px]:inline">CPAs</span>
+          <Link href="/" aria-label="Ashford and Reyes CPAs, home" className="-my-2.5 whitespace-nowrap py-2.5">
+            <Logo />
           </Link>
           <div className="flex shrink-0 items-center gap-3 xl:gap-6 2xl:gap-8">
             {navGroups.map((g) => {
@@ -227,10 +225,10 @@ export function Navbar() {
             >
               <span aria-hidden="true" className="relative block h-3.5 w-6">
                 <span
-                  className={`absolute left-0 h-0.5 w-6 bg-ink transition-transform duration-200 ${open ? 'top-1.5 rotate-45' : 'top-0'}`}
+                  className={`absolute left-0 h-0.5 w-6 rounded-full bg-ink transition-transform duration-200 ${open ? 'top-1.5 rotate-45' : 'top-0'}`}
                 />
                 <span
-                  className={`absolute left-0 h-0.5 w-6 bg-ink transition-transform duration-200 ${open ? 'top-1.5 -rotate-45' : 'top-3'}`}
+                  className={`absolute left-0 h-0.5 w-6 rounded-full bg-ink transition-transform duration-200 ${open ? 'top-1.5 -rotate-45' : 'top-3'}`}
                 />
               </span>
             </button>
@@ -248,7 +246,7 @@ export function Navbar() {
             <motion.nav
               id="mobile-menu"
               aria-label="Site menu"
-              className="fixed inset-x-0 bottom-0 top-[var(--header-h)] overflow-y-auto bg-bg px-5 pb-10 pt-6 md:px-8 xl:hidden"
+              className="fixed inset-x-0 bottom-0 top-[var(--header-h)] overflow-y-auto rounded-b-3xl bg-bg px-5 pb-10 pt-6 md:px-8 xl:hidden"
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -296,7 +294,7 @@ export function Navbar() {
                   </li>
                 ))}
               </ul>
-              <ul className="mt-8 flex flex-wrap gap-x-6 bg-surface px-4 py-2">
+              <ul className="mt-8 flex flex-wrap gap-x-6 rounded-xl bg-surface px-4 py-2">
                 <li>
                   <a href={contactInfo.phoneHref} className="inline-block py-3 font-medium underline underline-offset-4">
                     {contactInfo.phone}

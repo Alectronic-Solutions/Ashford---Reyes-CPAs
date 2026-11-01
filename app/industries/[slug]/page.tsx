@@ -53,7 +53,7 @@ export default function Page({ params }: Props) {
         </div>
       </section>
 
-      <section aria-labelledby="year-title" className="bg-delta px-5 py-24 text-bg md:px-8 md:py-32">
+      <section aria-labelledby="year-title" className="slab bg-delta px-5 py-24 text-bg md:px-8 md:py-32">
         <div className="mx-auto max-w-[90rem]">
           <RiseGroup>
             <div className="grid gap-8 md:grid-cols-12 md:gap-8">
@@ -72,7 +72,7 @@ export default function Page({ params }: Props) {
               <Rise
                 as="li"
                 key={y.when}
-                className="grid gap-4 bg-bg/10 p-6 md:grid-cols-12 md:gap-8 md:p-10"
+                className="grid gap-4 rounded-2xl bg-bg/10 p-6 md:grid-cols-12 md:gap-8 md:p-10"
               >
                 <h3 className="font-display text-h3 md:col-span-4">
                   {y.when}
@@ -99,7 +99,7 @@ export default function Page({ params }: Props) {
             {i.gallery.map((g, n) => (
               <Rise as="li" key={g.src} className={n % 2 === 1 ? 'md:mt-20' : ''}>
                 <Tilt max={6}>
-                  <div className="relative aspect-[3/4] overflow-hidden">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-rest">
                     <Image src={g.src} alt={g.alt} fill sizes="(min-width: 768px) 23vw, 50vw" className="object-cover" />
                   </div>
                 </Tilt>
@@ -140,7 +140,7 @@ export default function Page({ params }: Props) {
           </RiseGroup>
           <RiseGroup as="ul" className="grid gap-10 md:col-span-7 md:gap-12 lg:grid-cols-2 lg:gap-x-8">
             {i.help.map((h) => (
-              <Rise as="li" key={h.name} className="border-l-4 border-accent pl-5">
+              <Rise as="li" key={h.name} className="rounded-lg border-l-4 border-accent pl-5">
                 <h3 className="font-display text-h3">
                   {h.name}
                 </h3>

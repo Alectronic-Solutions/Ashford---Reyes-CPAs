@@ -134,7 +134,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
     <section
       id="year-ahead"
       aria-labelledby="year-ahead-title"
-      className="scroll-mt-24 overflow-hidden bg-delta px-5 pb-20 pt-24 text-bg md:px-8 md:pb-32 md:pt-40"
+      className="slab scroll-mt-24 overflow-hidden bg-delta px-5 pb-20 pt-24 text-bg md:px-8 md:pb-32 md:pt-40"
     >
       <RiseGroup className="mx-auto max-w-[90rem]">
         <div className="grid gap-8 md:grid-cols-12 md:gap-8">
@@ -166,7 +166,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
                   tabIndex={selected ? 0 : -1}
                   onClick={() => pickAudience(a.id)}
                   onKeyDown={(e) => onAudienceKey(e, i)}
-                  className={`min-h-12 px-5 py-3 font-medium transition-colors duration-200 active:translate-y-px ${
+                  className={`min-h-12 rounded-xl px-5 py-3 font-medium shadow-rest transition-colors duration-200 active:translate-y-px ${
                     selected ? 'bg-bg text-delta' : 'bg-bg/10 text-bg hover:bg-bg/20'
                   }`}
                 >
@@ -201,7 +201,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
                 key={name}
                 data-face
                 onClick={() => Date.now() - lastDrag.current > 250 && goToMonth(i + 1)}
-                className={`absolute top-[-5.5rem] ${away === 2 ? 'hidden lg:flex' : 'flex'} h-[11rem] w-[var(--face-w)] flex-col justify-between p-4 transition-[background-color,color,opacity] duration-300 [backface-visibility:hidden] md:top-[-8rem] md:h-[16rem] md:p-6 ${
+                className={`absolute top-[-5.5rem] ${away === 2 ? 'hidden lg:flex' : 'flex'} h-[11rem] w-[var(--face-w)] flex-col justify-between rounded-2xl p-4 transition-[background-color,color,opacity] duration-300 [backface-visibility:hidden] md:top-[-8rem] md:h-[16rem] md:p-6 ${
                   on ? 'bg-bg text-ink shadow-lift' : 'bg-delta-deep text-bg'
                 }`}
                 style={{
@@ -229,7 +229,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
               type="button"
               onClick={() => turnTo(turns - 1)}
               aria-label="Previous month"
-              className="flex h-12 w-12 items-center justify-center bg-bg text-delta transition hover:brightness-95 active:translate-y-px"
+              className="flex h-12 w-12 items-center justify-center rounded-xl bg-bg text-delta shadow-key transition hover:brightness-95 active:translate-y-px"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M11 3L5 9l6 6" />
@@ -239,7 +239,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
               type="button"
               onClick={() => turnTo(turns + 1)}
               aria-label="Next month"
-              className="flex h-12 w-12 items-center justify-center bg-bg text-delta transition hover:brightness-95 active:translate-y-px"
+              className="flex h-12 w-12 items-center justify-center rounded-xl bg-bg text-delta shadow-key transition hover:brightness-95 active:translate-y-px"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M7 3l6 6-6 6" />
@@ -266,7 +266,7 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
                   tabIndex={selected ? 0 : -1}
                   onClick={() => goToMonth(i + 1)}
                   onKeyDown={(e) => onMonthKey(e, i)}
-                  className={`min-h-12 min-w-12 px-2 font-medium transition-colors duration-200 ${
+                  className={`min-h-12 min-w-12 rounded-xl px-2 font-medium shadow-rest transition-colors duration-200 ${
                     selected ? 'bg-bg text-delta' : 'text-bg hover:bg-bg/15'
                   }`}
                 >
@@ -292,13 +292,13 @@ export function YearAheadPanel({ buildToday }: { buildToday: Ymd }) {
             </div>
             <div className="min-w-0 lg:col-span-7">
               {deadlines.length === 0 ? (
-                <p className="bg-bg/10 p-6 md:p-8">
+                <p className="rounded-2xl bg-bg/10 p-6 md:p-8">
                   No federal deadlines for a {who} in {monthNames[month - 1]}. A good month to get ahead of the next one.
                 </p>
               ) : (
                 <ol className="grid gap-4">
                   {deadlines.map((d) => (
-                    <li key={d.id} className="grid gap-4 bg-bg p-6 text-ink md:grid-cols-[9rem_1fr] md:gap-8 md:p-8">
+                    <li key={d.id} className="grid gap-4 rounded-2xl bg-bg p-6 text-ink shadow-rest md:grid-cols-[9rem_1fr] md:gap-8 md:p-8">
                       <div>
                         <time dateTime={iso(d.date)} className="block font-display text-h3 font-semibold">
                           {monthName(d.date.m)} {d.date.d}

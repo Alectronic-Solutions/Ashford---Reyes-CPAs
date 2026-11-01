@@ -25,7 +25,7 @@ export function ParallaxPhoto({
   const drifting = isDesktop === true && reduced === false;
 
   return (
-    <div ref={ref} className={`relative overflow-hidden ${className ?? ''}`}>
+    <div ref={ref} className={`relative overflow-hidden rounded-3xl ${className ?? ''}`}>
       {/* Taller than its frame, so the drift never uncovers an edge. */}
       <motion.div className="absolute inset-x-0 -top-[10%] h-[120%]" style={drifting ? { y } : undefined}>
         <Image src={src} alt={alt} fill sizes={sizes} className="object-cover" />

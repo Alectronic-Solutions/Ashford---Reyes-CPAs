@@ -23,7 +23,13 @@ const config: Config = {
       },
       boxShadow: {
         // Only for things that are lifted off the page in 3D: a tilted card, a stacked ledger sheet, a menu.
-        lift: '0 40px 80px -40px rgb(21 32 27 / 0.55), 0 12px 24px -12px rgb(21 32 27 / 0.25)',
+        lift: 'inset 0 1px 0 rgb(255 255 255 / 0.4), 0 2px 4px rgb(21 32 27 / 0.12), 0 14px 28px -8px rgb(21 32 27 / 0.3), 0 40px 80px -30px rgb(21 32 27 / 0.55)',
+        // Resting depth for cards, panels and photos: a lit top edge, a contact shadow and a soft ambient one.
+        rest: 'inset 0 1px 0 rgb(255 255 255 / 0.35), 0 1px 2px rgb(21 32 27 / 0.14), 0 8px 16px -6px rgb(21 32 27 / 0.22), 0 22px 36px -18px rgb(21 32 27 / 0.32)',
+        // Buttons: a raised key with a darker underside that sinks when pressed.
+        key: 'inset 0 1px 0 rgb(255 255 255 / 0.3), inset 0 -3px 0 rgb(0 0 0 / 0.2), 0 6px 14px -4px rgb(21 32 27 / 0.45)',
+        // Fields sit slightly recessed.
+        well: 'inset 0 2px 4px rgb(21 32 27 / 0.14)',
       },
       maxWidth: {
         // 1440px of content plus the 32px side gutters.

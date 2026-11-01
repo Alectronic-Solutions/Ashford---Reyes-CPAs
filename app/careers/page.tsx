@@ -78,7 +78,7 @@ export default function Page() {
           </RiseGroup>
           <RiseGroup as="ul" className="grid gap-10 md:col-span-7 lg:grid-cols-2 lg:gap-x-8">
             {reasons.map((r) => (
-              <Rise as="li" key={r.title} className="border-l-4 border-accent pl-5">
+              <Rise as="li" key={r.title} className="rounded-lg border-l-4 border-accent pl-5">
                 <h3 className="text-h3">{r.title}</h3>
                 <p className="mt-3 max-w-[44ch]">{r.text}</p>
               </Rise>
@@ -87,7 +87,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section aria-labelledby="roles-title" className="bg-ink px-5 py-24 text-bg md:px-8 md:py-40">
+      <section aria-labelledby="roles-title" className="slab bg-ink px-5 py-24 text-bg md:px-8 md:py-40">
         <div className="mx-auto max-w-[90rem]">
           <RiseGroup>
             <Rise mask>
@@ -99,14 +99,14 @@ export default function Page() {
           <RiseGroup as="ul" className="mt-12 grid gap-6 md:mt-20 lg:grid-cols-3 lg:gap-8">
             {roles.map((r) => (
               <Tilt as="li" key={r.title} max={4}>
-                <div className="flex h-full flex-col bg-bg p-6 text-ink md:p-8">
+                <div className="flex h-full flex-col rounded-2xl bg-bg p-6 text-ink shadow-rest md:p-8">
                   <h3 className="text-h3">{r.title}</h3>
                   <p className="mt-1 font-medium text-accent">{r.terms}</p>
                   <p className="mt-5">{r.text}</p>
                   <ul className="mt-5 grid gap-2">
                     {r.asks.map((a) => (
                       <li key={a} className="flex items-baseline gap-3">
-                        <span aria-hidden="true" className="h-2 w-2 shrink-0 translate-y-[-2px] bg-accent" />
+                        <span aria-hidden="true" className="h-2 w-2 shrink-0 translate-y-[-2px] rounded-full bg-accent" />
                         {a}
                       </li>
                     ))}

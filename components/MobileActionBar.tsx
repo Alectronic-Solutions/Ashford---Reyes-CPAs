@@ -67,7 +67,7 @@ export function MobileActionBar() {
         <motion.aside
           ref={bar}
           aria-label="Quick contact"
-          className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 gap-2 bg-ink p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
+          className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 gap-2 rounded-t-3xl bg-ink p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
           exit={{ y: '100%' }}
@@ -75,7 +75,7 @@ export function MobileActionBar() {
         >
           <a
             href={contactInfo.phoneHref}
-            className="flex min-h-12 items-center justify-center gap-2 bg-bg/10 font-medium text-bg active:translate-y-px"
+            className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-bg/10 shadow-key font-medium text-bg active:translate-y-px"
           >
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
               <path d="M4.5 1.5h3l1.5 4-2 1.5a9 9 0 0 0 4 4l1.5-2 4 1.5v3a1.5 1.5 0 0 1-1.5 1.5A13.5 13.5 0 0 1 3 3a1.5 1.5 0 0 1 1.5-1.5z" />
@@ -84,7 +84,7 @@ export function MobileActionBar() {
           </a>
           <Link
             href={bookHref}
-            className="flex min-h-12 items-center justify-center bg-accent font-medium text-bg active:translate-y-px"
+            className="flex min-h-12 items-center justify-center rounded-xl bg-accent shadow-key font-medium text-bg active:translate-y-px"
           >
             Book a consultation
           </Link>

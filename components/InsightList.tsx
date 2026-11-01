@@ -16,7 +16,7 @@ export function InsightCards({ items }: { items: Insight[] }) {
               href={`/insights/${a.slug}`}
               tabIndex={-1}
               aria-hidden="true"
-              className="relative block aspect-[3/2] overflow-hidden bg-surface"
+              className="relative block aspect-[3/2] overflow-hidden rounded-2xl bg-surface shadow-rest"
             >
               <Image
                 src={a.photo.src}
@@ -49,7 +49,7 @@ export function InsightCards({ items }: { items: Insight[] }) {
 /** The home page's look at the latest three articles, on a step of tone. */
 export function InsightsTeaser({ items }: { items: Insight[] }) {
   return (
-    <section id="insights" aria-labelledby="insights-title" className="scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40">
+    <section id="insights" aria-labelledby="insights-title" className="slab scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40">
       <div className="mx-auto max-w-[90rem]">
         <RiseGroup>
           <div className="mb-12 grid gap-8 md:mb-20 md:grid-cols-12 md:gap-8">

@@ -6,8 +6,8 @@ import { contactInfo } from '@/lib/site';
 /** The named person to ask, with a portrait and two ways to reach them. */
 export function PersonCard({ person, heading = 'Your contact' }: { person: Person; heading?: string }) {
   return (
-    <div className="grid grid-cols-[7rem_1fr] items-start gap-5 bg-surface p-5 md:grid-cols-[9rem_1fr] md:gap-8 md:p-8">
-      <div className="relative aspect-[4/5] overflow-hidden">
+    <div className="grid grid-cols-[7rem_1fr] items-start gap-5 rounded-3xl bg-surface p-5 shadow-rest md:grid-cols-[9rem_1fr] md:gap-8 md:p-8">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-rest">
         <Image
           src={person.src}
           alt={person.alt}

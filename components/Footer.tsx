@@ -34,7 +34,7 @@ export function Footer() {
             The fall planning meeting is where this year&rsquo;s tax bill is decided. The first conversation is free.
           </p>
           <div className="flex shrink-0 flex-wrap items-center gap-x-6 gap-y-3">
-            <Link href="/contact" className={buttonClass}>
+            <Link prefetch={false} href="/contact" className={buttonClass}>
               Book a consultation
             </Link>
             <a href={contactInfo.phoneHref} className={`inline-block py-3 font-medium ${plainLink}`}>
@@ -87,7 +87,7 @@ export function Footer() {
                   <ul className="mt-2">
                     {c.links.map((l) => (
                       <li key={l.href}>
-                        <Link href={l.href} className={listLink}>
+                        <Link prefetch={false} href={l.href} className={listLink}>
                           {l.label}
                         </Link>
                       </li>
@@ -117,7 +117,7 @@ export function Footer() {
                   <ul className="px-4 pb-4">
                     {c.links.map((l) => (
                       <li key={l.href}>
-                        <Link href={l.href} className={`${listLink} py-2`}>
+                        <Link prefetch={false} href={l.href} className={`${listLink} py-2`}>
                           {l.label}
                         </Link>
                       </li>
@@ -147,7 +147,7 @@ export function Footer() {
         <ul className="flex flex-wrap gap-x-6">
           {legalLinks.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="inline-block py-3 text-bg/85 hover:text-bg hover:underline">
+              <Link prefetch={false} href={l.href} className="inline-block py-3 text-bg/85 hover:text-bg hover:underline">
                 {l.label}
               </Link>
             </li>

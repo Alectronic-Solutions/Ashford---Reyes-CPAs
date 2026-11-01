@@ -2,20 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Rise, RiseGroup } from './Reveal';
 import { CountUp, Tilt } from './Depth';
+import { Stars } from './Stars';
+import { GoogleMark } from './GoogleMark';
 import { credentials, rating, sampleNote, stats, type Story, type Testimonial } from '@/lib/proof';
 import { industry } from '@/lib/industries';
-
-function Stars({ className }: { className?: string }) {
-  return (
-    <span className={`flex gap-1 ${className ?? ''}`} aria-hidden="true">
-      {Array.from({ length: 5 }, (_, i) => (
-        <svg key={i} width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L1.3 7.8l6.1-.7z" />
-        </svg>
-      ))}
-    </span>
-  );
-}
 
 /** The firm in four figures, set large on ink straight after the hero. */
 export function ProofStrip() {
@@ -41,9 +31,12 @@ export function ProofStrip() {
             <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-5 md:col-span-4">
               <span className="font-display text-h2 font-semibold">{rating.score}</span>
               <span>
-                <Stars className="text-bg" />
-                <span className="mt-1 block text-small">
-                  Average from {rating.count} {rating.source}
+                <Stars value={Number(rating.score)} size={24} />
+                <span className="mt-2 flex items-center gap-2 text-small">
+                  <GoogleMark size={20} />
+                  <span>
+                    {rating.count} {rating.source}
+                  </span>
                 </span>
               </span>
             </div>
@@ -110,7 +103,7 @@ export function Stories({
                 <p className="mt-1 text-small">{lead.client}</p>
                 <p className="mt-4 max-w-[52ch]">{lead.text}</p>
                 {linkOut && (
-                  <Link
+                  <Link prefetch={false}
                     href={`/industries/${lead.industry}`}
                     className="mt-auto inline-block self-start pt-6 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"
                   >
@@ -131,7 +124,7 @@ export function Stories({
                     <p className="mt-1 text-small">{s.client}</p>
                     <p className="mt-3 max-w-[52ch]">{s.text}</p>
                     {linkOut && (
-                      <Link
+                      <Link prefetch={false}
                         href={`/industries/${s.industry}`}
                         className="mt-auto inline-block self-start pt-5 font-medium underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
                       >
@@ -162,8 +155,9 @@ export function Testimonials({ quotes }: { quotes: Testimonial[] }) {
                 In their words
               </h2>
               <div className="mt-6 flex items-center gap-4">
-                <Stars className="text-bg" />
-                <span>
+                <Stars value={Number(rating.score)} size={24} />
+                <span className="inline-flex items-center gap-2">
+                  <GoogleMark size={18} />
                   {rating.score} from {rating.count} {rating.source}
                 </span>
               </div>
@@ -189,7 +183,7 @@ export function Testimonials({ quotes }: { quotes: Testimonial[] }) {
             {rest.map((t) => (
               <Tilt as="li" key={t.name} max={5}>
                 <figure className="flex h-full flex-col bg-bg/10 p-6 md:p-8">
-                  <Stars className="text-bg" />
+                  <Stars />
                   <blockquote className="mt-5 max-w-[40ch]">
                     <p>“{t.quote}”</p>
                   </blockquote>

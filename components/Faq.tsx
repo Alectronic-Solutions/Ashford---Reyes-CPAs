@@ -97,7 +97,7 @@ export function Faq({ variant = 'home' }: { variant?: 'home' | 'page' }) {
           </Rise>
           {home && (
             <Rise className="mt-6">
-              <Link href="/faq" className={textLink}>
+              <Link prefetch={false} href="/faq" className={textLink}>
                 All {questions.length} questions
               </Link>
             </Rise>

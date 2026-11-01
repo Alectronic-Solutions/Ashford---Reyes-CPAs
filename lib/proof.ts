@@ -13,7 +13,7 @@ export const stats = glue([
   { value: '98%', label: 'Clients who stay with us each year' },
 ]);
 
-export const rating = { score: '4.9', count: 212, source: 'client surveys' };
+export const rating = { score: '4.9', count: 212, source: 'Google reviews' };
 
 export const credentials = glue(
   'Licensed by the California Board of Accountancy. Members of the AICPA and the California Society of CPAs. QuickBooks ProAdvisors on staff.',

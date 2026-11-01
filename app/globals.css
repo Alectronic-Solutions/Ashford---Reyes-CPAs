@@ -15,11 +15,24 @@
   }
 }
 
+/* Everything above the hero on first load: header, plus the utility bar from xl up. */
+:root {
+  --chrome-h: var(--header-h);
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --chrome-h: 134px;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
     /* Keeps focused and anchored content out from under the sticky header. */
     scroll-padding-top: var(--header-h);
+    /* Set by MobileActionBar from its real height while it is showing. */
+    scroll-padding-bottom: calc(var(--action-bar-h, 0px) + 1rem);
   }
 
   body {

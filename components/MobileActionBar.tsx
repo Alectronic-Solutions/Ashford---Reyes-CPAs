@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { contactInfo } from '@/lib/site';
 
@@ -41,11 +41,31 @@ export function MobileActionBar() {
   }, [pathname]);
 
   const show = past && !blocked;
+  const bar = useRef<HTMLElement>(null);
+
+  // While the bar is up, tell the page how tall it really is, so scroll-padding keeps focused elements clear of it.
+  useEffect(() => {
+    const root = document.documentElement;
+    const el = bar.current;
+    if (!show || !el) {
+      root.style.removeProperty('--action-bar-h');
+      return;
+    }
+    const measure = () => root.style.setProperty('--action-bar-h', `${el.offsetHeight}px`);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+      root.style.removeProperty('--action-bar-h');
+    };
+  }, [show]);
 
   return (
     <AnimatePresence>
       {show && (
         <motion.aside
+          ref={bar}
           aria-label="Quick contact"
           className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 gap-2 bg-ink p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
           initial={{ y: '100%' }}

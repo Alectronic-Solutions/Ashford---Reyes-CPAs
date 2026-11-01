@@ -18,7 +18,7 @@ export function PersonCard({ person, heading = 'Your contact' }: { person: Perso
       </div>
       <div>
         <p className="font-display text-h3 font-semibold">
-          <Link href={`/team/${person.slug}`} className="hover:text-accent">
+          <Link prefetch={false} href={`/team/${person.slug}`} className="hover:text-accent">
             {person.name}
           </Link>
         </p>

@@ -59,7 +59,7 @@ export function WhoWeServe() {
               </p>
             </Rise>
             <Rise>
-              <Link
+              <Link prefetch={false}
                 href="/industries/farms-wineries"
                 className="mt-4 inline-block py-3 font-medium underline decoration-bg/60 decoration-2 underline-offset-8 hover:decoration-bg"
               >
@@ -73,7 +73,7 @@ export function WhoWeServe() {
       {/* Small businesses: copy and a plain list on one side, a tall photograph on the other. */}
       <RiseGroup>
         <div className="mt-20 grid gap-10 px-5 md:mt-40 md:grid-cols-12 md:items-center md:gap-8 md:px-8">
-          <Rise className="md:order-2 md:col-span-5 md:col-start-8">
+          <Rise className="md:order-2 md:col-span-5 md:col-start-7">
             <DepthPhoto
               src="/photos/serve-business.jpg"
               alt="Two shop owners in aprons standing outside their storefront, one holding a Yes We’re Open sign"
@@ -82,7 +82,7 @@ export function WhoWeServe() {
               imageClassName="object-[47%_50%]"
             />
           </Rise>
-          <div className="md:order-1 md:col-span-6">
+          <div className="md:order-1 md:col-span-5 md:col-start-2">
             <Rise>
               <h3 className={subhead}>Small businesses</h3>
             </Rise>
@@ -104,7 +104,7 @@ export function WhoWeServe() {
               </ul>
             </Rise>
             <Rise>
-              <Link href="/industries/small-business" className={`${textLink} mt-6`}>
+              <Link prefetch={false} href="/industries/small-business" className={`${textLink} mt-6`}>
                 How we work with small businesses
               </Link>
             </Rise>
@@ -132,7 +132,7 @@ export function WhoWeServe() {
                 federal and California returns, plan around the big events, and explain the numbers in plain words. If a
                 family business or farm is part of the picture, we look at the household and the business together.
               </p>
-              <Link href="/industries/families" className={`${textLink} mt-2`}>
+              <Link prefetch={false} href="/industries/families" className={`${textLink} mt-2`}>
                 How we work with families
               </Link>
             </div>

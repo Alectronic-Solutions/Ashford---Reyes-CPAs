@@ -21,6 +21,8 @@ const MOBILE = {
   end: '/photos/vineyard-end-mobile.jpg',
 };
 
+const DESKTOP_QUERY = '(min-width: 768px)';
+
 type Status = 'playing' | 'paused' | 'ended';
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -41,6 +43,7 @@ function NextDate({ buildToday }: { buildToday: Ymd }) {
         is the next federal date. {next.label}, {daysAwayText(next.daysAway)}.
       </p>
       <Link
+        prefetch={false}
         href="/#year-ahead"
         className="mt-4 inline-block py-2 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"
       >
@@ -116,18 +119,22 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
       ref={sectionRef}
       aria-labelledby="hero-title"
       onPointerMove={onPointerMove}
-      className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ink px-5 pb-10 pt-28 md:min-h-[calc(100svh-var(--header-h))] md:px-8 md:pb-16"
+      className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ink px-5 pb-10 pt-28 md:min-h-[calc(100svh-var(--chrome-h))] md:px-8 md:pb-12 md:pt-24 xl:pb-14"
     >
       <motion.div
         className="hero-grade absolute -inset-[4%] -z-20"
         style={depth.scroll ? { scale: mediaScale, y: mediaY } : undefined}
       >
         <motion.div className="absolute inset-0" style={depth.pointer ? { x: mediaX, y: mediaPY } : undefined}>
+          {/* Both posters are lazy, so the hidden one is never fetched. The media-scoped preloads below
+              start the visible one early at high priority, and only that one. */}
+          <link rel="preload" as="image" href={DESKTOP.poster} media={DESKTOP_QUERY} fetchPriority="high" />
+          <link rel="preload" as="image" href={MOBILE.poster} media={`not ${DESKTOP_QUERY}`} fetchPriority="high" />
           <Image
             src={reduced ? DESKTOP.end : DESKTOP.poster}
             alt=""
             fill
-            priority
+            fetchPriority="high"
             sizes="100vw"
             className="hidden object-cover md:block"
           />
@@ -135,7 +142,7 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
             src={reduced ? MOBILE.end : MOBILE.poster}
             alt=""
             fill
-            priority
+            fetchPriority="high"
             sizes="100vw"
             className="object-cover md:hidden"
           />
@@ -207,6 +214,7 @@ export function Hero({ buildToday }: { buildToday: Ymd }) {
             id="hero-title"
             data-reveal
             className="max-w-[12ch] text-display"
+            style={{ fontSize: 'clamp(3rem, min(9vw, 17svh), 9rem)' }}
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease }}

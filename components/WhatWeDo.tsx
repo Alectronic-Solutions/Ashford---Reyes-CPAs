@@ -82,7 +82,7 @@ export function WhatWeDo() {
                   />
                   <h3 className="text-h2">{s.name}</h3>
                   <p className="max-w-[56ch]">{s.summary}</p>
-                  <Link
+                  <Link prefetch={false}
                     href={`/services/${s.slug}`}
                     className="inline-block self-start py-2 font-medium underline decoration-accent decoration-2 underline-offset-8 hover:decoration-ink"
                   >

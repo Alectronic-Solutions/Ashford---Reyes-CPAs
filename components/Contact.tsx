@@ -294,8 +294,8 @@ export function Contact() {
       aria-labelledby="contact-title"
       className="scroll-mt-24 bg-surface px-5 py-24 md:px-8 md:py-40"
     >
-      <RiseGroup className="mx-auto grid max-w-[90rem] gap-12 md:grid-cols-12 md:gap-8">
-        <Rise className="md:col-span-5" mask>
+      <RiseGroup className="mx-auto grid max-w-[90rem] gap-12 md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-8 md:gap-y-12">
+        <Rise className="md:col-span-5 md:col-start-1 md:row-start-1" mask>
           <h2 id="contact-title" className="text-h2">
             Book a consultation
           </h2>
@@ -328,7 +328,7 @@ export function Contact() {
           </dl>
         </Rise>
 
-        <Rise className="md:col-span-7">
+        <Rise className="md:col-span-7 md:col-start-6 md:row-span-2 md:row-start-1 md:sticky md:top-28 md:self-start">
           <form
             action={contactInfo.formAction}
             method="POST"
@@ -389,11 +389,11 @@ export function Contact() {
                     </button>
                   )}
                   {step < steps.length - 1 ? (
-                    <button type="button" onClick={() => go(step + 1)} className={buttonClass}>
+                    <button key="continue" type="button" onClick={() => go(step + 1)} className={buttonClass}>
                       Continue
                     </button>
                   ) : (
-                    <button type="submit" className={buttonClass}>
+                    <button key="send" type="submit" className={buttonClass}>
                       Send request
                     </button>
                   )}
@@ -414,9 +414,9 @@ export function Contact() {
             ref={notice}
             onClose={() => panel.current?.querySelector<HTMLElement>('input, textarea')?.focus()}
           />
-          <div className="mt-10 md:mt-12">
-            <AreaMap />
-          </div>
+        </Rise>
+        <Rise className="md:col-span-5 md:col-start-1 md:row-start-2 md:self-start">
+          <AreaMap />
         </Rise>
       </RiseGroup>
     </section>

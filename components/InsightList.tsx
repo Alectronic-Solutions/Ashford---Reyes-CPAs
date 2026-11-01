@@ -12,7 +12,7 @@ export function InsightCards({ items }: { items: Insight[] }) {
       {items.map((a) => (
         <Rise as="li" key={a.slug}>
           <Tilt max={6}>
-            <Link
+            <Link prefetch={false}
               href={`/insights/${a.slug}`}
               tabIndex={-1}
               aria-hidden="true"
@@ -28,7 +28,7 @@ export function InsightCards({ items }: { items: Insight[] }) {
             </Link>
           </Tilt>
           <h3 className="mt-6 text-h3">
-            <Link
+            <Link prefetch={false}
               href={`/insights/${a.slug}`}
               className="hover:underline hover:decoration-accent hover:decoration-2 hover:underline-offset-4"
             >
@@ -60,7 +60,7 @@ export function InsightsTeaser({ items }: { items: Insight[] }) {
             </Rise>
             <Rise className="md:col-span-7 md:pt-3">
               <p className="max-w-[36ch] text-statement">Short pieces on what to do this season, written for Lodi.</p>
-              <Link href="/insights" className={`${textLink} mt-4`}>
+              <Link prefetch={false} href="/insights" className={`${textLink} mt-4`}>
                 All insights
               </Link>
             </Rise>

@@ -35,8 +35,14 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: site.locale,
     url: '/',
+    title: `${site.name} | Tax and advisory in Lodi, California`,
+    description: site.description,
   },
-  twitter: { card: 'summary_large_image' },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${site.name} | Tax and advisory in Lodi, California`,
+    description: site.description,
+  },
   formatDetection: { telephone: false },
 };
 
@@ -54,6 +60,7 @@ const firmData = {
   telephone: contactInfo.phoneHref.replace('tel:', ''),
   email: contactInfo.email,
   image: `${site.url}/opengraph-image.png`,
+  logo: `${site.url}/icons/icon-512.png`,
   address: {
     '@type': 'PostalAddress',
     addressLocality: contactInfo.city,
